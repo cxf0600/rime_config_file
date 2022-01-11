@@ -22,3 +22,19 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+
+# vim tmp file
+*.sw?
+
+# rime exclude file
+build/
+*.userdb/
+opencc/*
+!opencc/smzm*.txt
+!opencc/smzm*.json
+
+default.yaml
+installation.yaml
+user.yaml
+

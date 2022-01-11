@@ -1,0 +1,242 @@
+# Rime schema settings
+# encoding: utf-8
+
+schema:
+  name: "极点郑码"
+  schema_id: Zhengma_Jidian
+  version: "0.8.1"
+  author:
+    - "發明人 鄭易里"
+  dependencies:
+    - pinyin_simp
+  description: |
+    郑码
+    碼表源自 40737127群的极点郑码十周年纪念版中的超大字符集郑码超级郑码群修正版
+    通過【袖珍簡化字拼音】實現 ` 鍵拼音反查
+
+switches:
+#  - name: sichar                # 配置方法不明，疑似已失效;
+#  - name: single_char_filter
+#    reset: 1
+#    states: [s, m]
+  - name: ascii_punct           # 中英文标点开关;
+    reset: 0
+    states: ["，。", "，．"]
+  - name: zh_trad               # 简繁转换开关;
+    reset: 0
+    states: [ 汉字, 漢字 ]
+  - name: full_shape            # 全半角字符开关;
+    reset: 0
+    states: [ 半角, 全角 ]
+#  - name: emoji_cn              # Emoji开关;
+#    states: [ 〇, 😊]           # 示在状态栏的图标;
+#    reset: 1                    # 默认开启;
+  - options: [gb2312, gbk, utf8]    # 字符集选择列表;
+    reset: 1
+    states:
+      - GB2312
+      - GBK
+      - UTF-8
+#  - name: gbk                  # 字符集选择;
+#    reset: 1
+#    states: [utf, gbk]
+# 使用字符集选择列表功能时,应该同时打开"extended_charset"开关,并设置为默认打开(reset: 1);如不打开该功能,算法会默认不显示扩展字集,这会导致"字符集选择列表中"的'utf8'选项失效,也就是说,即使打开'utf8'选项,也无法输出展字集中的字符;
+  - name: extended_charset     # 扩展字符集开关;
+    reset: 1
+#    states: [ 通用, 增廣 ]     # 注释此行,不显示选择入口;
+
+#  - name: ascii_mode           # 中英文模式转换;
+#    reset: 0
+#    states: [ 中文, 西文 ]
+
+engine:
+  processors:
+    - ascii_composer
+    - recognizer
+    - key_binder
+    - speller
+    - punctuator
+    - selector
+    - navigator
+    - express_editor
+  segmentors:
+    - ascii_segmentor
+    - matcher
+    - abc_segmentor
+    - punct_segmentor
+    - fallback_segmentor
+  translators:
+    - punct_translator
+    - reverse_lookup_translator
+    - table_translator
+    - lua_translator@date_translator
+    - lua_translator@time_translator
+    - lua_translator@number_translator
+  filters:
+    - simplifier@zh_trad                        # 必要組件一
+#    - reverse_lookup_filter@zhengma_lookup     # 未配置使用
+#    - simplifier@emoji_cn                      #Emoji滤镜   没有相应的"emoji_cn"配置项，如不注释，程序会认为打开了一个"simplifier"过滤器，即打字时会自动将繁体字转换为简体字。
+#    - single_char_filter@sichar
+    - charset_filter@gbk
+    - charset_filter@gb2312
+    - lua_filter@single_char_only_filter        # 仅单字过滤器;
+#    - lua_filter@single_char_filter             # 单字优先过滤器;
+    - lua_filter@charset_comment_filter         # 注释所属"字符集"和"读音";
+    - lua_filter@reverse_lookup_filter
+    - uniquifier                                # 必要組件二／去除重复候选项，应放在最后
+
+speller:
+#  alphabet: zyxwvutsrqponmlkjihgfedcba;
+  alphabet: zyxwvutsrqponmlkjihgfedcba
+#  delimiter: " ;'"
+  auto_select: true
+  auto_select_unique_candidate: false
+  auto_clear: manual
+  #自动清除空码,有auto、manual和max_length可选。
+  max_code_length: 4
+
+translator:
+  dictionary: Zhengma_Jidian
+#  enable_charset_filter: true
+#  enable_encoder: true
+#  enable_sentence: false
+#  enable_user_dict: false
+#  encode_commit_history: true
+#  max_phrase_length: 4
+#  # ↓ 用户词典格式，tabledb（文本） 或 userdb （二进制）。
+#  db_class: tabledb
+#  db_class: userdb
+#  # ↓ 该翻译器出字优先级别
+#  initial_quality: 0.5
+  # ↓ 字符集过滤，低重形码用不着
+  enable_charset_filter: true
+#  enable_single_char_filter: true
+  # ↓ 自动造句，形码用不着
+  enable_sentence: false
+  # ↓ 自动造词，看需求
+  enable_encoder: false
+  # ↓ 对已上屏的内容整合成词条儿，看需求
+  encode_commit_history: false
+  # ↓ 自动造词的最长字数，看需求
+  max_phrase_length: 4
+  # ↓ 逐渐提示，看需求
+  enable_completion: true
+  # ↓ 是否开启用户词典，以记录动态字频和用户词词频
+  enable_user_dict: false
+#  prism: wubi_extend
+#  disable_user_dict_for_patterns:
+#    - "^z.*$"
+#  #解决编码提示后的波浪~
+#  comment_format:
+#    - 'xlit/~/ /'
+#  #拼写运算
+#  preedit_format:
+  
+#Emoji滤镜配置
+# emoji_cn:
+#   opencc_config: emoji.json   #Emoji词典配置文件
+#   option_name: emoji_cn    #与状态栏开关的名称一致
+#   tips: all    #开启注释
+  
+#sichar:
+#  option_name: sichar
+#  tags: [ abc ] #abc對應abc_segmentor
+#  tips: none
+
+# 输入字母同时启用反查功能，开启后可同时使用拼音打字并反查编码；
+abc_segmentor:
+  extra_tags:
+#    - reverse_lookup
+
+reverse_lookup:
+  dictionary: pinyin_simp
+  prefix: "`"
+  suffix: "'"
+  tips: 〔拼音〕
+  preedit_format:
+    - xform/([nl])v/$1ü/
+    - xform/([nl])ue/$1üe/
+    - xform/([jqxy])v/$1u/
+    
+zh_trad:
+  opencc_config: s2t.json
+  option_name: zh_trad
+  tags: [ abc ] #abc對應abc_segmentor
+  tips: none
+
+#punctuator:
+#  import_preset: default
+punctuator:
+  import_preset: mysymbols
+
+key_binder:
+  import_preset: default
+  bindings: 
+#    - { when: paging, accept: comma, send: comma }
+#    - { when: has_menu, accept: period, send: period }
+#    - { when: has_menu, accept: "#", toggle: emoji_cn }   # 在输入过程中，切换Emoji开关的快捷键，这里用井号切换
+    - {accept: ";", send: 2, when: composing}
+    - {accept: "'", send: 3, when: composing}
+
+recognizer:
+  import_preset: default
+  patterns:
+    email: "^[a-z][-_.0-9a-z]*@.*$"
+    url: "^(www[.]|https?:|ftp:|mailto:).*$"
+    reverse_lookup: "`[a-z]*;?$"
+#    pinyin_lookup: "`P[a-z]*;?$"
+#    jyutping_lookup: "`J[a-z]*;?$"
+#    pinyin: "(?<!`)P[a-z']*;?$"
+#    jyutping: "(?<!`)J[a-z']*;?$"
+    punct: "^/([0-9]0?|[a-z]+)$" #配合symbols.yaml中的特殊字符輸入
+#menu:
+#  alternative_select_keys: ASDFGHJKL #如編碼字符佔用數字鍵則須另設選字鍵
+#  page_size: 5 #選單每䈎顯示個數
+
+#style:
+#  keyboards: 
+#    -  qwerty
+#    -  number
+#    -  symbols
+#    -  edit
+#    -  move
+#    -  bqrw1
+#    -  bqrw2
+#    -  bqrw3
+#    -  bqrw4
+#    -  bqrw5
+#    -  bqqt1
+#    -  bqqt2
+#    -  bqqt3
+#    -  bqqt4
+#    -  bqqz1
+#    -  bqqz2
+#    -  bqqz3
+#    -  bqqz4
+#    -  bqqz5
+#    -  bqpt1
+#    -  bqpt2
+#    -  bqhd1
+#    -  bqhd2
+#    -  bqhc1
+#    -  bqhc2
+#    -  bqlx1
+#    -  bqlx2
+#    -  bqlx3
+#    -  bqlx4
+#    -  bqlx5
+#    -  bqkj1
+#    -  bqkj2
+#    -  bqkj3
+#    -  bqkj4
+#    -  bqfh1
+#    -  bqfh2
+#    -  bqfh3
+#    -  bqfh4
+#    -  kao_fond
+#    -  kao_sad
+#    -  kao_mad
+#    -  kao_astonished
+#    -  kao_impotent
+#    -  kao_happy #鍵盤配置
+

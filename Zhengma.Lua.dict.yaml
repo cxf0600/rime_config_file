@@ -1,0 +1,30 @@
+# dictionary: Zhengma.Lua
+# encoding: utf-8
+#
+# [ Description ]
+#    配合lua脚本使用的编码
+#
+#
+
+---
+name: Zhengma.Lua
+version: "1.0"
+sort: original
+use_preset_vocabulary: false
+columns:
+  - text
+  - code
+  - stem
+encoder:
+  rules:
+    - length_equal: 2
+      formula: "AaAbBaBb"
+    - length_equal: 3
+      formula: "AaBaBbCa"
+    - length_in_range: [4, 10]
+      formula: "AaBaCaDa"
+...
+#时	ti
+时	tim
+#日	da
+日	dat

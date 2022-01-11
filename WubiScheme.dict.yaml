@@ -1,0 +1,43 @@
+# Rime dictionary
+# encoding: utf-8
+#
+# 主码表，用于对方案下码表词典进行管理调整。
+# 调整增删import_tables下的码表词典条目控制候选词条。。
+#
+#
+---
+name: WubiScheme
+version: "2019.04.24"
+sort: by_weight
+#sort: original
+use_preset_vocabulary: false    #   是否使用八股文词库;
+columns:
+  - text
+  - code
+  - weight
+  - stem
+encoder:
+  exclude_patterns:
+    - '^z.*$'
+  rules:
+    - length_equal: 2
+      formula: "AaAbBaBb"
+    - length_equal: 3
+      formula: "AaBaCaCb"
+    - length_in_range: [4, 10]
+      formula: "AaBaCaZa"
+#下面的是本词库包含的所有词库，请根据需要开启/禁用，词条前添删#号即可开启/关闭词库。
+import_tables:
+#  - wubi_exgb_1j      #五笔GB6763_一级简码_75条;
+#  - wubi_exgb_2j      #五笔GB6763_二级简码_599条;
+#  - wubi_exgb_3j      #五笔GB6763_三级简码_3564条;
+#  - wubi_exgb_qm      #五笔GB6763_全码码表_6763条;
+#  - wb86_danziban_quanma      #五笔全码码表_27586条_wubi_exgb_qm＋wubi_ex_cx;
+#  - wb86_cjbcq        #五笔出简不出全码表_21418条;
+#  - wubi_ex_cx        #五笔次显-GB18030_20823条;
+#  - wubi_exgb_k       #五笔GBK大字库;
+#  - wubi_ex_cx_cy     #次显中一些常用汉字_11条;
+  - wubi86_single_char  #去除wubi86.dict中的词语，单字码表；
+#  - wubi86              #Rime.im的wubi86方案码表，有词语；
+  - wubi_ex_z         #z键的辅助编码_68条;
+...

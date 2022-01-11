@@ -1,0 +1,16 @@
+{
+  "name": "smzm_py",
+  "segmentation": {
+    "type": "mmseg",
+    "dict": {
+      "type": "text",
+      "file": "smzm_py.txt"
+    }
+  },
+  "conversion_chain": [{
+    "dict": {
+      "type": "text",
+      "file": "smzm_py.txt"
+    }
+  }]
+}

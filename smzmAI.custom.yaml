@@ -1,0 +1,79 @@
+# smzmAI.custom.yaml
+#
+# 補靪功能：将三码郑码整句方案的词典文件指向"smzmAI.custom.dict.yaml"
+#
+
+patch:
+  "translator/dictionary": smzmAI.custom            # 载入自定义词典；
+  "switches":
+    - name: zh_trad               # 简繁转换开关;
+      reset: 0
+      states: [ 汉字, 漢字 ]
+  #-↓↓↓↓↓↓↓↓↓↓↓↓ 以下为原"smzmAI.schema.yaml"文件的内容，每次更新请保持这部分与最新版方案文件一致; ↓↓↓↓↓↓↓↓↓↓↓↓↓
+    - name: ascii_mode
+      reset: 0
+      states: [ 中文, 西文 ]
+    - name: full_shape
+      states: [ 半角, 全角 ]
+    - name: ascii_punct
+      states: [ ，。, ，． ]
+    - name: pinyin_tip
+      states: ["拼", "pin"]
+      reset: 0
+    - name: chaifen
+      states: ["拆", "扌斥"]
+      reset: 0
+  #-↑↑↑↑↑↑↑↑↑↑↑↑ 以上为原"smzmAI.schema.yaml"文件的内容，每次更新请保持这部分与最新版方案文件一致; ↑↑↑↑↑↑↑↑↑↑↑↑↑
+
+  "engine/translators":
+  #-↓↓↓↓↓↓↓↓↓↓↓↓ 以下为原"smzmAI.schema.yaml"文件的内容，每次更新请保持这部分与最新版方案文件一致; ↓↓↓↓↓↓↓↓↓↓↓↓↓
+    - punct_translator  #英文标点符号转换成中文标点
+    - table_translator
+    - reverse_lookup_translator
+  #-↑↑↑↑↑↑↑↑↑↑↑↑ 以上为原"smzmAI.schema.yaml"文件的内容，每次更新请保持这部分与最新版方案文件一致; ↑↑↑↑↑↑↑↑↑↑↑↑↑
+    - lua_translator@date_translator
+    - lua_translator@time_translator
+    - lua_translator@number_translator
+
+  "engine/filters":
+  #-↓↓↓↓↓↓↓↓↓↓↓↓ 以下为原"smzmAI.schema.yaml"文件的内容，每次更新请保持这部分与最新版方案文件一致; ↓↓↓↓↓↓↓↓↓↓↓↓↓
+    - simplifier
+    - simplifier@pinyin_tip
+    - reverse_lookup_filter@smzm_lookup
+    - simplifier@chaifen
+  #-↑↑↑↑↑↑↑↑↑↑↑↑ 以上为原"smzmAI.schema.yaml"文件的内容，每次更新请保持这部分与最新版方案文件一致; ↑↑↑↑↑↑↑↑↑↑↑↑↑
+    - simplifier@zh_trad                        # custom++++++++++++++++
+    #- lua_filter@single_char_only_filter        # 仅单字过滤器;
+    #- lua_filter@single_char_filter             # 单字优先过滤器;
+    - lua_filter@charset_comment_filter         # 注释所属"字符集"和"读音";
+    - lua_filter@reverse_lookup_filter
+  #-↓↓↓↓↓↓↓↓↓↓↓↓ 以下为原"smzmAI.schema.yaml"文件的内容，每次更新请保持这部分与最新版方案文件一致; ↓↓↓↓↓↓↓↓↓↓↓↓↓
+    - uniquifier
+  #-↑↑↑↑↑↑↑↑↑↑↑↑ 以上为原"smzmAI.schema.yaml"文件的内容，每次更新请保持这部分与最新版方案文件一致; ↑↑↑↑↑↑↑↑↑↑↑↑↑
+
+  "zh_trad":
+    opencc_config: s2t.json
+    option_name: zh_trad
+    tags: [ abc ] #abc對應abc_segmentor
+    tips: none
+    
+  "punctuator/import_preset": mysymbols
+  "recognizer/patterns/punct": "^/([a-z]+|[A-Z]+|[0-9])$"
+
+  "key_binder/bindings":
+  #-↓↓↓↓↓↓↓↓↓↓↓↓ 以下为原"smzmAI.schema.yaml"文件的内容，每次更新请保持这部分与最新版方案文件一致; ↓↓↓↓↓↓↓↓↓↓↓↓↓
+    #- { when: has_menu, accept: semicolon,  send: 2 }
+    - { when: has_menu, accept: Tab, send: 3 }
+    #- { when: has_menu, accept: Shift+Shift_R, send: 3 }
+    #- { when: has_menu, accept: Shift+Shift_L, send: 3 }
+    - { when: has_menu, accept: Return, send: 1 }
+    - { when: has_menu, accept: space, send: "_" }
+    - { when: composing, accept: space, send: Escape }
+    - { when: has_menu, accept: apostrophe, send: 2 }
+    - { when: has_menu, accept: equal, send: Page_Down }
+    - { when: has_menu, accept: minus, send: Page_Up }
+    - { when: has_menu, accept: period, send: period }  #使得“。”可以顶首选字上屏。
+    - {when: always, accept: Control+Shift+P, toggle: pinyin_tip}
+    - {when: always, accept: Control+Shift+D, toggle: chaifen}
+  #-↑↑↑↑↑↑↑↑↑↑↑↑ 以上为原"smzmAI.schema.yaml"文件的内容，每次更新请保持这部分与最新版方案文件一致; ↑↑↑↑↑↑↑↑↑↑↑↑↑
+    - {when: always, accept: Control+Shift+Z, toggle: zh_trad}
