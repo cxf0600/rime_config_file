@@ -18,7 +18,7 @@ translator 的输出是若干候选项。
 
 local function translator(input, seg)
    -- 如果输入串为 `date` 则翻译
-   if (input == "date") then
+   if (input == "date" or input == "/date") then
       --[[ 用 `yield` 产生一个候选项
            候选项的构造函数是 `Candidate`，它有五个参数：
             - type: 字符串，表示候选项的类型
@@ -32,6 +32,7 @@ local function translator(input, seg)
            最终的效果是输入法候选框中出现两个格式不同的当前日期的候选项。
       --]]
       yield(Candidate("date", seg.start, seg._end, os.date("%Y-%m-%d"), "日期"))
+      yield(Candidate("date", seg.start, seg._end, os.date("%Y.%m.%d"), "日期"))
    end
 end
 
