@@ -1,9 +1,3 @@
-customization:
-  distribution_code_name: ""
-  distribution_version: ""
-  generator: "Rime::SwitcherSettings"
-  modified_time: "Fri Mar 26 22:00:44 2021"
-  rime_version: 1.5.3
 patch:
   "key_binder/bindings":
     - {accept: "Control+p", send: Up, when: composing}
@@ -40,6 +34,12 @@ patch:
     - {accept: Tab, send: Escape, when: composing}
     - {accept: space, send: space, when: has_menu}
     - {accept: space, send: Escape, when: composing}
+#  "menu/alternative_select_labels":
+#    - "Ⅰ"
+#    - "Ⅱ"
+#    - "Ⅲ"
+#    - "Ⅳ"
+#    - "Ⅴ"
   "menu/page_size": 5
   "punctuator/half_shape":
     "!": ["！", "!"]
@@ -67,7 +67,9 @@ patch:
     "[": ["[", "［", "「", "【", "〔"]
     "\\": ["\\", "、", "＼"]
     "]": ["]", "］", "」", "】", "〕"]
+#    "^": ["……", "^"]
     "^": ["^", "…"]
+#    _: [_, "——", "±"]
     _: [_, "—", "±"]
     "`": "`"
     "{": ["{", "｛", "『", "〖"]
@@ -77,11 +79,13 @@ patch:
   "recognizer/patterns/uppercase": "[A-Z][-_+./'0-9A-Za-z]*$"
   "recognizer/patterns/url": "^(www[.]|htt[p]|ftp[.:]|mailto:|file:).*$|^[a-z]+[.].+$"
   schema_list:
-    - {schema: Zhengma_Jidian}
-    - {schema: pinyin_simp}
     - {schema: smzm}
+    - {schema: Zhengma_Jidian}
+    - {schema: Zhengma_BuzhiDanzi_Pinyin}
+#    - {schema: Zhengma_Buzhi}
     - {schema: smzmAI}
     - {schema: terra_pinyin}
+    - {schema: pinyin_simp}
     - {schema: wubi86}
   "switcher/abbreviate_options": false
   "switcher/caption": "〔方案选单〕"
