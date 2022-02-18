@@ -4,7 +4,7 @@
 schema:
   schema_id: smzm
   name: 三码郑码
-  version: "V20210328"
+  version: "V20220213"
   author:
     - 郑易里、郑珑<svc@zmsjit.com>
     - 史岳（至至）<65003074@qq.com>
@@ -12,12 +12,12 @@ schema:
     *重码率低，编码确定性高，为盲打而生。重码率仅0.16%（单字版本为0.16%，整句版本为0.07%）。可轻松实现不看键盘、不看屏幕、不看候选框的真正盲打！
     *高效率、字均按键少。综合码长2.35（平均2.35键一字），纯单字效率即可达到传统形码词组输入的效率水平。按每秒击键7次计算，可以轻松实现170字/分钟的水平。效率可轻松达到拼音输入法两至三倍！
     *极其规律易学难忘的字根体系。输入法基于汉字形码理论体系的奠基人郑易里教授的科学字根体系。该体系汉字拆分直观符直觉，规律性极强，完全理解记忆不死记硬背，绝对无需记忆字根口诀！
-    纯单字输入，无需人工分词。无需像传统形码输入法一样人工分词输入词组，输入体验舒适度极佳，类似拼音整句，却无需选重！
+    *纯单字输入，无需人工分词。无需像传统形码输入法一样人工分词输入词组，输入体验舒适度极佳，类似拼音整句，却无需选重！
     *易于精通。全部简码仅约300字，数量不到传统形码的二分之一，且完全无需对词组作任何特殊训练。这使得该输入法从入门到精通（140字/分）的总时间远短于，总成本远低于传统形码。
     *高度符合人机工程学的键位设计。左右手负荷均衡，两手顺序交替频率高相同手指连击频率低，食中无名小指使用率依次降低，任一手指负荷适当。卓越的人机工程学设计有效保证了高速输入的持久性。
     *规范。在基本字根选用、字根笔画分类、笔形分区、取码笔顺及根顺等主要方面符合国家语言文字规范，与汉语语文识字教学背景一致。
     *均衡。达到了效率、易学性、速学性、舒适度的极佳均衡。
-    *敲“`”键（数字1旁边的按键）进入拼音反查
+    *敲“`”键（数字排数字键1左边的按键）进入拼音反查
   dependencies:
     - pinyin_simp
 
@@ -31,13 +31,17 @@ switches:
     states: [ ，。, ，． ]
   - name: gb2312
     states: [不滤生僻字, 过滤生僻字]
-    reset: 1
+    reset: 0
+  - name: simplification
+    states: [简体字, 简入繁出]
+    reset: 0
   - name: pinyin_tip
     states: ["拼", "pin"]
     reset: 0
   - name: chaifen
     states: ["拆", "扌斥"]
     reset: 0
+
 
 engine:
   processors:
@@ -74,7 +78,7 @@ speller:
     - 'derive/_$//'
     - 'derive/;$//'
 
-  alphabet: zyxwvutsrqponmlkjihgfedcba;_/
+  alphabet: zyxwvutsrqponmlkjihgfedcba;_/.
   initials: zyxwvutsrqponmlkjihgfedcba;/
   # use_space: true
   # delimiter: ' '
@@ -134,6 +138,10 @@ smzm_lookup:
     - pinyin
   dictionary: *dict
 
+simplifier:
+  opencc_config: s2t.json
+  option_name: simplification
+
 punctuator:
   import_preset: default
   half_shape:
@@ -155,6 +163,7 @@ key_binder:
     - { when: has_menu, accept: period, send: period }  #使得“。”可以顶首选字上屏。
     - {when: always, accept: Control+Shift+P, toggle: pinyin_tip}
     - {when: always, accept: Control+Shift+D, toggle: chaifen}
+    - {when: always, accept: Control+Shift+F, toggle: simplification}
 
 recognizer:
   import_preset: default
