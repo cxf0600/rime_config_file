@@ -16,9 +16,12 @@ patch:
       states: [ 半角, 全角 ]
     - name: ascii_punct
       states: [ ，。, ，． ]
-    - name: gb2312
-      states: [不滤生僻字, 过滤生僻字]
-      reset: 0
+#-  - name: gb2312
+#-    states: [不滤生僻字, 过滤生僻字]
+#-    reset: 0
+#-  - name: simplification
+#-    states: [简体字, 简入繁出]
+#-    reset: 0
     - name: pinyin_tip
       states: ["拼", "pin"]
       reset: 0
@@ -26,6 +29,12 @@ patch:
       states: ["拆", "扌斥"]
       reset: 0
   #-↑↑↑↑↑↑↑↑↑↑↑↑ 以上为原"smzm.schema.yaml"文件的内容，每次更新请保持这部分与最新版方案文件一致; ↑↑↑↑↑↑↑↑↑↑↑↑↑
+    - options: [gb2312, gbk, utf8]    # 字符集选择列表;
+      reset: 1
+      states:
+        - GB2312
+        - GBK
+        - UTF-8
 
   "engine/translators":
   #-↓↓↓↓↓↓↓↓↓↓↓↓ 以下为原"smzm.schema.yaml"文件的内容，每次更新请保持这部分与最新版方案文件一致; ↓↓↓↓↓↓↓↓↓↓↓↓↓
@@ -39,13 +48,15 @@ patch:
 
   "engine/filters":
   #-↓↓↓↓↓↓↓↓↓↓↓↓ 以下为原"smzm.schema.yaml"文件的内容，每次更新请保持这部分与最新版方案文件一致; ↓↓↓↓↓↓↓↓↓↓↓↓↓
-    - simplifier
-    - charset_filter@gb2312
+    #- simplifier
+    #- charset_filter@gb2312
     - simplifier@pinyin_tip
     - reverse_lookup_filter@smzm_lookup
     - simplifier@chaifen
   #-↑↑↑↑↑↑↑↑↑↑↑↑ 以上为原"smzm.schema.yaml"文件的内容，每次更新请保持这部分与最新版方案文件一致; ↑↑↑↑↑↑↑↑↑↑↑↑↑
     - simplifier@zh_trad                        # custom++++++++++++++++
+    - charset_filter@gbk
+    - charset_filter@gb2312
     #- lua_filter@single_char_only_filter        # 仅单字过滤器;
     #- lua_filter@single_char_filter             # 单字优先过滤器;
     - lua_filter@charset_comment_filter         # 注释所属"字符集"和"读音";
@@ -77,5 +88,6 @@ patch:
     - { when: has_menu, accept: period, send: period }  #使得“。”可以顶首选字上屏。
     - {when: always, accept: Control+Shift+P, toggle: pinyin_tip}
     - {when: always, accept: Control+Shift+D, toggle: chaifen}
+    #- - {when: always, accept: Control+Shift+F, toggle: simplification}
   #-↑↑↑↑↑↑↑↑↑↑↑↑ 以上为原"smzm.schema.yaml"文件的内容，每次更新请保持这部分与最新版方案文件一致; ↑↑↑↑↑↑↑↑↑↑↑↑↑
     - {when: always, accept: Control+Shift+Z, toggle: zh_trad}

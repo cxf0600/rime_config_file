@@ -98,9 +98,9 @@ translator:
   comment_format:
     - 'xform/([_;])\1/$1/'
 
-gb2312:
-  option_name: gb2312
-  charset: gb2312
+#-gb2312:
+#-  option_name: gb2312
+#-  charset: gb2312
 
 pinyin_tip:
   opencc_config: smzm_py.json
@@ -138,9 +138,9 @@ smzm_lookup:
     - pinyin
   dictionary: *dict
 
-simplifier:
-  opencc_config: s2t.json
-  option_name: simplification
+#-simplifier:
+#-  opencc_config: s2t.json
+#-  option_name: simplification
 
 punctuator:
   import_preset: default
