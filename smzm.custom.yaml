@@ -47,6 +47,8 @@ patch:
     - lua_translator@number_translator
 
   "engine/filters":
+    - charset_filter@gb2312
+    - charset_filter@gbk
   #-↓↓↓↓↓↓↓↓↓↓↓↓ 以下为原"smzm.schema.yaml"文件的内容，每次更新请保持这部分与最新版方案文件一致; ↓↓↓↓↓↓↓↓↓↓↓↓↓
     #- simplifier
     #- charset_filter@gb2312
@@ -55,8 +57,6 @@ patch:
     - simplifier@chaifen
   #-↑↑↑↑↑↑↑↑↑↑↑↑ 以上为原"smzm.schema.yaml"文件的内容，每次更新请保持这部分与最新版方案文件一致; ↑↑↑↑↑↑↑↑↑↑↑↑↑
     - simplifier@zh_trad                        # custom++++++++++++++++
-    - charset_filter@gbk
-    - charset_filter@gb2312
     #- lua_filter@single_char_only_filter        # 仅单字过滤器;
     #- lua_filter@single_char_filter             # 单字优先过滤器;
     - lua_filter@charset_comment_filter         # 注释所属"字符集"和"读音";
