@@ -23,6 +23,9 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+# MacOS
+.DS_Store
+trash/
 
 # vim tmp file
 *.sw?
