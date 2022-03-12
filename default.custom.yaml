@@ -40,7 +40,7 @@ patch:
 #    - "Ⅲ"
 #    - "Ⅳ"
 #    - "Ⅴ"
-  "menu/page_size": 5
+  "menu/page_size": 3
   "punctuator/half_shape":
     "!": ["！", "!"]
     "\"": {pair: ["“", "”"]}
