@@ -91,4 +91,4 @@ patch:
     #- - {when: always, accept: Control+Shift+F, toggle: simplification}
   #-↑↑↑↑↑↑↑↑↑↑↑↑ 以上为原"smzm.schema.yaml"文件的内容，每次更新请保持这部分与最新版方案文件一致; ↑↑↑↑↑↑↑↑↑↑↑↑↑
     - { when: always, accept: Control+Shift+Z, toggle: zh_trad}
-    - { when: has_menu, accept: Tab, send: space }
+    - { when: has_menu, accept: Shift+Shift_R, send: space }
