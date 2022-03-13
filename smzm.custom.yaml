@@ -82,7 +82,7 @@ patch:
     - { when: has_menu, accept: Shift+Shift_R, send: 3 }
     #- { when: has_menu, accept: Shift+Shift_L, send: 3 }
     - { when: composing, accept: Return, send: Escape }
-    #-- { when: has_menu, accept: space, send: "_" }
+    - { when: has_menu, accept: space, send: "_" }
     - { when: has_menu, accept: equal, send: Page_Down }
     - { when: has_menu, accept: minus, send: Page_Up }
     - { when: has_menu, accept: period, send: period }  #使得“。”可以顶首选字上屏。
@@ -91,5 +91,4 @@ patch:
     #- - {when: always, accept: Control+Shift+F, toggle: simplification}
   #-↑↑↑↑↑↑↑↑↑↑↑↑ 以上为原"smzm.schema.yaml"文件的内容，每次更新请保持这部分与最新版方案文件一致; ↑↑↑↑↑↑↑↑↑↑↑↑↑
     - { when: always, accept: Control+Shift+Z, toggle: zh_trad}
-    - { when: has_menu, accept: Tab, send: "_" }
-    #- { when: has_menu, accept: Return, send: "_" }
+    - { when: has_menu, accept: Tab, send: space }
