@@ -3,7 +3,8 @@
 #
 
 patch:
-  "translator/dictionary": smzm.custom            # 载入自定义词典；
+  "translator/dictionary": &dict smzm.custom            # 载入自定义词典；
+  "smzm_lookup/dictionary": *dict
   "switches":
     - name: zh_trad               # 简繁转换开关;
       reset: 0
