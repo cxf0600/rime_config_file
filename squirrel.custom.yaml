@@ -1,0 +1,8 @@
+# Weasel settings
+# encoding: utf-8
+
+patch: 
+#TSF模式下，模拟WIN10候选窗：
+  style/color_scheme: psionics                      #  配色方案；
+  #style/color_scheme: lost_temple                   #  配色方案；
+  #style/horizontal: true                            #  候选窗横排设置；
