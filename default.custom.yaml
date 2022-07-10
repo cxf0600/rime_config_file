@@ -40,7 +40,7 @@ patch:
 #    - "Ⅲ"
 #    - "Ⅳ"
 #    - "Ⅴ"
-  "menu/page_size": 3
+  "menu/page_size": 5
   "punctuator/half_shape":
     "!": ["！", "!"]
     "\"": {pair: ["“", "”"]}
@@ -79,11 +79,10 @@ patch:
   "recognizer/patterns/uppercase": "[A-Z][-_+./'0-9A-Za-z]*$"
   "recognizer/patterns/url": "^(www[.]|htt[p]|ftp[.:]|mailto:|file:).*$|^[a-z]+[.].+$"
   schema_list:
-    - {schema: smzm}
     - {schema: Zhengma_Jidian}
     - {schema: Zhengma_BuzhiDanzi_Pinyin}
-#    - {schema: Zhengma_Buzhi}
-    - {schema: smzmAI}
+    - {schema: Zhengma_Buzhi}
+    - {schema: luna_pinyin_simp}
     - {schema: terra_pinyin}
     - {schema: pinyin_simp}
     - {schema: wubi86}
