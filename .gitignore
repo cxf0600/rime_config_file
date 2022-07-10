@@ -33,9 +33,10 @@ trash/
 # rime exclude file
 build/
 *.userdb/
-opencc/*.ocd
-#!opencc/smzm*.txt
-#!opencc/smzm*.json
+#opencc/*.ocd
+opencc/*
+!opencc/smzm*.txt
+!opencc/smzm*.json
 
 default.yaml
 installation.yaml
