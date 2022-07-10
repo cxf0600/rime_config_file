@@ -1,0 +1,140 @@
+# Rime schema settings
+# encoding: utf-8
+# version: '20220607'
+# 本文件用途——三码郑码（smzm）输入法人性化设置
+#-------------------------------------
+
+# 使用说明如下：
+# ※英文行为设置行。
+# ※如一行设置第一个字符为"#"，意味着该设置为未启用状态（即为注释状态），该设置不会生效，
+#   输入法设置即为原本的初始设置。如需启用某行设置（设置必定是英文行），删除行首单个字符"#"即可启用。
+# ※本文件中如存在任何设置的更改，请在输入法中“重新部署”以使设置更改生效。
+#   如何在输入法中“重新部署”？在RIME小狼毫输入法中英文符号(通常在右下角)上点击鼠标右键弹出菜单，点击“重新部署”即可。
+# ※本设置文件默认为“未启用任何个性化设置”状态。即所有英文设置行首字符均带"#"字符。
+#   此时任何设置均为输入法默认初始设置。输入法本身无需对本文件做任何更改就可使用。
+
+#-------------------------------------
+
+patch:   #本行请勿做任何更改。
+  #个人补充设置
+  key_binder/import_preset: default
+  #-menu/page_size: 9                           #選單每䈎顯示個數
+  #-menu/alternative_select_keys: ASDFGHJKL     #如編碼字符佔用數字鍵則須另設選字鍵
+  translator/dictionary: smzmuser
+
+
+  #-------------------------------------
+  #外观设置
+  #style/font_face : 楷体
+  #    ⇧设置候选框字体。需和系统名称保持一致。查看字体系统名称可打开"记事本"的"格式"-"字体"设定查看。
+  #      常见字体包括但不限于："楷体"/ "幼圆"/ "黑体"/ "微软雅黑"/…… 
+  #style/font_point: 15      
+  #    ⇧设置候选框字号。必须为数字。
+  #      输入法初始设置为"14"号。可根据需求调整字号数值大小。
+  #menu/page_size: 5  
+  #    ⇧候选项目数量。范围:1-10。 输入法初始设置为"6"个候选。
+  #style/horizontal: true   
+  #    ⇧设置候选框选项显示排列方式：true——横向排列； false——竖向排列。
+  #      输入法初始设置为"false竖向排列"(形码常用)。如启用该项(给定false值)则为横向排列。
+  #      不建议使用横向排列，输入法展示方式并未对横向排列优化。
+  #style/layout/margin_y : -300   
+  #    ⇧设置是否隐藏候选框(盲打)。输入法初始设置为"不隐藏候选框"。本质上是候选字上下边距。值为数字，范围:-300-300 如果设定为-300即为完全隐藏候选框。
+  #      除非已经掌握三码郑码300简码，否则不建议隐藏候选框。
+
+  #-------------------------------------
+  #常用设置
+  #switches/@5/reset: 1   
+  #    ⇧设置输入法"中英文输入"默认状态：0-中文输入；1-英文输入。输入法初始设置为"0-中文输入状态"。
+  #switches/@3/reset: 1   
+  #    ⇧设置输入法"全半角"默认状态：0-半角；1-全角。输入法初始设置为"0-半角状态"。
+  #switches/@1/reset: 1   
+  #    ⇧设置输入法"简入繁出开关"默认状态：0-常规输入模式；1-简入繁出模式。输入法初始设置为"0-常规输入模式"。
+  #translator/dictionary: smzmemoji
+  #    ⇧设置输入法"微信QQ表情开关"默认状态：
+  #      smzm——微信微信/QQ emoji表情关闭；
+  #      smzmemoji——微信微信/QQ emoji表情开启；
+  #      输入法初始设置为"smzm——微信微信/QQ emoji表情关闭"。
+  #      表情编码对应表请见官网三郑教程第8章《输入法软件》-《符号输出》。
+
+  key_binder/bindings/+:   #本行请勿做任何更改。
+    #- { when: has_menu, accept: apostrophe, send: 2 }  
+    #    ⇧设置“引号” " ' " 上屏第2候选。此为输入法初始设置。
+    #- { when: has_menu, accept: Shift+Shift_R, send: 2 }  
+    #    ⇧设置“右shift键”上屏第2候选。
+    #- { when: has_menu, accept: Control+Control_L, send: 2 }  
+    #    ⇧设置“左ctrl键”上屏第2候选。
+    #- { when: has_menu, accept: Tab, send: 2 }    
+    #    ⇧设置“tab键”上屏第2候选。
+    #- { when: has_menu, accept: Tab, send: 3 }    
+    #    ⇧设置“tab键”上屏第3候选。此为输入法初始设置。
+    #- { when: has_menu, accept: Shift+Shift_R, send: 3 }  
+    #    ⇧设置“右shift键”上屏第3候选。
+    #- { when: has_menu, accept: Control+Control_L, send: 3 }  
+    #    ⇧设置“左ctrl键”上屏第3候选。
+    #- { when: has_menu, accept: apostrophe, send: 3 }  
+    #    ⇧设置“引号” " ' " 上屏第3候选。
+    #- {when: always, accept: Control+Shift+J, toggle: simp_trad}   
+    #    ⇧设置简入繁出快捷键为“Control+Shift+？”。默认为“Control+Shift+F”。
+    #      注意快捷键中的字母必须为大写字母才可生效。
+    #- {when: always, accept: Control+Shift+S, toggle: extended_char}  
+    #    ⇧设置过滤生僻字快捷键为“Control+Shift+？”。默认为“Control+Shift+U”。
+    #      注意快捷键中的字母必须为大写字母才可生效。
+    
+  #下述select_labels语句均为设置候选样式，仅可启用其一。请勿启用超过一项。
+  #menu/alternative_select_labels: [ 1,2,3,4,5,6,7,8,9,0 ]   
+  #    ⇧修改候选数字样式。该样式为输入法初始设置。
+  #menu/alternative_select_labels: [ 1,➋,3,4,5,6,7,8,9,0 ]    
+  #menu/alternative_select_labels: [ ①,②,③,④,⑤,⑥,⑦,⑧,⑨,⑩ ]   
+  #menu/alternative_select_labels: [ ❶,❷,❸,❹,❺,❻,❼,❽,❾,❿ ]   
+  #menu/alternative_select_labels: [ ⓵,⓶,⓷,⓸,⓹,⓺,⓻,⓼,⓽,⓾ ]   
+  #menu/alternative_select_labels: [ ㊀,㊁,㊂,㊃,㊄,㊅,㊆,㊇,㊈,㊉ ]   
+  #menu/alternative_select_labels: [ ㈠,㈡,㈢,㈣,㈤,㈥,㈦,㈧,㈨,㈩ ]  
+  #menu/alternative_select_labels: [ 🀇,🀈,🀉,🀊,🀋,🀌,🀍,🀎,🀏,🀄 ]  
+  #menu/alternative_select_labels: [ Ⅰ,Ⅱ,Ⅲ,Ⅳ,Ⅴ,Ⅵ,Ⅶ,Ⅷ,Ⅸ,Ⅹ ]  
+  #menu/alternative_select_labels: [ ⅰ,ⅱ,ⅲ,ⅳ,ⅴ,ⅵ,ⅶ,ⅷ,ⅸ,ⅹ ]   
+  #menu/alternative_select_labels: [ Ⓐ,Ⓑ,Ⓒ,Ⓓ,Ⓔ,Ⓕ,Ⓖ,Ⓗ,Ⓘ,Ⓙ ]   
+  #menu/alternative_select_labels: [ ⓐ,ⓑ,ⓒ,ⓓ,ⓔ,ⓕ,ⓖ,ⓗ,ⓘ,ⓙ ]  
+
+  
+  #-------------------------------------
+  #高级设置
+  #style/inline_preedit: true   
+  #    ⇧设置输入码是否内嵌/不内嵌——true/false，官方初始设置为"不内嵌"(false)。显示为true时，默认的内嵌模式是“composition”。
+  #style/preedit_type: input    
+  #    ⇧设置输入码内嵌模式：
+  #      preview——嵌入首选；composition——嵌入编码；input——嵌入输入码。
+  #      输入法无此项目的初始设置。
+  #editor/bindings/Return: commit_raw_input   
+  #    ⇧设置回车键功能：
+  #      cancel——清除编码(通常形码使用该功能)；
+  #      commit_raw_input——上屏输入编码(通常拼音输入法使用该功能)。
+  #      输入法初始设置为"cancel清除编码"。建议形码用户养成回车清屏习惯，即该项不要变动。
+  #editor/bindings/Shift+Shift_L: commit_raw_input   
+  #    ⇧设置左Shift键功能：
+  #      confirm——上屏首#      选字并切换英文；
+  #      commit_raw_input——上屏原始编码并切换英文。
+  #      输入法初始设置为confirm——上屏首选字并切换英文。
+  #speller/auto_clear: manual    
+  #    ⇧设置空码编码清除模式：
+  #      auto——三码空码自动清除编码；
+  #      manual——三码空码第四码再清除编码。
+  #      输入法初始设置为"auto空码自动清除"。
+  #switches/@0/reset: 0   
+  #    ⇧设置输入法"生僻字开关"默认状态：0-全字集模式(含生僻字)；1-常规字集模式(不含生僻字)。输入法初始设置为"1-常规字集模式"。
+  punctuator/half_shape/+:       #本行请勿做任何更改。
+  #  ' ' : { commit: '　' }    
+  #    ⇧设置强制在中文、半角模式下使用全角空格。
+  #      输入法初始设置为"在中文、半角模式下使用半角空格"。
+  
+  
+
+
+
+
+  
+  
+
+
+  
+
+

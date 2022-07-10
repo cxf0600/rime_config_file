@@ -1,4 +1,19 @@
 patch:
+  schema_list:
+    - {schema: smzm}
+    - {schema: luna_pinyin_simp}
+    #- {schema: terra_pinyin}
+    - {schema: pinyin_simp}
+  "switcher/abbreviate_options": false
+  "switcher/caption": "〔方案选单〕"
+  "switcher/fix_schema_list_order": true
+  "switcher/option_list_separator": "・"
+  #"switcher/option_list_separator": "／"
+  "menu/page_size": 5
+
+  #"recognizer/patterns/uppercase": "[A-Z][-_+./'0-9A-Za-z]*$"
+  #"recognizer/patterns/url": "^(www[.]|htt[p]|ftp[.:]|mailto:|file:).*$|^[a-z]+[.].+$"
+
   "key_binder/bindings":
     - {accept: "Control+p", send: Up, when: composing}
     - {accept: "Control+n", send: Down, when: composing}
@@ -34,13 +49,14 @@ patch:
     - {accept: Tab, send: Escape, when: composing}
     - {accept: space, send: space, when: has_menu}
     - {accept: space, send: Escape, when: composing}
-#  "menu/alternative_select_labels":
-#    - "Ⅰ"
-#    - "Ⅱ"
-#    - "Ⅲ"
-#    - "Ⅳ"
-#    - "Ⅴ"
-  "menu/page_size": 5
+
+  #"menu/alternative_select_labels":
+  #  - "Ⅰ"
+  #  - "Ⅱ"
+  #  - "Ⅲ"
+  #  - "Ⅳ"
+  #  - "Ⅴ"
+
   "punctuator/half_shape":
     "!": ["！", "!"]
     "\"": {pair: ["“", "”"]}
@@ -76,17 +92,3 @@ patch:
     "|": ["|", "¦", "｜", "§"]
     "}": ["}", "｝", "』", "〗"]
     "~": ["～", "~"]
-  "recognizer/patterns/uppercase": "[A-Z][-_+./'0-9A-Za-z]*$"
-  "recognizer/patterns/url": "^(www[.]|htt[p]|ftp[.:]|mailto:|file:).*$|^[a-z]+[.].+$"
-  schema_list:
-    - {schema: Zhengma_Jidian}
-    - {schema: Zhengma_BuzhiDanzi_Pinyin}
-    - {schema: Zhengma_Buzhi}
-    - {schema: luna_pinyin_simp}
-    - {schema: terra_pinyin}
-    - {schema: pinyin_simp}
-    - {schema: wubi86}
-  "switcher/abbreviate_options": false
-  "switcher/caption": "〔方案选单〕"
-  "switcher/fix_schema_list_order": true
-  "switcher/option_list_separator": "・"

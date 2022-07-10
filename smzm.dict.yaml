@@ -1,0 +1,20 @@
+# Rime dictionary: smzm
+# encoding: utf-8
+
+---
+name: smzm
+version: "V20220602"
+import_tables:
+  - user  #  "用户自定义码表"。
+  - smzm.main    #  "单字及符号"码表。
+  - smzm.smart  #  "智能选重情境"码表。
+  - smzm.phrase  #  "四字词/多字词"码表。  #注释后会导致"/符号引导的多字词输出功能"失效。
+  - smzm.competitor  # "竞争候选"码表。
+  #- smzm.emoji  # "微信/QQ emoji表情"码表。
+sort: original
+columns:
+  - text   #第一列字／词条目
+  - code   #第二列编码
+
+
+...
