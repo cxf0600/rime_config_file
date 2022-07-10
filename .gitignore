@@ -33,7 +33,7 @@ trash/
 # rime exclude file
 build/
 *.userdb/
-#opencc/*
+opencc/*.ocd
 #!opencc/smzm*.txt
 #!opencc/smzm*.json
 
