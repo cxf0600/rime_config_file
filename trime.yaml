@@ -8,6 +8,8 @@ author: osfans #作者資訊
 style:
   auto_caps: false #自動句首大寫:true|false|ascii
   background_dim_amount: 0.5
+  #root_background: #ddeeeeee # 整个键盘区+候选栏的背景图/色
+  #candidate_background: #eeeeeeee #候选栏的背景图/色
   candidate_font: han.ttf #候選字型
   candidate_padding: 5 #候選項內邊距
   candidate_spacing: 0.5 #候選間距
@@ -23,17 +25,13 @@ style:
   horizontal: true #水平模式
   horizontal_gap: 1 #鍵水平間距
   keyboard_padding: 0 #竖屏模式下，屏幕左右两侧与键盘的距离（曲面屏减少误触）
-  keyboard_padding_left: 0 #竖屏屏模式下，左手键盘布局，屏幕左侧与键盘的距离
-  keyboard_padding_right: 40 #竖屏屏模式下，左手键盘布局，屏幕右侧与键盘的距离
-  keyboard_padding_bottom: 0 #竖屏模式下，屏幕下边缘与键盘的距离（避免误触发全面屏手势）
-  keyboard_padding_land: 40 #横屏模式下，屏幕左右两侧与键盘的距离（避免横屏按键过度拉伸变形）
-  keyboard_padding_land_bottom: 0 #横屏模式下，屏幕下侧与键盘的距离
+  keyboard_padding_landscape: 40 #横屏模式下，屏幕左右两侧与键盘的距离（避免横屏UI变形）
+  keyboard_padding_portrait: 20 #竖屏模式下，屏幕下边缘与键盘的距离（避免误触发全面屏手势）
   layout: #懸浮窗口設置
     position: fixed #位置：left|right|left_up|right_up|fixed|bottom_left|bottom_right|top_left|top_right(left、right需要>=Android5.0)
     min_length: 5 #最小詞長
     max_length: 10 #超過字數則換行
     sticky_lines: 0 #固頂行數
-    sticky_lines_land: 0 #横屏模式下的固顶行数
     max_entries: 1 #最大詞條數
     min_check: 3 #只要前n个候选词有长度大于等于min_length的词，就会把长度符合以及之前的词全部加到悬浮窗内。
     all_phrases: false #所有滿足條件的詞語都顯示在窗口
@@ -42,16 +40,17 @@ style:
     max_height: 400 #最大高度
     min_width: 40 #最小寬度
     min_height: 0 #最小高度
-    margin_x: 5 #水平邊距 NOTE: margin_{x, y, bottom} 实际为 padding
+    margin_x: 5 #水平邊距
     margin_y: 5 #豎直邊距
     margin_bottom: 0 #底部边距 （用于适配特定背景图）
+    real_margin: 3 #屏幕左右边缘和悬浮窗之间的距离
     line_spacing: 0 #候选詞的行間距(px)
     line_spacing_multiplier: 1.2 #候选詞的行間距(倍數)
-    real_margin: 3 #屏幕左右边缘和悬浮窗之间的距离 TODO: 在 4.0 时给 real_margin 与 spacing 换一个更适合的名字
-    spacing: 1 #屏幕上下边缘或预编辑上下边缘和悬浮窗之间的距离
+    spacing: 1 #與預編輯或邊緣的距離
     round_corner: 8 #窗口圓角
     alpha: 0xdd #透明度(0-255)
     elevation: 5 #陰影(>=Android5.0)
+    background: background.png #顏色或者backgrounds目錄下的圖片文件名
     movable: once #是否可移動窗口，或僅移動一次 true|false|once
   window: #懸浮窗口組件
     - {start: "", move: 'ㄓ ', end: ""}
@@ -68,8 +67,6 @@ style:
   latin_font: latin.ttf #西文字型
   latin_locale: en_US #西文語言
   locale: zh_TW #預設語言 zh_TW,zh_CN,zh_HK,""
-  keyboard_height: 250 #锁定键盘高度，避免切换时键盘高度变化而造成闪烁
-  keyboard_height_land: 200 #锁定横屏下键盘高度，避免切换时键盘高度变化而造成闪烁
   preview_font: latin.ttf #按鍵提示字型
   preview_height: 60 #按鍵提示高度
   preview_offset: -12 #按鍵提示縱向偏移
@@ -87,8 +84,6 @@ style:
   vertical_correction: -10
   vertical_gap: 1 #鍵盤行距
   long_text_font: comment.ttf #剪贴板等可能包含大段文本使用的字体
-  #background_folder: #背景图保存在background目录下的哪个子目录
-  key_long_text_border: 1
 
 fallback_colors:
   candidate_text_color: text_color
@@ -101,6 +96,7 @@ fallback_colors:
   hilited_candidate_back_color: hilited_back_color
   hilited_label_color: hilited_candidate_text_color # 高亮候选序号 颜色
   hilited_comment_text_color: comment_text_color
+  text_back_color: back_color
   hilited_key_back_color: hilited_candidate_back_color
   hilited_key_text_color: hilited_candidate_text_color
   hilited_key_symbol_color: hilited_comment_text_color
@@ -112,6 +108,7 @@ fallback_colors:
   key_border_color: border_color
   key_text_color: candidate_text_color
   key_symbol_color: comment_text_color
+  keyboard_back_color: border_color
   label_color: candidate_text_color
   off_key_back_color: key_back_color
   off_key_text_color: key_text_color
@@ -120,12 +117,6 @@ fallback_colors:
   preview_back_color: key_back_color
   preview_text_color: key_text_color
   shadow_color: border_color
-  root_background: back_color # 整个键盘区+候选栏的背景图/色
-  candidate_background: back_color #候选栏的整体背景图/色
-  keyboard_back_color: border_color #键盘去的背景图/色
-  liquid_keyboard_background: keyboard_back_color # liquidKeyboard的背景图/色
-  text_back_color: back_color #编码区背景，即悬浮窗背景
-  long_text_back_color: key_back_color #长文本按键的背景(剪贴板）
 
 preset_color_schemes:
   default:
@@ -674,36 +665,26 @@ preset_color_schemes:
     text_color: 0x7f7f7f
 
 liquid_keyboard:
-  # 目前只能直接写参数，不支持变量或者fallback机制。
-  # 缺少参数时，自动从style中加载参数。除非需要指定liquid_keyboard使用与主键盘不同的背景色、背景图，否则不应设置被注释掉的参数。
   author: "tumuyan"
-  row: 6              #每屏最多显示多少行按键
-  row_land: 5         #横屏每屏最多显示多少行按键
   key_height: 40      #按键高度
   key_height_land: 40 #横屏模式按键高度
   single_width: 60    #single类型的按键宽度
-  vertical_gap: 1     #纵向按键间隙
-  margin_x: 0.5         #左右按键间隙的1/2
-  keyboards: [emoji, math, ascii, cn, history, clipboard, draft, list, tabs, exit, ids , jp, table, symbol, pinyin, grease, rusa, korea, lation, yinbiao, unit,  exit]  #tab列表
+  vertical_gap: 5     #纵向按键间隙
+  margin_x: 1         #左右按键间隙的1/2
+  keyboards: [emoji, math, ascii, cn, clipboard, history, exit, list , table, symbol, ids , pinyin, jp, unit, exit, grease, rusa, korea, lation, yinbiao, exit]  #tab列表
   exit:
     name: 返回
     type: NO_KEY
     keys: EXIT
-  tabs:
-    name: 更多
-    type: TABS
-  history:
-    name: 常用
-    type: HISTORY
   emoji:
     type: SINGLE
     keys: "🙂😂🤣😆🙃😅🙈🙉🙊☹😑😄🤐😨😱🌚🌝🤔❤💔♡🌹💣👌👍😣😥😮🙄😏😕😯😪😫😴😌🤑😉😋😎😍😘😚😛😜😝😒😓😔😲😷🤒😇🤓🤗🤕🙁😖😞😟😤😢😭😦😧😨😩😬😰😳😵😡😠☝✌🖕👎🙏🤘👏💪💋☘🍀🌸☕🍵🍺🍻🍦🍬🍚🍜🍲🍖🎂💤"
   clipboard:
     type: CLIPBOARD
     name: 剪贴
-  draft:
-    type: DRAFT
-    name: 草稿
+  history:
+    name: 最近
+    type: HISTORY
   math:   #tab名称
     type: SINGLE
     name: 数学
@@ -724,7 +705,7 @@ liquid_keyboard:
       - ···
       - ……
       - { click: "——" }
-      - { click: "——", label: "破折" }
+      - { click: "——", label: "破折号" }
       - （
       - ）
       - 【
@@ -742,7 +723,6 @@ liquid_keyboard:
       - ～
   symbol:
     name: 特殊
-    type: SINGLE
     keys: "△▽○◇□☆▲▼●◆■★▷◁▶◀♻♲†⚝✡⚹✦✸✹￼�×⌫☑☒✅❎✔✘✓✗☼☽♀☻◐㏂☀☾♂☹◑㏘☜☝☞☚☟☛▪•‥…∷※♩♪♫♬§°♭♯♮‖¶№◎¤۞℗®©卍卐℡™㏇Φ↖↑↗◤㊤◥←↔→㊧㊥㊨↙↓↘◣㊦◢⇄⇅⇆⇤↩⇥❏❐◲〼▢▣⇦⇧⇨⇩⇪↶▸◂▴▾✁↷✍⏍ϟ📝✎✆☱☰☴⚿⛮⚙☲☯☵⛶☩☐☳☷☶💬🗨⟲ღ✈☂🎤🌐🔍"
   unit:
     name: 单位
@@ -783,7 +763,7 @@ liquid_keyboard:
   ids:
     type: SINGLE
     name: IDS
-    keys: "⿰⿱⿲⿳⿴⿵⿶⿷⿸⿹⿺⿻↷↔"
+    keys: "⿰⿱⿲⿳⿴⿵⿶⿷⿸⿹⿺⿻"
   jp:
     type: SINGLE
     name: 假名
@@ -917,7 +897,7 @@ preset_keys:
   paste: {label: 貼上, send: Control+v}
   paste_text: {label: 貼上文本, send: Control+Shift+Alt+v} #>=Android 6.0
   share_text: {label: 分享文本, send: Control+Alt+s} #>=Android 6.0
-  redo: {label: 重做, send: Control+Shift+z} #>=Android 6.0
+  redo: {label: 重做, send: Control+y} #>=Android 6.0
   undo: {label: 撤銷, send: Control+z} #>=Android 6.0
   # rime組合鍵
   F4: {label: 方案選單, send: F4}
@@ -932,24 +912,17 @@ preset_keys:
   Henkan: {toggle: simplification, send: Mode_switch, states: [ 漢字, 汉字 ]}
   Charset_switch: {toggle: extended_charset, send: Mode_switch, states: [ 常用, 增廣 ]}
   Punct_switch: {toggle: ascii_punct, send: Mode_switch, states: [ 。，, ．， ]}
-  #切换键盘
+  # trime設定
+  IME_switch: {label: 🌐, send: LANGUAGE_SWITCH} #彈出對話框選擇輸入法
+  IME_last: {label: 上一輸入法, send: LANGUAGE_SWITCH, select: .last} #直接切換到上一輸入法
+  IME_next: {label: 下一輸入法, send: LANGUAGE_SWITCH, select: .next} #直接切換到下一輸入法
   Keyboard_symbols: {label: 符號, send: Eisu_toggle, select: symbols}
   Keyboard_number: {label: 數字, send: Eisu_toggle, select: number}
   Keyboard_letter: {label: 字母, send: Eisu_toggle, select: default}
   Keyboard_default: {label: 返回, send: Eisu_toggle, select: .default}
   Keyboard_switch: {label: 鍵盤, send: Eisu_toggle, select: .next}
-  liquid_keyboard_switch: { label: 更多, send: function, command: liquid_keyboard, option: "特殊" }
-  liquid_keyboard_switch2: { toggle: _liquid_keyboard, send: Mode_switch, states: [ 更多, 更多 ] }
-  liquid_keyboard_emoji: { label: 🙂, send: function, command: liquid_keyboard, option: "emoji" }
-  liquid_keyboard_clipboard: { label: 剪贴, send: function, command: liquid_keyboard, option: "剪贴" }
-  # trime設定
-  IME_switch: { label: 🌐, send: LANGUAGE_SWITCH } #彈出對話框選擇輸入法
-  IME_last: { label: 上一輸入法, send: LANGUAGE_SWITCH, select: .last } #直接切換到上一輸入法
-  IME_next: { label: 下一輸入法, send: LANGUAGE_SWITCH, select: .next } #直接切換到下一輸入法
   Schema_switch: {label: 下一方案, send: Control+Shift+1}
-  one_hand_switch_1: {toggle: _one_hand_mode_1, send: Mode_switch, states: [ 左手, 普通 ]}
-  one_hand_switch_2: {toggle: _one_hand_mode_2, send: Mode_switch, states: [ 右手, 普通 ]}
-  one_hand_switch_3: {toggle: _one_hand_mode_3, send: Mode_switch, states: [ 左手, 右手 ]}
+  liquid_keyboard_switch: { toggle: _liquid_keyboard, send: Mode_switch, states: [ 更多, "" ] }
   Color_switch: {label: 配色, send: PROG_RED}
   Help: {label: 說明, send: Help}
   Info: {label: 關於, send: INFO}
@@ -1040,7 +1013,6 @@ preset_keyboards:
   letter:
     __include: /preset_keyboards/default
     ascii_mode: 1
-    reset_ascii_mode: true  #显示键盘时重置为ascii_mode指定的状态
     lock: false
   qwerty0:
     name: 預設36鍵
@@ -1326,8 +1298,8 @@ preset_keyboards:
     - {click: '〉', long_click: '》', ascii: '>'}
     - {click: '“', ascii: '"', long_click: '‘'}
     - {click: '”', ascii: "'", long_click: '’'}
-    - {click: '，', ascii: ',', long_click: one_hand_switch_1}
-    - {click: '？', ascii: '?', long_click: one_hand_switch_3}
+    - {click: '，', ascii: ','}
+    - {click: '？', ascii: '?'}
     - {click: BackSpace, long_click: Escape}
     - {click: Keyboard_default, long_click: Menu, width: 15}
     - {click: Keyboard_number, long_click: Color_switch}
