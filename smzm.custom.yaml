@@ -20,7 +20,9 @@ patch:   #本行请勿做任何更改。
   key_binder/import_preset: default
   #-menu/page_size: 9                           #選單每䈎顯示個數
   #-menu/alternative_select_keys: ASDFGHJKL     #如編碼字符佔用數字鍵則須另設選字鍵
-  translator/dictionary: smzmuser
+  translator/dictionary: &dict smzmuser
+  smzm_lookup/dictionary: *dict
+  smzm_to_pinyin/dictionary: *dict
 
 
   #-------------------------------------
