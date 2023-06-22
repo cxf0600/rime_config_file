@@ -1,0 +1,7 @@
+# Rime table
+#@/db_name	yuhao
+#@/db_type	tabledb
+#@/rime_version	1.8.5
+#@/tick	2
+丅	akkk	2
+𫾠	auuu	2
