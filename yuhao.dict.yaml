@@ -31,13 +31,13 @@ version: "20230620"
 sort: original
 import_tables:
   # 去除下方的 # 符号以导入词库
-  - yuhao.quick
+  #- - yuhao.quick
   - yuhao.full
   - yuhao.private
-  - yuhao.words
-  - yuhao_tradition.words
-  - yuhao.words_extended
-  - yuhao.words_literature
+  #- - yuhao.words
+  #- - yuhao_tradition.words
+  #- - yuhao.words_extended
+  #- - yuhao.words_literature
   #  - yuhao_tradition.words_extended
   #  - yuhao_tradition.words_literature
   - yuhao.symbols
