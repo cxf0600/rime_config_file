@@ -13,5 +13,15 @@ patch:
   switches/@0/reset: 1 # [只出常用字, 常用字前置, 全字集原排序]
   switches/@1/reset: 0 # [字詞同出, 全碼出單]
   switches/@2/reset: 0 # [原始排序, 全碼後置]
-  switches/@3/reset: 0 # [〇註解, 一重註解, 二重註解, 三重註解]
+  switches/@3/reset: 3 # [〇註解, 一重註解, 二重註解, 三重註解]
   switches/@4/reset: 0 # [普通候選, 嵌入候選]
+
+  #-------------------------------------
+  key_binder/import_preset: default
+  editor/bindings/Return: cancel
+  #    ⇧设置回车键功能：
+  #      cancel——清除编码(通常形码使用该功能)；
+  #      commit_raw_input——上屏输入编码(通常拼音输入法使用该功能)。
+  #      输入法初始设置为"cancel清除编码"。建议形码用户养成回车清屏习惯，即该项不要变动。
+  punctuator/half_shape/+:        # 标点增补设置
+  key_binder/bindings/+:          # 按键增补设置
