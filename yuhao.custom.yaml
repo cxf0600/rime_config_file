@@ -26,6 +26,16 @@ patch:
 
 
   #-------------------------------------
+  speller/auto_clear: auto
+  #    ⇧设置空码编码清除模式：
+  #      auto——三码空码自动清除编码；
+  #      manual——三码空码第四码再清除编码。
+  #      输入法初始设置为"auto空码自动清除"。
+
+  translator/enable_sentence: false
+  translator/enable_user_dict: false
+  translator/enable_encoder: false
+  translator/encode_commit_history: false # 对连续上屏的词自动成词
 
   #-------------------------------------
   #外观设置
@@ -90,11 +100,7 @@ patch:
   #      confirm——上屏首#      选字并切换英文；
   #      commit_raw_input——上屏原始编码并切换英文。
   #      输入法初始设置为confirm——上屏首选字并切换英文。
-  speller/auto_clear: auto
-  #    ⇧设置空码编码清除模式：
-  #      auto——三码空码自动清除编码；
-  #      manual——三码空码第四码再清除编码。
-  #      输入法初始设置为"auto空码自动清除"。
+
   punctuator/half_shape/+:       #本行请勿做任何更改。
   #  ' ' : { commit: '　' }
   #    ⇧设置强制在中文、半角模式下使用全角空格。
