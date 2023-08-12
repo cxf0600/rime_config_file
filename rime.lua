@@ -1,4 +1,8 @@
 
+smyh_core_processor = require("smyh.core_processor")
+smyh_core_translator = require("smyh.core_translator")
+smyh_embeded_cands = require("smyh.embeded_cands")
+
 -- 宇浩输入法
 yuhao_char_filter = require("yuhao/yuhao_char_filter")
 yuhao_char_first = yuhao_char_filter.yuhao_char_first
