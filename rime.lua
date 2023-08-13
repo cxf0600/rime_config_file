@@ -1,7 +1,8 @@
 
-smyh_core_processor = require("smyh.core_processor")
-smyh_core_translator = require("smyh.core_translator")
-smyh_embeded_cands = require("smyh.embeded_cands")
+-- 宇浩三码顶（小狼毫0.15.0及以上版本不需要显式调用）
+-- smyh_core_processor = require("smyh.core_processor")
+-- smyh_core_translator = require("smyh.core_translator")
+-- smyh_embeded_cands = require("smyh.embeded_cands")
 
 -- 宇浩输入法
 yuhao_char_filter = require("yuhao/yuhao_char_filter")
