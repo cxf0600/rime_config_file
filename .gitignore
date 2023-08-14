@@ -35,8 +35,10 @@ build/
 *.userdb/
 #opencc/*.ocd
 opencc/*
-!opencc/smzm*.txt
-!opencc/smzm*.json
+# !opencc/smzm*.txt
+# !opencc/smzm*.json
+!opencc/smyh_div.txt
+!opencc/smyh_div.json
 
 default.yaml
 installation.yaml
