@@ -10,10 +10,10 @@ patch:
   style/inline_preedit: true  # 候選欄内置於輸入界面
   style/preedit_type: composition  # 候選顯示字母(composition)还是候選(preview)
   # 以下開關，0爲第一個，1爲第二個，2爲第三個
-  switches/@0/reset: 1 # [只出常用字, 常用字前置, 全字集原排序]
+  switches/@0/reset: 2 # [只出常用字, 常用字前置, 全字集原排序]
   switches/@1/reset: 0 # [字詞同出, 全碼出單]
   switches/@2/reset: 0 # [原始排序, 全碼後置]
-  switches/@3/reset: 0 # [〇註解, 一重註解, 二重註解, 三重註解]
+  switches/@3/reset: 1 # [〇註解, 一重註解, 二重註解, 三重註解]
   switches/@4/reset: 0 # [普通候選, 嵌入候選]
   embeded_cands/+:
     # option_name: embeded_cands                         # 嵌入候選開關
@@ -131,3 +131,82 @@ patch:
             return self:calc(args, false)
           end
           return t
+
+
+
+  #-------------------------------------
+  translator/enable_completion: true    # 輸入預測（逐碼提示）
+  translator/comment_format/+:
+    - "xform/^.+$//"
+
+  fixed/enable_completion: false        # 輸入預測（逐碼提示）
+
+ #-------------------------------------
+  #外观设置
+  #menu/page_size: 5
+  #    ⇧候选项目数量。范围:1-10。 输入法初始设置为"6"个候选。
+  style/font_face : 楷体
+  #    ⇧设置候选框字体。需和系统名称保持一致。查看字体系统名称可打开"记事本"的"格式"-"字体"设定查看。
+  #      常见字体包括但不限于："楷体"/ "幼圆"/ "黑体"/ "微软雅黑"/……
+  #style/font_point: 15
+  #    ⇧设置候选框字号。必须为数字。
+  #      输入法初始设置为"14"号。可根据需求调整字号数值大小。
+  #style/horizontal: true
+  #    ⇧设置候选框选项显示排列方式：true——横向排列； false——竖向排列。
+  #      输入法初始设置为"false竖向排列"(形码常用)。如启用该项(给定false值)则为横向排列。
+  #      不建议使用横向排列，输入法展示方式并未对横向排列优化。
+  #style/layout/margin_y : -300
+  #    ⇧设置是否隐藏候选框(盲打)。输入法初始设置为"不隐藏候选框"。本质上是候选字上下边距。值为数字，范围:-300-300 如果设定为-300即为完全隐藏候选框。
+  #      除非已经掌握三码郑码300简码，否则不建议隐藏候选框。
+
+  #-------------------------------------
+  #按键设置
+  key_binder/import_preset: default
+  key_binder/bindings/+:   #本行请勿做任何更改。
+    #- { when: has_menu, accept: apostrophe, send: 2 }
+    #    ⇧设置“引号” " ' " 上屏第2候选。此为输入法初始设置。
+    #- { when: has_menu, accept: Shift+Shift_R, send: 2 }
+    #    ⇧设置“右shift键”上屏第2候选。
+    #- { when: has_menu, accept: Control+Control_L, send: 2 }
+    #    ⇧设置“左ctrl键”上屏第2候选。
+    #- { when: has_menu, accept: Tab, send: 2 }
+    #    ⇧设置“tab键”上屏第2候选。
+    #- { when: has_menu, accept: Tab, send: 3 }
+    #    ⇧设置“tab键”上屏第3候选。此为输入法初始设置。
+    #- { when: has_menu, accept: Shift+Shift_R, send: 3 }
+    #    ⇧设置“右shift键”上屏第3候选。
+    #- { when: has_menu, accept: Control+Control_L, send: 3 }
+    #    ⇧设置“左ctrl键”上屏第3候选。
+    #- { when: has_menu, accept: apostrophe, send: 3 }
+    #    ⇧设置“引号” " ' " 上屏第3候选。
+    #- {when: always, accept: Control+Shift+J, toggle: simp_trad}
+    #    ⇧设置简入繁出快捷键为“Control+Shift+？”。默认为“Control+Shift+F”。
+    #      注意快捷键中的字母必须为大写字母才可生效。
+    #- {when: always, accept: Control+Shift+S, toggle: extended_char}
+    #    ⇧设置过滤生僻字快捷键为“Control+Shift+？”。默认为“Control+Shift+U”。
+    #      注意快捷键中的字母必须为大写字母才可生效。
+
+  #-------------------------------------
+  #高级设置
+  #style/inline_preedit: true
+  #    ⇧设置输入码是否内嵌/不内嵌——true/false，官方初始设置为"不内嵌"(false)。显示为true时，默认的内嵌模式是“composition”。
+  #style/preedit_type: input
+  #    ⇧设置输入码内嵌模式：
+  #      preview——嵌入首选；composition——嵌入编码；input——嵌入输入码。
+  #      输入法无此项目的初始设置。
+  editor/bindings/Return: cancel
+  #    ⇧设置回车键功能：
+  #      cancel——清除编码(通常形码使用该功能)；
+  #      commit_raw_input——上屏输入编码(通常拼音输入法使用该功能)。
+  #      输入法初始设置为"cancel清除编码"。建议形码用户养成回车清屏习惯，即该项不要变动。
+  #editor/bindings/Shift+Shift_L: commit_raw_input
+  #    ⇧设置左Shift键功能：
+  #      confirm——上屏首#      选字并切换英文；
+  #      commit_raw_input——上屏原始编码并切换英文。
+  #      输入法初始设置为confirm——上屏首选字并切换英文。
+
+  punctuator/half_shape/+:       #本行请勿做任何更改。
+  #  ' ' : { commit: '　' }
+  #    ⇧设置强制在中文、半角模式下使用全角空格。
+  #      输入法初始设置为"在中文、半角模式下使用半角空格"。
+
