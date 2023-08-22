@@ -163,7 +163,8 @@ patch:
   #外观设置
   #menu/page_size: 5
   #    ⇧候选项目数量。范围:1-10。 输入法初始设置为"6"个候选。
-  style/font_face : &font 楷体
+  # style/font_face : &font 楷体
+  style/font_face : &font 霞鹜文楷等宽
   style/label_font_face: *font
   style/comment_font_face: *font
   #    ⇧设置候选框字体。需和系统名称保持一致。查看字体系统名称可打开"记事本"的"格式"-"字体"设定查看。
