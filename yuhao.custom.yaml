@@ -10,10 +10,10 @@ patch:
   style/inline_preedit: true  # 候選欄内置於輸入界面
   style/preedit_type: composition  # 候選顯示字母(composition)还是候選(preview)
   # 以下開關，0爲第一個，1爲第二個，2爲第三個
-  switches/@0/reset: 2 # [只出常用字, 常用字前置, 全字集原排序]
+  switches/@0/reset: 0 # [只出常用字, 常用字前置, 全字集原排序]
   switches/@1/reset: 0 # [字詞同出, 全碼出單]
   switches/@2/reset: 0 # [原始排序, 全碼後置]
-  switches/@3/reset: 1 # [〇註解, 一重註解, 二重註解, 三重註解]
+  switches/@3/reset: 0 # [〇註解, 一重註解, 二重註解, 三重註解]
   switches/@4/reset: 0 # [普通候選, 嵌入候選]
   embeded_cands/+:
     # option_name: embeded_cands                         # 嵌入候選開關
@@ -131,24 +131,46 @@ patch:
             return self:calc(args, false)
           end
           return t
+  #-------------------------------------
+    set:
+      - { type: radio, names: [ yuhao_char_only, yuhao_char_first, cjk ], states: [ ☑☐☐只出常用字, ☐☑☐常用字前置, ☐☐☑全字集原排序 ] }
 
 
 
   #-------------------------------------
-  translator/enable_completion: true    # 輸入預測（逐碼提示）
+  speller/auto_clear: auto
+  #    ⇧设置空码编码清除模式：
+  #      auto       ——三码空码自动清除编码；
+  #      manual     ——三码空码第四码再清除编码。
+  #      max_length ——三码空码第五码再清除编码（max_length为4）。
+  #      输入法初始设置为"auto空码自动清除"。
+
+  style/horizontal: true                      # 橫排候選欄
+  style/inline_preedit: false                 # 候選欄内置於輸入界面
+
+  translator/enable_sentence: false
+  translator/enable_user_dict: false
+  translator/enable_encoder: false
+  translator/encode_commit_history: false     # 对连续上屏的词自动成词
+
+  translator/enable_completion: true          # 輸入預測（逐碼提示）
   translator/comment_format/+:
     - "xform/^.+$//"
 
-  fixed/enable_completion: false        # 輸入預測（逐碼提示）
+  fixed/enable_completion: false              # 輸入預測（逐碼提示）
 
  #-------------------------------------
   #外观设置
   #menu/page_size: 5
   #    ⇧候选项目数量。范围:1-10。 输入法初始设置为"6"个候选。
-  style/font_face : 楷体
+  style/font_face : &font 楷体
+  style/label_font_face: *font
+  style/comment_font_face: *font
   #    ⇧设置候选框字体。需和系统名称保持一致。查看字体系统名称可打开"记事本"的"格式"-"字体"设定查看。
   #      常见字体包括但不限于："楷体"/ "幼圆"/ "黑体"/ "微软雅黑"/……
-  #style/font_point: 15
+  # style/font_point: 15
+  # style/label_font_point: 15
+  # style/comment_font_point: 15
   #    ⇧设置候选框字号。必须为数字。
   #      输入法初始设置为"14"号。可根据需求调整字号数值大小。
   #style/horizontal: true
