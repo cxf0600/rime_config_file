@@ -2,47 +2,10 @@
 # encoding: utf-8
 
 # 此文档是对rime在Windows平台上小狼毫的配置。
-# 进入特定应用程序时，自动转换输入法默认状态为英文输入状态。
 
 
 patch: 
-
-  #  ####app options 设置特定程序默认英文模式时，程序名需全用小写字母。
-  "app_options/windowsterminal.exe":
-    ascii_mode: true  
-  
-
-  # 设定主题    #不建议在此处设置主题。
-  #"style/color_scheme": ink
-
-  # 设定显示托盘图标，在调配置时，方便右键图标快速执行“重新部署”，以及其它便捷入口。调配完日常使用就 false 隐藏掉吧。
-  # 没有托盘图标，Windows+R: $ "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\小狼毫輸入法"，里面有相关操作项
-  # Windows 10下已经发现问题：切换到小狼毫輸入法，Windows徽标就失灵，必须切换至其它输入法，Ctrl+Shift+Esc 中 “Windows 资源管理器” 鼠标右键“重新启动(R)”，才能正常使用。
-  #"style/display_tray_icon": false
-
-
-
-
-#未知功能：
-  # style/alpha: 1
-  # style/candidate_format: " %c %@ "
-#候选窗风格设置：
-  # style/horizontal: true                          #  候选窗横排设置；
-  # style/inline_preedit: true                      #  TSF模式下嵌入式编码；
-  # style/preedit_type: preview                     #  嵌入式编码风格：(composition | preview)_(编码｜文字预览)；
-  style/display_tray_icon: true                     #  任务栏显示“中”字标点；
-  # style/fullscreen: true                          #  全屏候选窗；
-  # style/font_point: 12                            #  候选字体大小；
-  # style/label_format: "%s"                        #  候选数字样式设置；
-  style/color_scheme: lost_temple                   #  配色方案；
-  # style/color_scheme: dark_temple                 #  配色方案；
-  # style/color_scheme: psionics                    #  配色方案；
-  # style/color_scheme: metro                       #  配色方案；
-#候选窗样式设置：
-  # style/layout/border: 1                          #  候选窗边框宽度；
-  style/layout/corner_radius: 5                     #  候选窗口等圆角显示
-
-#“metro”配色方案：
+# “metro”配色方案：
   preset_color_schemes/metro:
     #back_color: 0xffffff                           #   候选窗底色               白；
     back_color: 0xeceeee                            #   候选窗底色               浅灰；
@@ -58,21 +21,124 @@ patch:
     hilited_text_color: 0x000000                    #   候选字颜色               黑；
     hilited_back_color: 0xd4d4d4                    #   候选编码颜色；
 
-# TSF模式下，模拟WIN10候选窗：
-  # # style/font_point: 12                            #  候选字体大小；
+# 进入特定应用程序时，自动转换输入法默认状态为英文输入状态，程序名需全用小写字母。
+  "app_options/windowsterminal.exe":
+    ascii_mode: true  
+  
+
+
+
+#未知功能：
+  # style/alpha: 1
+  # style/candidate_format: " %c %@ "
+
+#候选窗风格设置：
+
+  #-------------------------------------
+  # 外观设置：#--------------------------
+  #-------------------------------------
+  # menu/page_size: 5
+
+  style/display_tray_icon: true                     #  任务栏显示“中”字标点；
+  # style/fullscreen: true                          #  全屏候选窗；
+  # style/layout/border: 1                          #  候选窗边框宽度；
+  style/layout/corner_radius: 5                     #  候选窗口等圆角显示
+  #-------------------------------------
+
+  # style/font_face : &font 楷体
+  # style/font_face : &font 霞鹜文楷等宽
+  # style/label_font_face: *font
+  # style/comment_font_face: *font
+  #    ⇧设置候选框字体。需和系统名称保持一致。查看字体系统名称可打开"记事本"的"格式"-"字体"设定查看。
+  #      常见字体包括但不限于："楷体"/ "幼圆"/ "黑体"/ "微软雅黑"/……
+  # style/font_point: 15                            #  候选字体大小；
+  # style/label_font_point: 15
+  # style/comment_font_point: 15
+
   # style/horizontal: true                            #  候选窗横排设置；
   # style/inline_preedit: true                        #  TSF模式下嵌入式编码；
-  # # style/label_format: "%s"                        #  候选数字样式设置；
-  # # style/preedit_type: preview                     #  嵌入式编码风格：(composition | preview)_(编码｜文字预览)；
-  # style/layout/border: 0                            #  候选窗边框粗细；
-  # # style/layout/border_width: 1                    #  候选窗边框粗细；
-  # style/layout/corner_radius: 8                     #  候选窗口等圆角显示
+  # style/label_format: "%s"                        #  候选数字样式设置；
+  # style/preedit_type: input
+  #    ⇧设置输入码内嵌模式：
+  #      composition  ——嵌入编码；
+  #      input        ——嵌入输入码；
+  #      preview      ——嵌入首选；
+  #      preview_all  ——在输入时将候选项显示于composition中
+  # style/vertical_text: true                       #  竖直文字布局
+  # style/vertical_text_left_to_right: true
+  # style/vertical_text_with_wrap: false
+
+# 候选窗布局，TSF模式：
+  # style/layout/border: 1                            #  候选窗边框粗细；
+  # style/layout/corner_radius: 17                    #  候选窗口等圆角显示
   # style/layout/candidate_spacing: 30                #  候选项间距；
-  # style/layout/hilite_padding: 9                    #  候选项高亮边框；
-  # style/layout/hilite_spacing: 4                    #  候选项与编号的间距；
-  # style/layout/margin_x: 10                         #  候选窗宽；
-  # style/layout/margin_y: 10                         #  候选窗高；
+  # style/layout/hilite_padding: 5                    #  候选项高亮边框；
+  # style/layout/hilite_spacing: 2                    #  候选项与编号的间距；
+  # style/layout/margin_x: 7                          #  候选窗宽；
+  # style/layout/margin_y: 7                          #  候选窗高；
   # style/layout/min_height: 0                        #  候选窗最小高度；
   # style/layout/min_width: 75                        #  候选窗最小宽度；
-  # style/layout/round_corner: 0                      #  高亮部分圆角；
+  # style/layout/round_corner: 15                     #  高亮部分圆角；
+  # style/layout/shadow_radius: 1
+  # style/layout/shadow_offset_x: 1
+  # style/layout/shadow_offset_y: 1
   # # style/layout/spacing: 16                        #  编码与候选间距；
+
+  # preset_color_schemes/color_scheme/shadow_color: color
+  # preset_color_schemes/color_scheme/nextpage_color: color
+  # preset_color_schemes/color_scheme/prevpage_color: color
+  # preset_color_schemes/color_scheme/candidate_back_color: color
+  # preset_color_schemes/color_scheme/candidate_shadow_color: color
+  # preset_color_schemes/color_scheme/candidate_border_color: color
+  # preset_color_schemes/color_scheme/hilited_shadow_color: color
+  # preset_color_schemes/color_scheme/hilited_candidate_shadow_color: color
+  # preset_color_schemes/color_scheme/hilited_candidate_border_color: color
+  # preset_color_schemes/color_scheme/hilited_mark_color: color
+  #-------------------------------------
+  #-------------------------------------
+
+  #-------------------------------------
+  # 配色设置：#--------------------------
+  #-------------------------------------
+  # style/color_scheme: metro
+  #-------------------------------------
+  # style/color_scheme: android
+  # style/color_scheme: aqua
+  # style/color_scheme: azure
+  # style/color_scheme: brasil
+  # style/color_scheme: brisk
+  # style/color_scheme: cool_breeze
+  # style/color_scheme: dark_temple
+  # style/color_scheme: doraemon
+  # style/color_scheme: dota_2
+  # style/color_scheme: espagna
+  # style/color_scheme: flypy
+  # style/color_scheme: gholabok
+  # style/color_scheme: google
+  # style/color_scheme: google_plus
+  # style/color_scheme: ink
+  # style/color_scheme: kuma_shuzboz
+  # style/color_scheme: kuon
+  style/color_scheme: lost_temple
+  # style/color_scheme: lost_temple_with_shad
+  # style/color_scheme: luna
+  # style/color_scheme: macau
+  # style/color_scheme: metroblue
+  # style/color_scheme: modern_warfare
+  # style/color_scheme: nba
+  # style/color_scheme: ps4
+  # style/color_scheme: psionics
+  # style/color_scheme: skype
+  # style/color_scheme: smurfs
+  # style/color_scheme: so_young  # 1
+  # style/color_scheme: solarized_rock
+  # style/color_scheme: starcraft
+  # style/color_scheme: starcraft_ii
+  # style/color_scheme: steam
+  # style/color_scheme: tintin
+  # style/color_scheme: wii
+  # style/color_scheme: xbox_silver
+  # style/color_scheme: youtube
+  #-------------------------------------
+  #-------------------------------------
+
