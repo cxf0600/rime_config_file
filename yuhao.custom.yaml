@@ -15,6 +15,7 @@ patch:
   switches/@2/reset: 0 # [原始排序, 全碼後置]
   switches/@3/reset: 0 # [〇註解, 一重註解, 二重註解, 三重註解]
   switches/@4/reset: 0 # [普通候選, 嵌入候選]
+  switches/@5/reset: 0 # [輸入預測, 精確匹配]
   embeded_cands/+:
     # option_name: embeded_cands                         # 嵌入候選開關
     # index_indicators: [ ¹, ², ³, ⁴, ⁵, ⁶, ⁷, ⁸, ⁹, ⁰ ] # 嵌入候選的序號顯示格式
@@ -24,6 +25,8 @@ patch:
   recognizer/patterns/+:
     # 配合自定義宏, 允許以下宏使用 / 鍵追加參數
     macros: "^/(calc|echo|len)(/[a-z]*)*$"
+    macro_calc: "^/calc(/[a-zA-Z0-9\\+\\-\\*\\^\\.%]*)*$"
+    macro_echo: "^/echo(/[a-zA-Z]*)*$"
   yuhao_macro/macros/+:
     # 自定義宏
     # 先为宏命名, 如 *mymacro*, 则將其添加到 *macros* 下,
@@ -106,23 +109,22 @@ patch:
       # m(mod) => %
       # a(remainder) => //
       - type: eval
+        hijack: true
         expr: >
           local nums = {q='1',w='2',e='3',r='4',t='5',y='6',u='7',i='8',o='9',p='0'}
           local signs = {h='*',j='-',k='+',l='/',s='^',d='.',m='%',x='*',a='//'}
-          setmetatable(signs, { __index = function() return "+" end })
+          setmetatable(signs, { __index = function(self, key) return key end })
           local t = {
             nums = nums,
             signs = signs,
           }
           function t:calc(args, peek_only)
             if #args == 0 then return "" end
+            local expr = table.concat(args, "/")
             local res = {}
-            for _, expr in ipairs(args) do
-              expr = string.gsub(string.gsub(expr, "[qwertyuiop]", self.nums), "[^0-9]+", self.signs)
-              local eval = load("return " .. expr)
-              table.insert(res, (peek_only and expr .. "=" or "") .. (eval and eval() or "?"))
-            end
-            return table.concat(res, ",")
+            expr = string.gsub(string.gsub(expr, "[qwertyuiop]", self.nums), "[^0-9%+%-*/^.%%]", self.signs)
+            local eval = load("return " .. expr)
+            return (peek_only and expr .. "=" or "") .. (eval and eval() or "?")
           end
           function t:peek(args)
             return self:calc(args, true)
@@ -131,7 +133,6 @@ patch:
             return self:calc(args, false)
           end
           return t
-
 
   #-------------------------------------
   #    下方为个人设置：
@@ -248,5 +249,3 @@ patch:
   # switches/@4/reset: 1                              #  [普通候選, 嵌入候選]
   #-------------------------------------
   #-------------------------------------
-
-

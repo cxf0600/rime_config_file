@@ -49,6 +49,10 @@ switches:
     reset: 0
     states: [普通候選, 嵌入候選]
     # Control+Shift+E
+  - name: yuhao_autocompletion_filter
+    reset: 0
+    states: [輸入預測, 精確匹配]
+    # Control+Shift+Y
   - name: traditionalization
     states: [简保持, 简转繁]
     reset: 0
@@ -96,6 +100,7 @@ engine:
     - "table_translator@zaoci" # 用户造詞
     - lua_translator@yuhao_switch_tr@yuhao_macro
   filters:
+    - lua_filter@yuhao_autocompletion_filter
     - lua_filter@yuhao_single_char_only_for_full_code
     - lua_filter@yuhao_char_first
     - lua_filter@yuhao_char_only
@@ -139,8 +144,8 @@ yuhao_chaifen:
     cycle_key: "Shift+Control+C"
 
 speller:
-  alphabet: zyxwvutsrqponmlkjihgfedcba/
-  initials: zyxwvutsrqponmlkjihgfedcba/
+  alphabet: zyxwvutsrqponmlkjihgfedcba
+  initials: zyxwvutsrqponmlkjihgfedcba
   delimiter: "`"
   max_code_length: 4
   auto_select: true
@@ -239,9 +244,23 @@ yuhao_macro:
       - { type: switch, name: traditionalization, states: [ ☐不轉換, ☑簡轉繁 ] }
     simp:
       - { type: switch, name: simplification, states: [ ☐不轉換, ☑繁轉簡 ] }
+    dist:
+      - type: eval
+        expr: >
+          return function(args)
+            return string.format("librime: [%s]", rime_api.get_rime_version())
+          end
+      - type: eval
+        expr: >
+          return function(args)
+            return string.format("distribution: [%s](%s/%s)",
+              rime_api.get_distribution_name(),
+              rime_api.get_distribution_code_name(),
+              rime_api.get_distribution_version())
+          end
 
 punctuator:
-  import_preset: symbols
+  import_preset: symbols_yuhao
   half_shape:
     "%": "%"
     "*": "*"
@@ -275,6 +294,11 @@ key_binder:
         accept: "Control+Shift+H",
         toggle: yuhao_postpone_full_code,
       } # 全碼後置
+    - {
+        when: always,
+        accept: "Control+Shift+Y",
+        toggle: yuhao_autocompletion_filter,
+      } # 輸入預測
     - { when: has_menu, accept: semicolon, send: 2 } # 分号次选
     - { when: has_menu, accept: apostrophe, send: 3 } # 引号三选
     - { when: has_menu, accept: Tab, send: 4 } # 製表符四选
