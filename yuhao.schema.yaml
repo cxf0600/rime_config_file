@@ -3,7 +3,7 @@
 
 schema:
   schema_id: yuhao
-  name: 宇浩繁简通·简体简码
+  name: 宇浩·光華·大陆简体
   version: 20230522
   author:
     - 發明人 朱宇浩
@@ -152,7 +152,7 @@ speller:
   initials: zyxwvutsrqponmlkjihgfedcba
   delimiter: "`"
   max_code_length: 4
-  auto_select: true
+  auto_select: false
   algebra:
     - "derive/^([a-y])[a-y]([a-y]*)$/$1z$2/" # Az AzC AzCD
     - "derive/^([a-y]+)[a-y]([a-y]*)$/$1z$2/" # ABz ABzD ABCz AzC AzCD
@@ -165,7 +165,7 @@ speller:
 translator:
   dictionary: yuhao
   prism: yuhao
-  db_class: tabledb
+  # db_class: tabledb
   enable_completion: true
   enable_sentence: false
   enable_user_dict: true
