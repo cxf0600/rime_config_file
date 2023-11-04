@@ -1,0 +1,121 @@
+# 功能開關一鍵配置
+
+patch:
+  schema/name: 宇浩·星陈·简先  # 方案名
+
+
+  #########################################################################################################
+  #########################################    下方为个人设置：    #########################################
+  #########################################################################################################
+  #-------------------------------------
+  # 宏：#----------------
+  #-------------------------------------
+  yuhao_macro/macros/+:
+    set:
+      - { type: radio, names: [ yuhao_char_only, yuhao_char_first, cjk ], states: [ ☑☐☐只出常用字, ☐☑☐常用字前置, ☐☐☑全字集原排序 ] }
+
+
+  #-------------------------------------
+  # 默认状态设置：#----------------------
+  #-------------------------------------
+  switches/@0/reset: 0 # [只出常用字, 常用字前置, 全字集原排序]
+  switches/@1/reset: 1 # [繁簡混頻, 簡體優先]
+  switches/@4/reset: 0 # [〇註解, 一重註解, 二重註解, 三重註解]
+  switches/@5/reset: 0 # [普通候選, 嵌入候選]
+
+  #-------------------------------------
+  # 行为设置：#--------------------------
+  #-------------------------------------
+  speller/auto_select: false                  # 四碼唯一自動上屏
+  speller/auto_clear: auto
+  #    ⇧设置空码编码清除模式：
+  #      auto       ——三码空码自动清除编码；
+  #      manual     ——三码空码第四码再清除编码。
+  #      max_length ——三码空码第五码再清除编码（max_length为4）。
+  #      输入法初始设置为"auto空码自动清除"。
+
+  translator/enable_sentence: false
+  translator/enable_user_dict: false
+  # zaoci/enable_user_dict: false
+  translator/enable_encoder: false
+  translator/encode_commit_history: false     # 对连续上屏的词自动成词
+
+  translator/enable_completion: true          # 輸入預測（逐碼提示）
+  translator/comment_format/+:
+    - "xform/^.+$//"
+
+  fixed/enable_completion: false              # 輸入預測（逐碼提示）
+
+  #-------------------------------------
+  # 按键设置：#--------------------------
+  #-------------------------------------
+  editor/bindings/Return: cancel
+  #    ⇧设置回车键功能：
+  #      cancel——清除编码(通常形码使用该功能)；
+  #      commit_raw_input——上屏输入编码(通常拼音输入法使用该功能)。
+  #      输入法初始设置为"cancel清除编码"。建议形码用户养成回车清屏习惯，即该项不要变动。
+  # editor/bindings/Shift+Shift_L: commit_raw_input
+  #    ⇧设置左Shift键功能：
+  #      confirm——上屏首#      选字并切换英文；
+  #      commit_raw_input——上屏原始编码并切换英文。
+  #      输入法初始设置为confirm——上屏首选字并切换英文。
+
+  key_binder/import_preset: default
+  key_binder/bindings/+:   #本行请勿做任何更改。
+
+  punctuator/half_shape/+:       #本行请勿做任何更改。
+  #  ' ' : { commit: '　' }
+  #    ⇧设置强制在中文、半角模式下使用全角空格。
+  #      输入法初始设置为"在中文、半角模式下使用半角空格"。
+
+  #-------------------------------------
+  # 外观设置：#--------------------------
+  #-------------------------------------
+  style/color_scheme: dark_temple
+  #-------------------------------------
+  # style/font_face : &font 楷体
+  style/font_face : &font 霞鹜文楷等宽
+  style/label_font_face: *font
+  style/comment_font_face: *font
+  #    ⇧设置候选框字体。需和系统名称保持一致。查看字体系统名称可打开"记事本"的"格式"-"字体"设定查看。
+  #      常见字体包括但不限于："楷体"/ "幼圆"/ "黑体"/ "微软雅黑"/……
+  # style/font_point: 15                            #  候选字体大小；
+  # style/label_font_point: 15
+  # style/comment_font_point: 15
+
+  style/horizontal: true                            #  候选窗横排设置；
+  style/inline_preedit: true                        #  TSF模式下嵌入式编码；
+  # style/label_format: "%s"                        #  候选数字样式设置；
+  style/preedit_type: input
+  #    ⇧设置输入码内嵌模式：
+  #      composition  ——嵌入编码；
+  #      input        ——嵌入输入码；
+  #      preview      ——嵌入首选；
+  #      preview_all  ——在输入时将候选项显示于composition中
+  # style/vertical_text: true                       #  竖直文字布局
+  # style/vertical_text_left_to_right: true
+  # style/vertical_text_with_wrap: false
+
+  # 候选窗布局，TSF模式：
+  style/layout/border: 1                            #  候选窗边框粗细；
+  style/layout/corner_radius: 17                    #  候选窗口等圆角显示
+  style/layout/candidate_spacing: 30                #  候选项间距；
+  style/layout/hilite_padding: 5                    #  候选项高亮边框；
+  style/layout/hilite_spacing: 2                    #  候选项与编号的间距；
+  style/layout/margin_x: 7                          #  候选窗宽；
+  style/layout/margin_y: 7                          #  候选窗高；
+  style/layout/min_height: 0                        #  候选窗最小高度；
+  style/layout/min_width: 75                        #  候选窗最小宽度；
+  style/layout/round_corner: 15                     #  高亮部分圆角；
+  style/layout/shadow_radius: 1
+  style/layout/shadow_offset_x: 1
+  style/layout/shadow_offset_y: 1
+  # style/layout/spacing: 16                        #  编码与候选间距；
+
+  #-------------------------------------
+  # 无候选窗模式：#----------------------
+  #-------------------------------------
+  # speller/auto_clear: max_length
+  # translator/enable_completion: false
+  # style/layout/margin_x: -10                        #  候选窗宽；
+  # switches/@5/reset: 1                              #  [普通候選, 嵌入候選]
