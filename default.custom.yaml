@@ -1,7 +1,6 @@
 patch:
   schema_list:
     - {schema: yustar_sc}
-    #- {schema: yustar}
     - {schema: luna_pinyin_simp}
     #- {schema: terra_pinyin}
     - {schema: pinyin_simp}
