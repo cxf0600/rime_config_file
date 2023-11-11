@@ -1,7 +1,7 @@
 # encoding: utf-8
 ---
 name: "yustar.quick"
-version: "20231028"
+version: "20231106"
 sort: original
 columns:
   - text
@@ -23,10 +23,11 @@ columns:
 能	n
 大	o
 要	p
-着	q
+道	q
 人	r
 而	s
-然	w
+不	v
+出	w
 多	x
 那	y
 刺	ac
@@ -65,7 +66,6 @@ columns:
 每	ge
 真	gj
 及	gk
-否	gl
 答	gr
 箅	gv
 筋	gw
@@ -131,6 +131,7 @@ columns:
 蚌	qd
 师	qf
 精	qh
+着	qj
 北	qn
 美	qo
 差	qp
@@ -148,6 +149,7 @@ columns:
 花	se
 著	sh
 苦	sj
+落	sn
 放	tt
 彩	ua
 斯	ud
@@ -158,13 +160,14 @@ columns:
 岸	uv
 崡	uy
 破	vb
+原	vd
 雁	ve
 碗	vi
 野	vk
-遇	vo
 服	wa
 股	we
 腿	wg
+然	wh
 逃	wi
 回	wl
 因	wo
@@ -280,7 +283,6 @@ columns:
 貌	mdw
 顶	jvc
 滚	nak
-坏	hgu
 鬆	uak
 鎮	tgj
 瑞	jus
@@ -325,6 +327,7 @@ columns:
 潤	ndj
 睁	jxb
 緒	ohj
+噴	lgs
 输	xrf
 馨	hbe
 猴	heb
@@ -373,7 +376,6 @@ columns:
 巢	lja
 肆	uba
 妄	tcn
-篮	gug
 齿	prw
 磚	vdh
 餃	kak
@@ -425,6 +427,7 @@ columns:
 諒	bai
 驢	wuv
 煥	ixc
+墳	hgs
 璋	jkj
 禧	jhl
 苟	swl
@@ -441,7 +444,7 @@ columns:
 賄	jew
 緞	oel
 宪	ipw
-锤	oms
+锤	ogs
 俞	rfw
 齋	aqu
 迭	goo
@@ -531,7 +534,7 @@ columns:
 邯	sip
 炖	ixw
 涤	nta
-坯	hgf
+坯	hvf
 罈	jpj
 皚	duf
 詔	bml
@@ -651,6 +654,7 @@ columns:
 瘵	mwj
 禘	jaq
 瑑	jet
+倕	egs
 暕	jaw
 赒	cwh
 剟	bbb
