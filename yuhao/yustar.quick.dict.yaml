@@ -1,7 +1,7 @@
 # encoding: utf-8
 ---
 name: "yustar.quick"
-version: "20231106"
+version: "20231114"
 sort: original
 columns:
   - text
@@ -9,6 +9,7 @@ columns:
 ...
 
 就	a
+這	b
 好	c
 的	d
 你	e
@@ -26,6 +27,8 @@ columns:
 道	q
 人	r
 而	s
+这	t
+爲	u
 不	v
 出	w
 多	x
@@ -539,7 +542,7 @@ columns:
 皚	duf
 詔	bml
 閻	dxd
-齲	pgq
+齲	pgl
 箐	ghw
 鞑	soo
 涣	nxc
@@ -558,6 +561,7 @@ columns:
 噫	lkj
 珪	jhh
 殇	fxg
+垜	hga
 弑	sak
 醍	pjf
 庾	mdr
