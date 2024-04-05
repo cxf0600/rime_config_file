@@ -1,7 +1,7 @@
 # encoding: utf-8
 ---
 name: "yustar_tc.quick"
-version: "20231226"
+version: "20240330"
 sort: original
 columns:
   - text
@@ -298,7 +298,7 @@ columns:
 它	in
 尖	io
 空	ip
-業	iq
+窮	iq
 二	ir
 賽	is
 家	it
@@ -498,7 +498,7 @@ columns:
 自	qi
 曾	qj
 益	qk
-蠟	ql
+蟬	ql
 米	qm
 北	qn
 美	qo
@@ -507,7 +507,7 @@ columns:
 息	qr
 身	qs
 蜂	qt
-幣	qu
+並	qu
 鼻	qv
 前	qw
 鄰	qx
@@ -555,7 +555,7 @@ columns:
 蘋	sp
 蔽	sq
 茶	sr
-葉	ss
+華	ss
 荒	st
 夢	su
 萬	sv
@@ -595,7 +595,7 @@ columns:
 還	uf
 置	ug
 基	uh
-虚	ui
+崇	ui
 買	uj
 乳	uk
 占	ul
@@ -603,7 +603,7 @@ columns:
 雞	un
 羅	uo
 髭	up
-其	uq
+業	uq
 悲	ur
 山	us
 處	ut
@@ -611,7 +611,7 @@ columns:
 岸	uv
 期	uw
 愛	ux
-崡	uy
+邺	uy
 爪	uz
 礎	va
 破	vb
@@ -911,7 +911,7 @@ columns:
 它們	in
 尖鋭	io
 空間	ip
-業務	iq
+窮人	iq
 二者	ir
 賽程	is
 家庭	it
@@ -1077,7 +1077,7 @@ columns:
 精神	qh
 自己	qi
 曾經	qj
-蠟燭	ql
+蟬聯	ql
 米飯	qm
 北京	qn
 美國	qo
@@ -1085,6 +1085,7 @@ columns:
 導致	qq
 身體	qs
 蜂蜜	qt
+並且	qu
 鼻子	qv
 前面	qw
 鄰居	qx
@@ -1126,7 +1127,7 @@ columns:
 芭蕾	so
 蘋果	sp
 茶葉	sr
-葉子	ss
+華人	ss
 荒唐	st
 夢想	su
 萬能	sv
@@ -1161,12 +1162,12 @@ columns:
 還是	uf
 置換	ug
 基本	uh
-虚假	ui
+崇尚	ui
 買賣	uj
 乳房	uk
 雞蛋	un
 羅馬	uo
-其中	uq
+業務	uq
 悲觀	ur
 山東	us
 處理	ut
@@ -1421,7 +1422,7 @@ columns:
 光電	il
 尖子	io
 空氣	ip
-業績	iq
+窮盡	iq
 二月	ir
 賽馬	is
 家族	it
@@ -1576,6 +1577,7 @@ columns:
 導演	qq
 身邊	qs
 蜂窩	qt
+並不	qu
 鼻樑	qv
 前期	qw
 羊毛	qy
@@ -1610,7 +1612,7 @@ columns:
 面孔	sm
 落後	sn
 茶館	sr
-葉片	ss
+華夏	ss
 荒謬	st
 夢幻	su
 萬物	sv
@@ -1638,11 +1640,11 @@ columns:
 還有	uf
 置身	ug
 基礎	uh
-虚擬	ui
+崇拜	ui
 買主	uj
 乳頭	uk
 羅盤	uo
-其實	uq
+業績	uq
 悲劇	ur
 山西	us
 處於	ut
@@ -1728,7 +1730,6 @@ columns:
 朽	ahk
 櫃	ahl
 憖	ahr
-樸	aiq
 檔	aiv
 鬱	aja
 亭	ajd
@@ -1767,6 +1768,7 @@ columns:
 核	ath
 豪	ats
 麥	atu
+樸	auq
 楞	aut
 栢	avj
 楒	avr
@@ -1811,9 +1813,9 @@ columns:
 違	boc
 記	boj
 尋	bpl
-譜	bqi
 層	bqj
 屏	bqs
+譜	bqu
 護	bse
 謊	bst
 張	buc
@@ -1923,7 +1925,6 @@ columns:
 伏	ehq
 仕	ehs
 傲	ehw
-僕	eiq
 倘	eis
 傢	eit
 估	ejg
@@ -1950,6 +1951,7 @@ columns:
 僞	eug
 布	euj
 存	euk
+僕	euq
 仙	eus
 條	eut
 偶	evv
@@ -1966,7 +1968,6 @@ columns:
 播	fgq
 掛	fhh
 撑	fif
-撲	fiq
 擋	fiv
 挖	fiy
 打	fjd
@@ -1998,11 +1999,13 @@ columns:
 描	fsv
 撒	fsw
 掙	fub
-搬	fue
+亚	fue
 排	fuf
 擇	fuh
 掉	fuj
 擺	fun
+撲	fuq
+恶	fur
 據	fut
 授	fux
 抓	fuz
@@ -2081,7 +2084,6 @@ columns:
 圳	hlc
 區	hll
 喜	hlv
-獵	hlw
 獯	hmg
 獷	hms
 老	hnb
@@ -2112,7 +2114,7 @@ columns:
 燈	ibf
 决	ibr
 爛	ida
-竄	idb
+寢	idb
 割	idl
 宙	ido
 宥	iew
@@ -2142,10 +2144,7 @@ columns:
 寮	ioq
 牢	ipn
 冼	ipw
-窮	iqb
-叢	iqg
 邃	iqt
-黹	iqu
 窩	irk
 寧	iru
 寬	isj
@@ -2340,10 +2339,8 @@ columns:
 唉	lnj
 巡	loc
 联	lqo
-憩	lqr
 聆	lrk
 喏	lse
-嘩	lsf
 另	lsl
 啡	luf
 喘	lus
@@ -2540,7 +2537,6 @@ columns:
 蹁	phc
 甄	phr
 酡	pin
-蹼	piq
 顰	piv
 貢	pjb
 醍	pjf
@@ -2558,6 +2554,7 @@ columns:
 功	psl
 牧	ptu
 牤	ptw
+蹼	puq
 躍	pvv
 酌	pwk
 贊	pwp
@@ -2582,7 +2579,6 @@ columns:
 蟑	qkj
 粒	qkl
 蜢	qku
-蟬	qll
 糖	qmb
 羨	qnx
 羓	qob
@@ -2598,7 +2594,7 @@ columns:
 糟	qsj
 瓶	qsr
 蚊	qte
-斃	quk
+幣	quk
 螈	qvd
 蛎	qvf
 翔	qvv
@@ -2722,7 +2718,6 @@ columns:
 瓞	ugo
 幡	ugq
 舴	ugu
-崇	uij
 峭	uiw
 貞	ujb
 舸	ujl
@@ -2732,16 +2727,18 @@ columns:
 鹹	ukf
 嶂	ukj
 幢	ukv
-鬣	ulw
 巍	umc
 爬	uob
 崦	uod
 岂	uoj
+叢	uqg
 罾	uqj
+黹	uqu
 崙	urf
 岭	urk
 艨	usx
 峰	utd
+帳	uuc
 罩	uuj
 慮	uvr
 虜	uvs
@@ -2793,7 +2790,6 @@ columns:
 腳	wkr
 腦	wld
 句	wlv
-臘	wlw
 驕	wml
 勾	wna
 肥	wob

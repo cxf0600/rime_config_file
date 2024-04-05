@@ -3,7 +3,7 @@
 
 schema:
   schema_id: yustar_sc
-  name: 星陈·陆简
+  name: 星陈·陆标简码
   version: 20231001
   author:
     - 發明人 朱宇浩
@@ -42,14 +42,14 @@ switches:
       - yuhao_chaifen.lv3
     states: [〇註解, 一重註解, 二重註解, 三重註解]
     reset: 0
-  - name: embeded_cands
-    reset: 0
-    states: [普通候選, 嵌入候選]
-    # Control+Shift+E
   - name: yuhao_autocompletion_filter
     reset: 0
     states: [輸入預測, 精確匹配]
     # Control+Shift+Y
+  - name: embeded_cands
+    reset: 0
+    states: [普通候選, 嵌入候選]
+    # Control+Shift+E
   - name: traditionalization
     states: [简保持, 简转繁]
     reset: 0
@@ -292,7 +292,7 @@ key_binder:
       } # 輸入預測
     - { when: has_menu, accept: semicolon, send: 2 } # 分号次选
     - { when: has_menu, accept: apostrophe, send: 3 } # 引号三选
-    - { when: has_menu, accept: Tab, send: 4 } # 製表符四选
+    - { when: has_menu, accept: Tab, send: 2 } # 製表符次选
     - { when: has_menu, accept: minus, send: Page_Up }    #減號上翻頁
     - { when: has_menu, accept: equal, send: Page_Down }    #等號下翻頁
 

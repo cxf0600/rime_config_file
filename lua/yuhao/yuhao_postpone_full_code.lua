@@ -5,10 +5,11 @@
 -- 目前的实现方式，原理适用于所有使用规则简码的形码方案。
 
 -- 修改: forFudan
--- 版本: 20230103
+-- 版本:
+-- - 20230103: 只後置排名第一的簡碼字的全碼
+-- - 20240317: 只後置全碼爲三碼以上的字
 -- 修改介紹：
 -- 根據宇浩輸入法更新字根列表。
--- 只後置排名第一的簡碼字的全碼
 
 local radstr = "也不亡尚穴韋甲屮丌鬼巛丶户用爪石非僉巳儿酉雨乃生马电豸馬囗禺了矛尸丅面食寸幺瓦壬足麻齒乙骨又米冊爿末西王古讠人毛世丨止母{shuxia}丰自艮士合禾曰广见上灬〇𬺰𠂤缶七牛卯刀文千扌瓜阝斤風气魚衤工厶龰欠攴宀彡見丂竹罒烏目至艹𠂇二丬已方兀一木之八且臣矢乚卩鸟犬牙弓疒糸向山匚{sui}戊{suw}廴夕土田黽丷凡貝饣鱼刂大豕弋亦门巾長示片車犭耳夫羽𧘇水飛亠黑未戈小礻火㗊虎爾三车𡗗辛鬥鹵冖口手氵辰言白虫尤心入高龶臼殳舟卜走立來鹿子辶彐纟丿身贝申皿其匕乌亍皮早十日而{nuyx}〢歹甫羊革夂予干亥隹月己丁彳咼钅力門女川长亻乂巴夭舌九几冂金厂由鳥𫝀⺄㇂丩⺶𠕁龴⻟𫩏𠂒〣冎髟ソ𠂎㇞⼌マ釒⼓丄𣥂𡈼𡿨⻍⺂ッ卄乀丆戶⻎訁⼹𫠠⺧𠃌コ䒑𰃦⺮氺卝戸匸𰁜⼁𩙿𠃊习乜忄𭕄㇍兀㐄𠂊𠥓勹冫丱乁𰀁𤣩爫⼅㇇⼂廾㇣㇈⺈𠘧𠀎𥫗㔾㇕㇀龷⺆凵Γ𠂉𫶧㇜耂ス㇒𦥑糹𡭔⺼攵⼃𰆊飠𠃎ユ⺊𥝌㇏⺍⾻乛⻗虍卅ュ㐅⻞⼶㇝卌𠁼⺬𠆢尢⺌⺁𠃍𠃋龵⺥㇉𧰨𠄌朩𠤎镸⼢牜亅㇅癶𠂆⻊巜𠄎𠃑𱼀𠃜⾅覀䶹キヰ⺋⺝𠘨⼫⺕夊𰀪⺩𠂭𧾷⺀"
 
@@ -67,8 +68,10 @@ local function has_short_and_is_full(cand, env)
     local not_full = not
         string.find(' ' .. codestr .. ' ', ' ' .. cand_input .. ' ', 1, true)
     local short = not not_full and get_short(codestr)
+    -- 只后置三码以上的字
+    local long_input = string.len(env.engine.context.input) > 2
     -- 注意排除有简码但是输入的是不规则编码的情况
-    return short and is_first and cand_input:find('^' .. short .. '%l+'), not_full
+    return long_input and short and is_first and cand_input:find('^' .. short .. '%l+'), not_full
 end
 
 local function filter(input, env)

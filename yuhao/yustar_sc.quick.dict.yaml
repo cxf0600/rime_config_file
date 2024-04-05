@@ -1,7 +1,7 @@
 # encoding: utf-8
 ---
 name: "yustar_sc.quick"
-version: "20231226"
+version: "20240330"
 sort: original
 columns:
   - text
@@ -215,7 +215,7 @@ columns:
 无	ff
 龙	fg
 持	fh
-按	fi
+抄	fi
 看	fj
 于	fk
 远	fl
@@ -288,7 +288,7 @@ columns:
 当	ib
 安	ic
 害	id
-业	ie
+准	ie
 定	if
 少	ig
 火	ih
@@ -308,7 +308,7 @@ columns:
 烦	iv
 烟	iw
 次	ix
-邺	iy
+炀	iy
 景	ja
 缺	jb
 现	jc
@@ -317,7 +317,7 @@ columns:
 量	jf
 眼	jg
 时	jh
-显	ji
+叔	ji
 祖	jj
 时	jk
 可	jl
@@ -329,7 +329,7 @@ columns:
 日	jr
 示	js
 故	jt
-卡	ju
+显	ju
 上	jv
 明	jw
 下	jx
@@ -509,7 +509,7 @@ columns:
 息	qr
 身	qs
 遂	qt
-盖	qu
+普	qu
 兽	qv
 前	qw
 将	qx
@@ -597,7 +597,7 @@ columns:
 非	uf
 置	ug
 基	uh
-虚	ui
+崇	ui
 桌	uj
 乳	uk
 战	ul
@@ -609,7 +609,7 @@ columns:
 虑	ur
 山	us
 峰	ut
-罪	uu
+虚	uu
 岸	uv
 期	uw
 爱	ux
@@ -835,7 +835,7 @@ columns:
 无限	ff
 龙头	fg
 持续	fh
-按照	fi
+抄袭	fi
 看见	fj
 于是	fk
 远方	fl
@@ -901,7 +901,7 @@ columns:
 当时	ib
 安排	ic
 害怕	id
-业务	ie
+准备	ie
 定价	if
 少年	ig
 火焰	ih
@@ -927,7 +927,7 @@ columns:
 量化	jf
 眼睛	jg
 时候	jh
-显示	ji
+叔叔	ji
 祖国	jj
 时间	jk
 可以	jl
@@ -937,7 +937,7 @@ columns:
 日本	jr
 示范	js
 故事	jt
-卡车	ju
+显示	ju
 上海	jv
 明显	jw
 下去	jx
@@ -1086,7 +1086,7 @@ columns:
 差距	qp
 首次	qq
 身体	qs
-盖子	qu
+普遍	qu
 前面	qw
 将军	qx
 羊肉	qy
@@ -1159,7 +1159,7 @@ columns:
 非常	uf
 置换	ug
 基本	uh
-虚假	ui
+崇尚	ui
 桌子	uj
 乳房	uk
 战争	ul
@@ -1167,7 +1167,7 @@ columns:
 爬行	uo
 其中	uq
 山东	us
-罪名	uu
+虚假	uu
 期待	uw
 爱情	ux
 爪牙	uz
@@ -1352,7 +1352,7 @@ columns:
 无法	ff
 龙虾	fg
 持有	fh
-按摩	fi
+抄写	fi
 看到	fj
 远离	fl
 招聘	fm
@@ -1410,7 +1410,7 @@ columns:
 当然	ib
 安慰	ic
 害羞	id
-业绩	ie
+准确	ie
 定位	if
 少女	ig
 火箭	ih
@@ -1436,7 +1436,6 @@ columns:
 量子	jf
 眼下	jg
 时间	jh
-显然	ji
 祖先	jj
 时候	jk
 可能	jl
@@ -1446,7 +1445,7 @@ columns:
 日子	jr
 示威	js
 故意	jt
-卡片	ju
+显然	ju
 上面	jv
 明天	jw
 下降	jx
@@ -1584,6 +1583,7 @@ columns:
 差异	qp
 首先	qq
 身边	qs
+普通	qu
 前期	qw
 将来	qx
 羊毛	qy
@@ -1644,7 +1644,7 @@ columns:
 非法	uf
 置身	ug
 基础	uh
-虚拟	ui
+崇拜	ui
 桌面	uj
 乳头	uk
 战略	ul
@@ -1652,7 +1652,7 @@ columns:
 爬虫	uo
 其实	uq
 山西	us
-罪行	uu
+虚拟	uu
 期间	uw
 爱心	ux
 顾问	va
@@ -1885,7 +1885,7 @@ columns:
 毁	dpe
 谭	dpj
 皓	dpl
-谱	dqi
+谱	dqu
 谕	drf
 谍	dsa
 谎	dst
@@ -1995,11 +1995,12 @@ columns:
 撒	fsw
 捞	fsx
 扑	fub
-搬	fue
+亚	fue
 排	fuf
 揽	fug
 摆	fuh
 掉	fuj
+恶	fur
 揣	fus
 授	fux
 抓	fuz
@@ -2123,7 +2124,6 @@ columns:
 宪	ipw
 寝	iqb
 邃	iqt
-黻	iqu
 寞	isj
 寨	isk
 客	itl
@@ -2218,6 +2218,7 @@ columns:
 瞄	jsv
 璇	jtg
 珞	jtl
+卡	jub
 祯	juc
 玷	jul
 暖	jun
@@ -2312,7 +2313,6 @@ columns:
 嗜	lhn
 吐	lht
 咛	lij
-噗	liq
 巢	lja
 員	ljb
 贵	ljc
@@ -2330,13 +2330,12 @@ columns:
 呜	lmw
 咦	lob
 适	loc
-亚	lqk
 联	lqo
-恶	lqr
 聆	lrk
 喏	lse
 另	lsl
 啡	luf
+噗	luq
 喘	lus
 嚼	luu
 啰	lux
@@ -2507,7 +2506,6 @@ columns:
 蹁	phc
 甄	phr
 跎	pin
-蹼	piq
 颦	piv
 飘	pje
 醍	pjf
@@ -2525,6 +2523,7 @@ columns:
 功	psl
 牧	ptu
 牤	ptw
+蹼	puq
 踹	pus
 酌	pwk
 肯	pwy
@@ -2562,6 +2561,7 @@ columns:
 蚊	qte
 帅	quj
 瞥	quk
+盖	qum
 螈	qvd
 蛎	qvf
 鼻	qvl
@@ -2684,7 +2684,6 @@ columns:
 帙	ugo
 幡	ugq
 舴	ugu
-崇	uij
 峭	uiw
 岢	ujl
 遥	ujo
@@ -2695,14 +2694,16 @@ columns:
 嶂	ukj
 幢	ukv
 占	ulv
-鬣	ulw
 巍	umc
 崦	uod
 岂	uoj
 罾	uqj
+黻	uqu
 岭	urk
 虏	usl
 艨	usx
+觑	uuc
+罪	uuf
 罩	uuj
 盘	uum
 崽	uvr

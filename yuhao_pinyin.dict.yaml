@@ -30777,7 +30777,6 @@ columns:
 不得已	bu de yi	426
 不断发展	bu duan fa zhan	426
 不斷發展	bu duan fa zhan	426
-不斷髮展	bu duan fa zhan	426
 也快	ye kuai	426
 五星	wu xing	426
 代工	dai gong	426
@@ -31163,7 +31162,6 @@ columns:
 出什么	chu shen me	419
 出什麼	chu shen me	419
 出什麽	chu shen me	419
-匯豐	hui feng	419
 十屆	shi jie	419
 十届	shi jie	419
 单元格	dan yuan ge	419
@@ -35709,7 +35707,6 @@ columns:
 熄燈	xi deng	353
 猪八戒	zhu ba jie	353
 生長發育	sheng zhang fa yu	353
-生長髮育	sheng zhang fa yu	353
 生长发育	sheng zhang fa yu	353
 痉挛	jing luan	353
 痙攣	jing luan	353
@@ -60948,6 +60945,7 @@ columns:
 异类	yi lei	173
 张震岳	zhang zhen yue	173
 張震岳	zhang zhen yue	173
+張震嶽	zhang zhen yue	173
 彼此彼此	bi ci bi ci	173
 很弱	hen ruo	173
 很苦	hen ku	173
@@ -130894,7 +130892,6 @@ columns:
 匯川	hui chuan	0
 匯川區	hui chuan qu	0
 匯改	hui gai	0
-匯業	hui ye	0
 匯款人	hui kuan ren	0
 匯款單	hui kuan dan	0
 匯流	hui liu	0
@@ -151294,6 +151291,8 @@ columns:
 安岳	an yue	0
 安岳县	an yue xian	0
 安岳縣	an yue xian	0
+安嶽	an yue	0
+安嶽縣	an yue xian	0
 安平	an ping	0
 安平县	an ping xian	0
 安平縣	an ping xian	0
@@ -156459,6 +156458,15 @@ columns:
 嶺東	ling dong	0
 嶻	jie	0
 嶻	za	0
+嶽伯	yue bo	0
+嶽塘	yue tang	0
+嶽塘區	yue tang qu	0
+嶽州	yue zhou	0
+嶽普湖	yue pu hu	0
+嶽池	yue chi	0
+嶽池縣	yue chi xian	0
+嶽西	yue xi	0
+嶽西縣	yue xi xian	0
 嶽麓	yue lu	0
 嶽麓區	yue lu qu	0
 嶽麓山	yue lu shan	0
@@ -159655,6 +159663,7 @@ columns:
 廣寧縣	guang ning xian	0
 廣州中醫藥大學	guang zhou zhong yi yao da xue	0
 廣州恆大	guang zhou heng da	0
+廣州恒大	guang zhou heng da	0
 廣州的	guang zhou de	0
 廣州美術學院	guang zhou mei shu xue yuan	0
 廣州話	guang zhou hua	0
@@ -164068,8 +164077,11 @@ columns:
 恒湿	heng shi	0
 恒牙	heng ya	0
 恒生指数	heng sheng zhi shu	0
+恒生指數	heng sheng zhi shu	0
 恒生电子	heng sheng dian zi	0
+恒生銀行	heng sheng yin hang	0
 恒生银行	heng sheng yin hang	0
+恒生電子	heng sheng dian zi	0
 恒等	heng deng	0
 恕不	shu bu	0
 恕罪	shu zui	0
@@ -201246,6 +201258,7 @@ columns:
 王屋山	wang wu shan	0
 王岳伦	wang yue lun	0
 王岳倫	wang yue lun	0
+王嶽倫	wang yue lun	0
 王师	wang shi	0
 王師	wang shi	0
 王庄	wang zhuang	0
@@ -214251,7 +214264,9 @@ columns:
 精忠报国	jing zhong bao guo	0
 精忠柏	jing zhong bo	0
 精忠說岳傳	jing zhong shuo yue zhuan	0
+精忠說嶽傳	jing zhong shuo yue zhuan	0
 精忠説岳傳	jing zhong shuo yue zhuan	0
+精忠説嶽傳	jing zhong shuo yue zhuan	0
 精忠说岳传	jing zhong shuo yue zhuan	0
 精怪	jing guai	0
 精悍	jing han	0

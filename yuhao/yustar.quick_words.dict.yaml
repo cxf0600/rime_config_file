@@ -1,7 +1,7 @@
 # encoding: utf-8
 ---
 name: "yustar.quick_words"
-version: "20231226"
+version: "20240330"
 sort: original
 columns:
   - text
@@ -162,6 +162,7 @@ columns:
 当时	ib
 安排	ic
 室内	id
+實現	ie
 少年	ig
 火焰	ih
 实现	ii
@@ -170,7 +171,7 @@ columns:
 光芒	il
 动静	in
 头发	io
-業務	iq
+窮人	iq
 二者	ir
 家庭	it
 常常	iu
@@ -288,6 +289,7 @@ columns:
 差距	qp
 首次	qq
 蜂蜜	qt
+並且	qu
 鼻子	qv
 前面	qw
 将军	qx
@@ -320,7 +322,7 @@ columns:
 面子	sm
 边缘	so
 蘋果	sp
-葉子	ss
+華人	ss
 荒唐	st
 菜單	su
 萬能	sv
@@ -347,14 +349,14 @@ columns:
 長期	uc
 斯文	ud
 非常	uf
-虚假	ui
+崇尚	ui
 乳房	uk
 点燃	ul
 雞蛋	un
 其中	uq
 悲觀	ur
 處理	ut
-罪名	uu
+虚假	uu
 期待	uw
 受到	ux
 爪牙	uz

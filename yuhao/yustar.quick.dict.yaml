@@ -1,7 +1,7 @@
 # encoding: utf-8
 ---
 name: "yustar.quick"
-version: "20231226"
+version: "20240330"
 sort: original
 columns:
   - text
@@ -208,6 +208,7 @@ columns:
 当	ib
 安	ic
 室	id
+實	ie
 定	if
 少	ig
 火	ih
@@ -219,12 +220,12 @@ columns:
 动	in
 头	io
 空	ip
-業	iq
+窮	iq
 二	ir
 家	it
 常	iu
 察	iw
-邺	iy
+炀	iy
 果	ja
 现	jc
 礼	je
@@ -385,7 +386,7 @@ columns:
 息	qr
 身	qs
 蜂	qt
-幣	qu
+並	qu
 鼻	qv
 前	qw
 将	qx
@@ -428,7 +429,7 @@ columns:
 边	so
 蘋	sp
 蒋	sq
-葉	ss
+華	ss
 荒	st
 菜	su
 萬	sv
@@ -460,9 +461,8 @@ columns:
 彩	ua
 長	uc
 斯	ud
-般	ue
 非	uf
-虚	ui
+崇	ui
 乳	uk
 点	ul
 雞	un
@@ -471,7 +471,7 @@ columns:
 悲	ur
 山	us
 處	ut
-罪	uu
+虚	uu
 岸	uv
 期	uw
 受	ux
@@ -625,12 +625,13 @@ columns:
 峰	utd
 联	lqo
 珍	jrc
+亚	fue
 夢	sux
 试	dkp
 导	okc
 态	okr
 昨	jgu
-恶	lqr
+恶	fur
 羽	vvx
 担	fjf
 版	ddb
@@ -680,7 +681,6 @@ columns:
 闭	tkg
 督	jib
 玲	jrk
-崇	uij
 緩	oun
 艺	syi
 紹	oml
@@ -709,6 +709,7 @@ columns:
 猪	hhj
 昆	jnn
 贈	jqj
+帳	uuc
 輛	dfu
 掏	fwj
 飽	kwo
@@ -762,6 +763,7 @@ columns:
 荆	sfs
 賦	jfk
 旭	rjr
+沛	nfu
 瞒	jsf
 靖	khw
 鋭	tql
@@ -936,7 +938,6 @@ columns:
 礴	vsn
 毗	vnn
 粿	qja
-鬣	ulw
 觴	xsg
 貽	jnl
 辍	xbb
@@ -946,7 +947,7 @@ columns:
 胼	wqs
 犍	pba
 魈	diw
-黹	iqu
+黹	uqu
 饨	xxw
 疳	msi
 鋅	tkx
@@ -1001,7 +1002,7 @@ columns:
 鲵	xdw
 瘆	mno
 纮	ken
-蹼	piq
+蹼	puq
 酰	ppw
 禔	jjf
 褊	xhc
