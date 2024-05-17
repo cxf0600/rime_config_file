@@ -4,22 +4,22 @@ patch:
   #########################################################################################################
   #########################################    下方为个人设置：    #########################################
   #########################################################################################################
-  schema/name: 宇浩·星陈·简先  # 方案名
+  schema/name: 星陈·简先  # 方案名
   #-------------------------------------
   # 宏：#----------------
   #-------------------------------------
   yuhao_macro/macros/+:
     set:
       - { type: radio, names: [ yuhao_char_only, yuhao_char_first, cjk ], states: [ ☑☐☐只出常用字, ☐☑☐常用字前置, ☐☐☑全字集原排序 ] }
+      - { type: tip, name: ❖字符集选择 }
 
 
   #-------------------------------------
   # 默认状态设置：#----------------------
   #-------------------------------------
-  switches/@0/reset: 0 # [只出常用字, 常用字前置, 全字集原排序]
+  # switches/@0/reset: 0 # [只出常用字, 常用字前置, 全字集原排序]
   switches/@1/reset: 1 # [繁簡混頻, 簡體優先]
-  switches/@4/reset: 0 # [〇註解, 一重註解, 二重註解, 三重註解]
-  switches/@5/reset: 0 # [普通候選, 嵌入候選]
+  # switches/@4/reset: 0 # [〇註解, 一重註解, 二重註解, 三重註解]
 
   #-------------------------------------
   # 行为设置：#--------------------------
@@ -70,7 +70,7 @@ patch:
   #-------------------------------------
   # 外观设置：#--------------------------
   #-------------------------------------
-  style/color_scheme: dark_temple
+  # style/color_scheme: dark_temple
   #-------------------------------------
   # style/font_face : &font 楷体
   style/font_face : &font 霞鹜文楷等宽
@@ -95,21 +95,6 @@ patch:
   # style/vertical_text_left_to_right: true
   # style/vertical_text_with_wrap: false
 
-  # 候选窗布局，TSF模式：
-  style/layout/border: 1                            #  候选窗边框粗细；
-  style/layout/corner_radius: 17                    #  候选窗口等圆角显示
-  style/layout/candidate_spacing: 30                #  候选项间距；
-  style/layout/hilite_padding: 5                    #  候选项高亮边框；
-  style/layout/hilite_spacing: 2                    #  候选项与编号的间距；
-  style/layout/margin_x: 7                          #  候选窗宽；
-  style/layout/margin_y: 7                          #  候选窗高；
-  style/layout/min_height: 0                        #  候选窗最小高度；
-  style/layout/min_width: 75                        #  候选窗最小宽度；
-  style/layout/round_corner: 15                     #  高亮部分圆角；
-  style/layout/shadow_radius: 1
-  style/layout/shadow_offset_x: 1
-  style/layout/shadow_offset_y: 1
-  # style/layout/spacing: 16                        #  编码与候选间距；
 
   #-------------------------------------
   # 无候选窗模式：#----------------------
