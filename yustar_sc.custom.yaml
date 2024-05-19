@@ -17,9 +17,10 @@ patch:
   #-------------------------------------
   # 默认状态设置：#----------------------
   #-------------------------------------
-  # switches/@0/reset: 0 # [只出常用字, 常用字前置, 全字集原排序]
-  switches/@1/reset: 1 # [繁簡混頻, 簡體優先]
-  # switches/@4/reset: 0 # [〇註解, 一重註解, 二重註解, 三重註解]
+  switches/@0/reset: 0                        # [只出常用字, 常用字前置, 全字集原排序]
+  switches/@1/reset: 1                        # [繁簡混頻, 簡體優先]
+  # switches/@4/reset: 0                        # [〇註解, 一重註解, 二重註解, 三重註解]
+  # switches/@5/reset: 0                        # [輸入預測, 精確匹配]
 
   #-------------------------------------
   # 行为设置：#--------------------------
@@ -102,4 +103,5 @@ patch:
   # speller/auto_clear: max_length
   # translator/enable_completion: false
   # style/layout/margin_x: -10                        #  候选窗宽；
-  # switches/@5/reset: 1                              #  [普通候選, 嵌入候選]
+  # switches/@5/reset: 1                              #  [輸入預測, 精確匹配]
+  # switches/@6/reset: 1                              #  [普通候選, 嵌入候選]
