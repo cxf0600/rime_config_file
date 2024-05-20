@@ -9,21 +9,14 @@ patch:
   "app_options/windowsterminal.exe":
     ascii_mode: true  
   
-
-
-
-#未知功能：
-  # style/alpha: 1
-  # style/candidate_format: " %c %@ "
-
-#候选窗风格设置：
+# 候选窗风格设置：
 
   #-------------------------------------
   # 外观设置：#--------------------------
   #-------------------------------------
   # menu/page_size: 5
 
-  style/display_tray_icon: true                     #  任务栏显示“中”字标点；
+  # style/display_tray_icon: true                   #  任务栏显示“中”字标点；
   # style/fullscreen: true                          #  全屏候选窗；
   # style/layout/border: 1                          #  候选窗边框宽度；
   # style/layout/corner_radius: 5                   #  候选窗口等圆角显示
@@ -103,46 +96,46 @@ patch:
   #-------------------------------------
 
 # 竖排 天圆地方
-#   style/+:
-#     inline_preedit: true
-#     font_point: 15
-#     label_font_point: 13
-#     comment_font_point: 15
-#     horizontal: false
-#     layout:
-#       min_width: 160
-#       margin_x: 12
-#       margin_y: 2
-#       candidate_spacing: 2
-#       hilite_spacing: 6
-#       hilite_padding: 2
-#       hilite_padding_x: 12
-#       shadow_radius: 8
-#       corner_radius: 8
-#       shadow_offset_x: 5
-#       shadow_offset_y: 5
+  # style/+:
+  #   inline_preedit: true
+  #   font_point: 15
+  #   label_font_point: 13
+  #   comment_font_point: 15
+  #   horizontal: false
+  #   layout:
+  #     min_width: 160
+  #     margin_x: 12
+  #     margin_y: 2
+  #     candidate_spacing: 2
+  #     hilite_spacing: 6
+  #     hilite_padding: 2
+  #     hilite_padding_x: 12
+  #     shadow_radius: 8
+  #     corner_radius: 8
+  #     shadow_offset_x: 5
+  #     shadow_offset_y: 5
 
 # 横排 天圆地方
-#   style/+:
-#     label_format: "%s"
-#     inline_preedit: true
-#     font_point: 15
-#     label_font_point: 15
-#     comment_font_point: 14
-#     horizontal: true
-#     layout:
-#       max_width: 1200
-#       min_width: 10
-#       margin_x: 15
-#       margin_y: 6
-#       hilite_spacing: 6
-#       hilite_padding_y: 6
-#       hilite_padding_x: 15
-#       shadow_radius: 8
-#       corner_radius: 8
-#       round_corner: 8
-#       shadow_offset_x: 5
-#       shadow_offset_y: 5
+  # style/+:
+  #   label_format: "%s"
+  #   inline_preedit: true
+  #   font_point: 15
+  #   label_font_point: 15
+  #   comment_font_point: 14
+  #   horizontal: true
+  #   layout:
+  #     max_width: 1200
+  #     min_width: 10
+  #     margin_x: 15
+  #     margin_y: 6
+  #     hilite_spacing: 6
+  #     hilite_padding_y: 6
+  #     hilite_padding_x: 15
+  #     shadow_radius: 8
+  #     corner_radius: 8
+  #     round_corner: 8
+  #     shadow_offset_x: 5
+  #     shadow_offset_y: 5
 
 # Windows 11 风格
   style/+:
