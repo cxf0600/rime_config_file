@@ -1,7 +1,7 @@
 # encoding: utf-8
 ---
 name: "yustar.quick_words"
-version: "20240330"
+version: "20240522"
 sort: original
 columns:
   - text
@@ -52,7 +52,6 @@ columns:
 枕頭	ax
 杨柳	ay
 發展	bb
-屋頂	bd
 难道	be
 語言	bf
 書面	bh
@@ -181,7 +180,7 @@ columns:
 礼物	je
 量化	jf
 古城	jg
-時候	jh
+暑假	jh
 时候	jk
 可以	jl
 目前	jm
@@ -404,7 +403,6 @@ columns:
 色彩	xo
 轮胎	xr
 外面	xu
-顿时	xw
 陳述	ya
 陣容	yd
 随着	ye

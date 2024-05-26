@@ -1,15 +1,16 @@
 # encoding: utf-8
 #
 # 宇浩·星陈·陆简
-# 版本: 20240330
+# 版本: 20240522
 #
 ---
 name: "yustar_sc"
-version: "20240330"
+version: "20240522"
 sort: original
 import_tables:
   # - yuhao/yustar_sc.quick
   - yuhao/yustar.full
+  # # - yuhao/yustar.adjusted
   # - yuhao/yustar_sc.short
   # - yuhao/yuhao.private
   # - yuhao/yustar_sc.words

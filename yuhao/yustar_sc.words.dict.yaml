@@ -1,7 +1,7 @@
 # encoding: utf-8
 ---
 name: "yustar_sc.words"
-version: "20240330"
+version: "20240522"
 sort: original
 columns:
   - text
@@ -3877,7 +3877,7 @@ columns:
 户口	hhlv
 独立性	hkrp
 民主	oxkj
-逮捕	bnfn
+逮捕	bofn
 道具	qqjk
 容量	irjf
 东亚	xifu
@@ -8772,7 +8772,7 @@ columns:
 无从	ffrr
 北极	qnag
 无情	ffrh
-隶属	bnbg
+隶属	bdbg
 吉祥物	hjpw
 不谋而合	vdsr
 黑幕	ghsj
@@ -11639,7 +11639,7 @@ columns:
 悬空	jnip
 红叶	kplg
 充血	angu
-奴隶	cbbn
+奴隶	cbbd
 抚慰	ffbj
 用处	sytu
 五星红旗	fjkt
@@ -31249,7 +31249,7 @@ columns:
 中统	luka
 继承权	kyab
 刁蛮	yftq
-逮住	bnek
+逮住	boek
 无从下手	frjf
 健美操	eqfl
 刺青	achw
@@ -37858,7 +37858,7 @@ columns:
 新婚燕尔	kcsx
 平白	nqdb
 云泥之别	inol
-隶书	bnyy
+隶书	bdyy
 樟木	akam
 山根	usag
 藤条	swta
@@ -50346,7 +50346,7 @@ columns:
 功放	pstt
 写就	xhai
 时文	jkte
-逮到	bndm
+逮到	bodm
 延寿	gpdk
 玩完	jfif
 龙年	fgga
@@ -55144,7 +55144,7 @@ columns:
 如梭	clan
 雄飞	enyi
 长亲	ncka
-直隶	gjbn
+直隶	gjbd
 技压群雄	fvbe
 长诗	ncdh
 外径	xucb
@@ -70160,7 +70160,7 @@ columns:
 胚层	wvbi
 眼快	jgrb
 空论	ipdr
-皂隶	dxbn
+皂隶	dxbd
 细叶	kvlg
 韵白	kjdb
 架站	slku
@@ -77148,7 +77148,7 @@ columns:
 梦兆	aawi
 去磁	hnvq
 每常	geiu
-隶卒	bnar
+隶卒	bdar
 衰替	afoo
 锌白	okdb
 村塾	akak
@@ -77281,7 +77281,7 @@ columns:
 年尊	gaqp
 翻用	gqsy
 栖宿	apie
-隶字	bnik
+隶字	bdik
 村妓	akcg
 轻悄	xbri
 冬汛	tiny
@@ -79307,6 +79307,7 @@ columns:
 刘建	tmba
 监区	ughs
 李宇	akif
+计画	dgfv
 陈忠	yxlu
 排产	fukg
 马币	bmgu
@@ -79895,6 +79896,7 @@ columns:
 泰阳	onyj
 车兜	xjdk
 浸提	nbfj
+策画	gafv
 发蔫	wbsf
 鼻癌	qvml
 键能	obnw
@@ -80222,6 +80224,7 @@ columns:
 透映	mgjc
 索欠	gxxq
 顿释	xwgq
+谋画	dsfv
 叶缝	lgkt
 橱架	avsl
 坟顶	htjv

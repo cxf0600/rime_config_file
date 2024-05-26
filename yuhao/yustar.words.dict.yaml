@@ -1,7 +1,7 @@
 # encoding: utf-8
 ---
 name: "yustar.words"
-version: "20240330"
+version: "20240522"
 sort: original
 columns:
   - text
@@ -115,6 +115,7 @@ columns:
 隨著	yesh
 工作	pgeg
 計劃	bgbh
+計畫	bgbh
 计划	dgkm
 希望	setw
 活動	nlmv
@@ -6348,7 +6349,7 @@ columns:
 獨立性	hkrp
 独立性	hkrp
 民主	oxkj
-逮捕	bnfn
+逮捕	bofn
 道具	qqjk
 容量	irjf
 東亞	ajfk
@@ -8646,9 +8647,9 @@ columns:
 呵护	ljfh
 頂部	jvkl
 顶部	jvkl
+抬頭	fnfl
 擡頭	fhfl
 抬头	fnio
-抬頭	fnfl
 念頭	rkfl
 念头	rkio
 儼然	elwh
@@ -8826,8 +8827,8 @@ columns:
 躱避	qgbl
 躲避	qebl
 迷人	qore
-擡高	fhag
 抬高	fnag
+擡高	fhag
 物體	pwrc
 物体	pwea
 溫泉	nwdn
@@ -14362,7 +14363,7 @@ columns:
 無情	gsrh
 无情	ffrh
 隸屬	ajbn
-隶属	bnbg
+隶属	bdbg
 吉祥物	hjpw
 不謀而合	vbsr
 不谋而合	vdsr
@@ -19097,7 +19098,7 @@ columns:
 红叶	kplg
 充血	angu
 奴隸	cbaj
-奴隶	cbbn
+奴隶	cbbd
 撫慰	fgbj
 抚慰	ffbj
 用處	syut
@@ -29237,8 +29238,8 @@ columns:
 如饥似渴	cxen
 叫苦連天	lsdf
 叫苦连天	lsxf
-兼收并蓄	qwqs
 兼收並蓄	qwqs
+兼收并蓄	qwqs
 刨根問底	wadm
 刨根问底	watm
 風雲際會	ecyr
@@ -29640,9 +29641,9 @@ columns:
 談天説地	bfbh
 谈天说地	dfdh
 談天說地	bfbh
+高抬貴手	aflf
 高擡貴手	aflf
 高抬贵手	aflf
-高抬貴手	aflf
 草草了事	sskk
 美滋滋	qnnq
 槐樹	adah
@@ -32016,9 +32017,9 @@ columns:
 滾熱	nahk
 漆黑一團	ngfw
 漆黑一团	ngfw
+不識抬舉	vbfd
 不識擡舉	vbfd
 不识抬举	vdfn
-不識抬舉	vbfd
 理屈詞窮	jbbi
 理屈词穷	jbdi
 天誅地滅	fbhn
@@ -38711,8 +38712,8 @@ columns:
 组织部	kkkl
 漸趨	ndhw
 渐趋	nxhx
-擡起	fhho
 抬起	fnho
+擡起	fhho
 出入境	wkhk
 死因	fxwo
 議決	bqnb
@@ -51965,7 +51966,7 @@ columns:
 继承权	kyab
 刁蠻	yfbo
 刁蛮	yftq
-逮住	bnek
+逮住	boek
 無從下手	gcjf
 无从下手	frjf
 健美操	eqfl
@@ -61336,9 +61337,9 @@ columns:
 笔筒	gmgc
 木橋	amam
 木桥	amam
+抬舉	fndh
 擡舉	fhdh
 抬举	fnnk
-抬舉	fndh
 廢黜	mbgw
 废黜	mwgw
 輓歌	dxjl
@@ -62367,8 +62368,8 @@ columns:
 筋斗	gwig
 就義	aiqg
 就义	aiks
-兼容并包	qiqw
 兼容並包	qiqw
+兼容并包	qiqw
 套筒	ougc
 歉收	qbwt
 雷池	cvno
@@ -62834,7 +62835,7 @@ columns:
 云泥之别	inol
 雲泥之別	cnol
 隸書	ajbh
-隶书	bnyy
+隶书	bdyy
 樟木	akam
 山根	usag
 藤條	sweu
@@ -74463,8 +74464,8 @@ columns:
 爲題	ugjf
 为题	ksjf
 為題	kgjf
-擡升	fhgs
 抬升	fngs
+擡升	fhgs
 夜店	aemu
 三叉戟	lbgj
 人壽	rehy
@@ -83027,8 +83028,8 @@ columns:
 輸錢	drtk
 输钱	xrof
 味美	lfqo
-擡腿	fhwg
 抬腿	fnwg
+擡腿	fhwg
 哪是	lyjf
 板球	adjf
 非比尋常	unbi
@@ -83674,7 +83675,7 @@ columns:
 写就	xhai
 時文	jhte
 时文	jkte
-逮到	bndm
+逮到	bodm
 延壽	gphy
 延寿	gpdk
 玩完	jfif
@@ -85073,9 +85074,9 @@ columns:
 飞起	yiho
 控件	fiep
 粗粗	qjqj
+抬腳	fnwk
 擡腳	fhwk
 抬脚	fnwh
-抬腳	fnwk
 米醋	qmps
 求診	fnbr
 求诊	fndr
@@ -86879,9 +86880,9 @@ columns:
 刘秀	tmmg
 離鄉	twkg
 离乡	twkg
+抬轎	fndm
 擡轎	fhdm
 抬轿	fnxm
-抬轎	fndm
 娘娘腔	ccwi
 判讀	qabh
 判读	qadg
@@ -87587,8 +87588,8 @@ columns:
 掌纹	ifkt
 俠侶	eoel
 侠侣	eoel
-擡眼	fhjg
 抬眼	fnjg
+擡眼	fhjg
 總支	odgb
 总支	qlgb
 財源滚滚	jnnn
@@ -91600,7 +91601,7 @@ columns:
 長親	ucka
 长亲	ncka
 直隸	gjaj
-直隶	gjbn
+直隶	gjbd
 技壓群雄	fvbe
 技压群雄	fvbe
 長詩	ucbh
@@ -93118,8 +93119,8 @@ columns:
 汽船	ngue
 怎敢	guyl
 擦痕	fimg
-皁角	dgxs
 皂角	dxxs
+皁角	dgxs
 雁陣	veyd
 雁阵	veyx
 三跪九叩	lprl
@@ -97378,9 +97379,9 @@ columns:
 诗赋	dhcf
 血吸蟲	glqq
 血吸虫	glqc
+八抬大轎	kfod
 八擡大轎	kfod
 八抬大轿	kfox
-八抬大轎	kfod
 初伏	xmeh
 流麗	nafc
 流丽	nafc
@@ -97805,9 +97806,9 @@ columns:
 甥女	pvcn
 冷霜	irca
 皮筏	bpge
+抬愛	fnux
 擡愛	fhux
 抬爱	fnux
-抬愛	fnux
 魔怔	mdrf
 硬脂	vfwn
 書脊	bhii
@@ -108495,8 +108496,8 @@ columns:
 出摊	wwfb
 鴨血	vdgu
 鸭血	vmgu
-高擡	agfh
 高抬	agfn
+高擡	agfh
 咬過	laro
 咬过	lako
 溫服	nwwa
@@ -116582,7 +116583,7 @@ columns:
 空論	ipbr
 空论	ipdr
 皁隸	dgaj
-皂隶	dxbn
+皂隶	dxbd
 皂隸	dxaj
 細葉	ovss
 细叶	kvlg
@@ -124297,9 +124298,9 @@ columns:
 叫真	lwgj
 夾板氣	oagq
 夹板气	oagq
+低頭不見抬頭見	efvj
 低頭不見擡頭見	efvj
 低头不见抬头见	eivc
-低頭不見抬頭見	efvj
 踢腳線	pwod
 踢脚线	pwkf
 殺去	sahn
@@ -126962,8 +126963,8 @@ columns:
 浮升	nugs
 脉石	wkvs
 脈石	wdvs
-擡扛	fhfp
 抬扛	fnfp
+擡扛	fhfp
 押尾	fvbm
 炕牀	iada
 炕床	iama
@@ -128269,7 +128270,7 @@ columns:
 去磁	hnvq
 每常	geiu
 隸卒	ajar
-隶卒	bnar
+隶卒	bdar
 衰替	afoo
 鋅白	tkdb
 锌白	okdb
@@ -128490,7 +128491,7 @@ columns:
 棲宿	agie
 栖宿	apie
 隸字	ajik
-隶字	bnik
+隶字	bdik
 村妓	akcg
 輕悄	dfri
 轻悄	xbri
@@ -130961,8 +130962,8 @@ columns:
 林阴	aayw
 撫背	fgqn
 抚背	ffqn
-擡步	fhpi
 抬步	fnpi
+擡步	fhpi
 俏媚	eicb
 謁拜	bjff
 谒拜	djff
@@ -131975,6 +131976,7 @@ columns:
 監區	hghl
 监区	ughs
 李宇	akif
+计画	dgfv
 陳忠	yalu
 陈忠	yxlu
 排産	fukg
@@ -132925,6 +132927,8 @@ columns:
 車兜	dcdk
 车兜	xjdk
 浸提	nbfj
+策畫	gabh
+策画	gafv
 發蔫	bbsf
 发蔫	wbsf
 鼻癌	qvml
@@ -133460,6 +133464,8 @@ columns:
 索欠	gxxq
 頓釋	xwgq
 顿释	xwgq
+謀畫	bsbh
+谋画	dsfv
 葉縫	ssot
 叶缝	lgkt
 櫥架	amsl

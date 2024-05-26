@@ -8,8 +8,9 @@
 
 ---
 name: "yuhao_pinyin"
-version: "20230418"
+version: "20240516"
 sort: by_weight
+vocabulary: yuhao.essay
 columns:
   - text
   - code
@@ -5867,12 +5868,10 @@ columns:
 但在	dan zai	3233
 佩服	pei fu	3233
 彙報	hui bao	3233
-榮	ce	3233
 榮	rong	3233
 汇报	hui bao	3233
 牙	ya	3233
 舞	wu	3233
-荣	ce	3233
 荣	rong	3233
 轉讓	zhuan rang	3233
 转让	zhuan rang	3233
@@ -30777,6 +30776,7 @@ columns:
 不得已	bu de yi	426
 不断发展	bu duan fa zhan	426
 不斷發展	bu duan fa zhan	426
+不斷髮展	bu duan fa zhan	426
 也快	ye kuai	426
 五星	wu xing	426
 代工	dai gong	426
@@ -31162,6 +31162,7 @@ columns:
 出什么	chu shen me	419
 出什麼	chu shen me	419
 出什麽	chu shen me	419
+匯豐	hui feng	419
 十屆	shi jie	419
 十届	shi jie	419
 单元格	dan yuan ge	419
@@ -35707,6 +35708,7 @@ columns:
 熄燈	xi deng	353
 猪八戒	zhu ba jie	353
 生長發育	sheng zhang fa yu	353
+生長髮育	sheng zhang fa yu	353
 生长发育	sheng zhang fa yu	353
 痉挛	jing luan	353
 痙攣	jing luan	353
@@ -130892,6 +130894,7 @@ columns:
 匯川	hui chuan	0
 匯川區	hui chuan qu	0
 匯改	hui gai	0
+匯業	hui ye	0
 匯款人	hui kuan ren	0
 匯款單	hui kuan dan	0
 匯流	hui liu	0
@@ -159663,7 +159666,6 @@ columns:
 廣寧縣	guang ning xian	0
 廣州中醫藥大學	guang zhou zhong yi yao da xue	0
 廣州恆大	guang zhou heng da	0
-廣州恒大	guang zhou heng da	0
 廣州的	guang zhou de	0
 廣州美術學院	guang zhou mei shu xue yuan	0
 廣州話	guang zhou hua	0
@@ -164077,11 +164079,8 @@ columns:
 恒湿	heng shi	0
 恒牙	heng ya	0
 恒生指数	heng sheng zhi shu	0
-恒生指數	heng sheng zhi shu	0
 恒生电子	heng sheng dian zi	0
-恒生銀行	heng sheng yin hang	0
 恒生银行	heng sheng yin hang	0
-恒生電子	heng sheng dian zi	0
 恒等	heng deng	0
 恕不	shu bu	0
 恕罪	shu zui	0
