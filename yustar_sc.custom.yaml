@@ -88,7 +88,7 @@ patch:
   style/horizontal: true                            #  候选窗横排设置；
   style/inline_preedit: true                        #  TSF模式下嵌入式编码；
   # style/label_format: "%s"                        #  候选数字样式设置；
-  style/preedit_type: input
+  style/preedit_type: preview
   #    ⇧设置输入码内嵌模式：
   #      composition  ——嵌入编码；
   #      input        ——嵌入输入码；
