@@ -1,7 +1,7 @@
 # encoding: utf-8
 ---
 name: "yustar_tc.words"
-version: "20240522"
+version: "20240619"
 sort: original
 columns:
   - text
@@ -64248,6 +64248,7 @@ columns:
 網聊	oclk
 原系	vdgo
 通稿	bsma
+戾氣	hhgq
 對看	uqfj
 房號	htlh
 佘山	rjus
@@ -80009,6 +80010,7 @@ columns:
 於鋭	trtq
 物景	pwja
 遁隱	dgyu
+上巳	jvos
 雀聖	iell
 耳蟎	leqs
 箭袋	gqek
@@ -84694,10 +84696,10 @@ columns:
 體育	rcxk
 開啟	dfdl
 流量	nxjf
-差距	qgph
 熱點	hwgu
 形勢	fshw
 最佳	cieh
+贏得	tlcj
 最為	cikg
 房子	dtkz
 汙染	nfnr
@@ -84724,7 +84726,6 @@ columns:
 房產	dttv
 最好	cick
 編號	odlh
-差異	qgvs
 培育	hkxk
 勢頭	hwfl
 科學	miss
@@ -84768,7 +84769,6 @@ columns:
 著力	shsl
 普及	qugy
 興趣	cfhl
-差額	qgit
 夫妻	offb
 吃飯	lgkv
 危害	xvih
@@ -84822,7 +84822,6 @@ columns:
 學院	ssyi
 而今	srrf
 全民	kjox
-差別	qglw
 編劇	odut
 一舉	fihg
 跟著	pgsh
@@ -84853,7 +84852,6 @@ columns:
 村裡	akxv
 白領	dbrf
 反思	vbvr
-相差	ajqg
 流行	nxci
 紀念	oorf
 攻勢	pthw
@@ -84877,6 +84875,7 @@ columns:
 流傳	nxed
 留學生	ksps
 客流	itnx
+罕見	xwjj
 全身	kjqs
 中華	lusf
 偏向	eddx
@@ -84949,7 +84948,6 @@ columns:
 最先	cipw
 全力以赴	kseh
 領隊	rfyq
-差價	qgep
 視覺	jjss
 僱員	edlj
 偏離	edtw
@@ -84959,7 +84957,6 @@ columns:
 分解	kmxw
 加熱	slhw
 全都	kjhj
-差點	qggu
 最小	ciiv
 舉例	hgef
 厲害	vsih
@@ -84987,13 +84984,12 @@ columns:
 最少	ciig
 統治	oxnn
 房東	dtaj
-差錯	qgts
+贏家	tlit
 聲譽	hbhg
 一流	finx
 學位	ssek
 眼淚	jgnd
 念頭	rffl
-出差	wwqg
 災害	liih
 往返	ckvb
 重創	mvrf
@@ -85049,7 +85045,7 @@ columns:
 數學	lgss
 忙碌	rtve
 貪汙	rfnf
-偏差	edqg
+偏差	edqp
 流水	nxns
 現今	jjrf
 編寫	odid
@@ -85117,12 +85113,10 @@ columns:
 流感	nxkf
 反攻	vbpt
 撤退	fxgo
-落差	snqg
 危及	xvgy
 義務教育	qkhx
 竊聽	iglm
 反感	vbkf
-誤差	blqg
 方便麵	teat
 不解	vuxw
 淚水	ndns
@@ -85160,7 +85154,6 @@ columns:
 廢棄	mbxk
 插入	fnkr
 司令	yfrf
-逆差	qwqg
 華僑	sfem
 編造	odpl
 諒解	baxw
@@ -85185,13 +85178,14 @@ columns:
 竭盡全力	kbks
 滋養	nqqk
 統統	oxox
+輸贏	drtl
 辯解	kbxw
 死角	fxxw
 來不及	avgy
 悼念	rurf
 舉足輕重	hpdm
 外流	xunx
-反差	vbqg
+反差	vbqp
 血統	guox
 全景	kjja
 名譽	xlhg
@@ -85329,7 +85323,6 @@ columns:
 機房	andt
 慢性	rcrp
 減慢	nkrc
-時差	jhqg
 機床	anma
 供養	esqk
 表象	hgxj
@@ -85461,7 +85454,6 @@ columns:
 諸葛亮	bsaw
 偏僻	edeb
 反光	vbil
-溫差	nwqg
 房客	dtit
 牆角	dhxw
 遣返	ljvb
@@ -85640,6 +85632,7 @@ columns:
 怠慢	nlrc
 哲學家	fsit
 意念	kjrf
+稀罕	msxw
 養女	qkcn
 累贅	voht
 學識	ssbk
@@ -85719,7 +85712,6 @@ columns:
 流放	nxtt
 熱風	hwef
 憲章	ihkj
-差勁	qgfl
 兩全其美	fkuq
 蟲害	qqih
 雜念	arrf
@@ -85767,7 +85759,6 @@ columns:
 鳥瞰	dnjj
 偏心	edri
 無所顧忌	gddo
-差事	qgkl
 哄騙	lswd
 淚眼	ndjg
 聽講	lmbs
@@ -85801,7 +85792,6 @@ columns:
 覺察	ssiw
 學派	ssnd
 詩篇	bhgd
-參差	nnqg
 養料	qkqi
 隨大流	yonx
 文武雙全	tfek
@@ -85822,7 +85812,6 @@ columns:
 患難與共	lshs
 裡應外合	xmxr
 利害	mmih
-郵差	msqg
 濫竽充數	ngxl
 藏汙納垢	snoh
 流沙	nxni
@@ -85849,7 +85838,6 @@ columns:
 興師動眾	cdmu
 拐騙	flwd
 多此一舉	xpfh
-交差	akqg
 摩肩接踵	mdfp
 委曲求全	mcfk
 急流	xbnx
@@ -86062,7 +86050,6 @@ columns:
 感興趣	kchl
 頹勢	mwhw
 曼德拉	ccfk
-較差	daqg
 扳回	fvwl
 反觀	vbsl
 與否	hgvl
@@ -86077,18 +86064,18 @@ columns:
 艦船	uhuw
 前妻	qwfb
 一角	fixw
-最差	ciqg
+最差	ciqp
 等著	ghsh
 華碩	sfvv
 領軍	rfxd
 環境汙染	jhnn
+雙贏	eetl
 最不	civu
 華商	sfaq
 舉債	hgeh
 亟待	hlch
 盯著	jjsh
 最難	cisf
-順差	lvqg
 領到	rfdm
 排汙	funf
 惠及	drgy
@@ -86140,6 +86127,7 @@ columns:
 房主	dtkj
 現如今	jcrf
 化學反應	esvm
+贏取	tllb
 正版	fpdv
 插件	fnep
 散熱	swhw
@@ -86158,7 +86146,6 @@ columns:
 顧全	dekj
 活著	nlsh
 京滬	aind
-很差	cgqg
 向著	dxsh
 較慢	darc
 華語	sfbf
@@ -86215,6 +86202,7 @@ columns:
 肩上	dwjv
 最怕	cird
 熱賣	hwhu
+打贏	fjtl
 船廠	uwmi
 學界	ssvr
 當著	ivsh
@@ -86287,6 +86275,7 @@ columns:
 醫學院	hsyi
 全數	kjlg
 助學	jsss
+贏利	tlmm
 就學	aiss
 房管	dtgi
 市裡	auxv
@@ -86402,6 +86391,7 @@ columns:
 畢加索	vsgx
 遊學	tgss
 攪亂	fsub
+羸弱	tlbi
 糾偏	owed
 溫熱	nwhw
 反悔	vbrg
@@ -86413,7 +86403,6 @@ columns:
 蹦床	puma
 騙錢	wdtk
 唱主角	lkxw
-時間差	jdqg
 洩憤	ndrg
 誰敢	bejl
 油汙	ndnf
@@ -86442,7 +86431,7 @@ columns:
 稜角	mhxw
 社會科學	jrms
 無功而返	gpsv
-極差	ahqg
+極差	ahqp
 編髮	odue
 翻領	gqrf
 即興	bncf
@@ -86715,7 +86704,6 @@ columns:
 偏轉	eddd
 底板	mkav
 斷流	nnnx
-級差	ogqg
 安全帽	ikuc
 明令	jwrf
 背棄	qnxk
@@ -86737,7 +86725,6 @@ columns:
 高攀	agss
 領結	rfoh
 冷麵	irat
-色差	xoqg
 丹參	wann
 滑雪板	ncav
 截流	gknx
@@ -87069,7 +87056,6 @@ columns:
 風勢	efhw
 板報	avhq
 中飯	lukv
-差池	qgno
 車床	dcma
 船工	uwpg
 車轍	dcdx
@@ -87129,7 +87115,6 @@ columns:
 初版	xmdv
 解乏	xwgo
 施與	tghg
-開小差	diqg
 豁口	ihlv
 鋥亮	tlaw
 豢養	qoqk
@@ -87211,7 +87196,6 @@ columns:
 插班	fnjq
 龜甲	xdvj
 不敢苟同	vjsc
-視差	jjqg
 鬱郁	jaew
 行船	ciuw
 學社	ssjh
@@ -87266,14 +87250,12 @@ columns:
 遠房	hldt
 人棄我取	rxgl
 班房	jqdt
-公差	knqg
 邯鄲學步	slsp
 即令	bnrf
 舉步	hgpi
 全盛	kjky
 同床共枕	cmsa
 悽苦	rfsj
-美差	qoqg
 產床	tvma
 晶亮	jjaw
 著筆	shgb
@@ -87352,7 +87334,6 @@ columns:
 患難夫妻	lsof
 頷首	rfqq
 物象	pwxj
-差遣	qglj
 鋪床	tnma
 栓劑	akaq
 解囊	xwgl
@@ -87376,11 +87357,9 @@ columns:
 銳角	tkxw
 除害	yrih
 招領	fmrf
-差使	qgef
 融解	flxw
 飯桶	kvab
 熱鍵	hwtb
-當差	ivqg
 人丁興旺	rjcj
 白熱	dbhw
 餘興	krcf
@@ -87430,7 +87409,6 @@ columns:
 與虎謀皮	hubb
 沸反盈天	nvgf
 悽楚	rfaa
-欽差	txqg
 庸碌	mbve
 撤防	fxyt
 女流	cnnx
@@ -87531,7 +87509,6 @@ columns:
 夙興夜寐	ecai
 吃裡爬外	lxux
 耶和華	lmsf
-差役	qgce
 鄙棄	lgxk
 害病	ihmf
 結髮夫妻	ouof
@@ -87546,7 +87523,6 @@ columns:
 敵害	aqih
 吃閒飯	ldkv
 曲裡拐彎	cxfb
-官差	ibqg
 瘟病	mwmf
 板壁	avbl
 貪贓	rfjk
@@ -87586,6 +87562,7 @@ columns:
 與之	hgoz
 買房	ujdt
 熱議	hwbq
+贏球	tljf
 反超	vbhm
 房源	dtnv
 拿著	rfsh
@@ -87604,9 +87581,9 @@ columns:
 短板	jfav
 與此	hgpn
 訪華	btsf
-價差	epqg
 汙染物	nnpw
 反壟斷	vknn
+共贏	sktl
 感覺到	ksdm
 長三角	ulxw
 亂象	ubxj
@@ -87615,12 +87592,12 @@ columns:
 再創	fcrf
 戴著	gksh
 全過程	krml
+贏了	tlke
 被騙	xbwd
 為最	kgci
 全美	kjqo
 打著	fjsh
 漲停板	neav
-利差	mmqg
 逆勢	qwhw
 最大化	coen
 之舉	ozhg
@@ -87692,10 +87669,8 @@ columns:
 學霸	sscs
 全裸	kjxj
 養眼	qkjg
-之差	ozqg
 極佳	aheh
 做著	ejsh
-太差	okqg
 哈佛大學	leos
 起著	hosh
 不完全	vikj
@@ -87770,7 +87745,6 @@ columns:
 棄用	xksy
 握著	fbsh
 正式版	fkdv
-差值	qgeg
 包養	woqk
 便與	efhg
 版型	dvfs
@@ -87780,7 +87754,6 @@ columns:
 極有	ahew
 吃著	lgsh
 藏獒	skht
-差評	qgbn
 泡麵	nwat
 伴著	eqsh
 追著	dosh
@@ -87807,7 +87780,6 @@ columns:
 觸到	xwdm
 太慢	okrc
 太倉	okrf
-不差	vuqg
 騙走	wdhz
 等角	ghxw
 華納	sfoc
@@ -87832,7 +87804,6 @@ columns:
 違憲	boih
 滿倉	nsrf
 最輕	cidf
-更差	fjqg
 右肩	eldw
 試聽	bklm
 最弱	cibi
@@ -87846,7 +87817,6 @@ columns:
 忍著	mksh
 同濟大學	cnos
 往裡	ckxv
-差旅	qgtg
 今秋	rfmi
 今明	rfjw
 摸不著頭腦	fvsw
@@ -87938,7 +87908,6 @@ columns:
 填充物	hxpw
 南華	gcsf
 反美	vbqo
-稍差	miqg
 國防大學	wyos
 全院	kjyi
 洩洪	ndns
@@ -87949,9 +87918,7 @@ columns:
 象山	xjus
 圈養	wqqk
 斬倉	ddrf
-髒亂差	ruqg
 揣著	fush
-補差	xnqg
 排洩物	fnpw
 想聽	ajlm
 散養	swqk
@@ -87961,6 +87928,7 @@ columns:
 流進	nxeo
 全攻略	kpvt
 雨勢	cvhw
+罕有	xwew
 找對象	fuxj
 解酒	xwnp
 反戈	vbkg
@@ -88043,7 +88011,6 @@ columns:
 害得	ihcj
 梁啟超	ndhm
 金領	tjrf
-等差	ghqg
 反身	vbqs
 正反面	fvsm
 暨南大學	bgos
@@ -88154,6 +88121,7 @@ columns:
 極多	ahxx
 一覺	fiss
 數學系	lsgo
+贏錢	tltk
 板卡	avju
 學完	ssif
 家學	itss
@@ -88194,9 +88162,7 @@ columns:
 量販	jfjv
 編出	odww
 充好	xkck
-差生	qgps
 桀驁	xaht
-方差	tfqg
 流變	nxbo
 駐滬	wknd
 及於	gytr
@@ -88340,6 +88306,7 @@ columns:
 試用版	bsdv
 停學	eass
 土庫曼	hmci
+嬴政	tlfp
 呈請	lmbh
 勤工助學	spjs
 軟飯	dxkv
@@ -88351,7 +88318,6 @@ columns:
 天極	foah
 冬令	tirf
 解鬱	xwja
-差可	qgjl
 活學活用	nsns
 盛舉	kyhg
 龜殼	xdhf
@@ -88493,7 +88459,6 @@ columns:
 通解	bsxw
 壓板	vjav
 割線	ihod
-苦差	sjqg
 編內	odck
 遊興	tgcf
 釉料	uaqi
@@ -88502,7 +88467,6 @@ columns:
 剷土	tvht
 積鬱	mhja
 情人眼裡出西施	rrjt
-肥差	woqg
 鐵床	tgma
 糟糠之妻	qqof
 反誣	vbbp
@@ -88526,7 +88490,6 @@ columns:
 嘰裡呱啦	lxll
 化學鍵	estb
 船幫	uwhh
-兼差	qbqg
 漫說	ncbk
 反間計	vdbg
 流氣	nxgq
@@ -88577,6 +88540,7 @@ columns:
 解衣	xwag
 苗床	svma
 悽惶	rfrd
+納罕	ocxw
 俗諺	ekbt
 彩釉	uaua
 畜養	anqk
@@ -88702,7 +88666,6 @@ columns:
 體念	rcrf
 皇統	djox
 呼扇	lgdv
-差誤	qgbl
 靈床	clma
 汙七八糟	nxkq
 興利除害	cmyi
@@ -88716,6 +88679,7 @@ columns:
 苟全性命	skrr
 交口稱譽	almh
 裡出外進	xwxe
+罕聞	xwdl
 洩勁	ndfl
 合轍	rhdx
 令堂	rfih
@@ -88799,7 +88763,6 @@ columns:
 逼著	flsh
 住著	eksh
 截然相反	gwav
-變差	boqg
 婚房	ckdt
 養了	qkke
 摸著石頭過河	fsvn
@@ -88885,11 +88848,11 @@ columns:
 興寧	cfir
 萊曼	saci
 拴在	fkeu
+戾氣	dhgq
 房號	dtlh
 又熱	bohw
 瞪著	jbsh
 統招	oxfm
-略差	vtqg
 單肩	lldw
 護著	bssh
 號房	lhdt
@@ -89390,7 +89353,6 @@ columns:
 善與人交	qhra
 不敢高攀	vjas
 超群出眾	hbwu
-專差	dkqg
 東床快婿	amrc
 拴縛	fkon
 龜鑑	xdth
@@ -89423,11 +89385,11 @@ columns:
 妖由人興	cdrc
 領漲	rfnb
 熱刺	hwac
-分差	kmqg
 全智賢	kjhb
 搜房	fddt
 臨著	hgsh
 熱映	hwjc
+連贏	dotl
 全服	kjwa
 體育部	rxkl
 返現	vbjj
@@ -89577,7 +89539,6 @@ columns:
 慢嚥	rcls
 船名	uwxl
 累著	vosh
-差數	qglg
 領款	rfhj
 大簷帽	oguc
 流播	nxfg
@@ -89599,7 +89560,6 @@ columns:
 掛角	fhxw
 間接選舉	dfoh
 船籍	uwgd
-差動	qgmv
 王顧左右而言他	jdee
 臥著	hrsh
 偏失	edgo
@@ -89845,6 +89805,7 @@ columns:
 超慢	hmrc
 四篇	wwgd
 標著	apsh
+躺贏	qitl
 領旨	rfnj
 朝裡無人莫做官	gxgi
 多措並舉	xfqh

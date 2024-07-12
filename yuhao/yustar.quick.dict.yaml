@@ -1,7 +1,7 @@
 # encoding: utf-8
 ---
 name: "yustar.quick"
-version: "20240522"
+version: "20240619"
 sort: original
 columns:
   - text
@@ -625,7 +625,6 @@ columns:
 雲	cin
 术	akd
 束	alv
-換	fxc
 狗	hwl
 峰	utd
 硬	vfj
@@ -651,6 +650,7 @@ columns:
 较	xak
 遭	sjj
 零	crk
+换	fxc
 貌	mdw
 鬆	uak
 滚	nak
@@ -734,7 +734,6 @@ columns:
 廚	mhk
 菊	swq
 辣	kal
-唤	lxc
 疊	vvv
 裸	xja
 岂	uoj
@@ -825,7 +824,6 @@ columns:
 蜘	qjl
 璋	jkj
 苟	swl
-煥	ixc
 岭	urk
 嚣	llv
 賄	jew
@@ -917,7 +915,6 @@ columns:
 沓	njr
 犄	poj
 褶	xvv
-瘓	mxc
 繆	ovv
 鯊	nig
 祯	juc
@@ -961,7 +958,6 @@ columns:
 罈	jpj
 蠣	qvs
 鞦	smi
-涣	nxc
 洄	nwl
 谙	dkj
 琰	jii

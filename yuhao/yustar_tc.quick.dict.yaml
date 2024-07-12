@@ -1,7 +1,7 @@
 # encoding: utf-8
 ---
 name: "yustar_tc.quick"
-version: "20240522"
+version: "20240619"
 sort: original
 columns:
   - text
@@ -2035,7 +2035,7 @@ columns:
 抓	fuz
 摺	fvv
 搖	fwj
-換	fxc
+殃	fxc
 揮	fxd
 殤	fxg
 殘	fxk
@@ -2178,7 +2178,6 @@ columns:
 燭	iuw
 燦	iux
 寡	ivj
-煥	ixc
 次	ixq
 瓷	ixr
 炖	ixw
@@ -2263,6 +2262,7 @@ columns:
 瞞	jsf
 暴	jsk
 罐	jsl
+瞄	jsv
 璇	jtg
 賂	jtl
 卡	jub
@@ -2278,7 +2278,6 @@ columns:
 克	jwr
 盟	jwu
 睁	jxb
-瓊	jxc
 暈	jxd
 暝	jxj
 瞻	jxv
@@ -2380,7 +2379,6 @@ columns:
 嚼	luu
 啰	lux
 兄	lwr
-喚	lxc
 耽	lxw
 耶	lyf
 廂	maj
@@ -2433,7 +2431,6 @@ columns:
 廖	mvv
 瘵	mwj
 庖	mwo
-瘓	mxc
 滚	nak
 澈	nan
 津	nba
@@ -2506,7 +2503,6 @@ columns:
 熊	nwn
 允	nwr
 洶	nws
-渙	nxc
 渾	nxd
 盜	nxu
 渔	nxv
@@ -2791,7 +2787,6 @@ columns:
 卓	ujz
 鹹	ukf
 嶂	ukj
-幟	ukk
 幢	ukv
 巍	umc
 爬	uob

@@ -1,7 +1,7 @@
 # encoding: utf-8
 ---
 name: "yustar.words"
-version: "20240522"
+version: "20240619"
 sort: original
 columns:
   - text
@@ -106764,6 +106764,8 @@ columns:
 网聊	cslk
 原系	vdgo
 通稿	bsma
+戾氣	hhgq
+戾气	hhgq
 對看	uqfj
 对看	bkfj
 房號	htlh
@@ -133104,6 +133106,7 @@ columns:
 物景	pwja
 遁隱	dgyu
 遁隐	dgyx
+上巳	jvos
 雀聖	iell
 雀圣	iebh
 耳蟎	leqs

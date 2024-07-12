@@ -1,7 +1,7 @@
 # encoding: utf-8
 ---
 name: "yustar.quick_words"
-version: "20240522"
+version: "20240619"
 sort: original
 columns:
   - text

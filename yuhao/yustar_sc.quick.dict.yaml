@@ -1,7 +1,7 @@
 # encoding: utf-8
 ---
 name: "yustar_sc.quick"
-version: "20240522"
+version: "20240619"
 sort: original
 columns:
   - text
@@ -2156,7 +2156,7 @@ columns:
 寡	ivj
 党	iwr
 净	ixb
-焕	ixc
+资	ixc
 瓷	ixr
 盗	ixu
 炖	ixw
@@ -2381,7 +2381,6 @@ columns:
 嘎	lvj
 嗤	lwf
 兄	lwr
-唤	lxc
 耽	lxw
 耶	lyf
 康	mbd
@@ -2425,7 +2424,6 @@ columns:
 瘵	mwj
 庖	mwo
 稳	mxb
-痪	mxc
 湘	naj
 滚	nak
 澈	nan
@@ -2487,7 +2485,6 @@ columns:
 頃	nvj
 洄	nwl
 允	nwr
-涣	nxc
 渔	nxv
 沈	nxw
 铱	oag
