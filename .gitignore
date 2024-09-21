@@ -46,3 +46,6 @@ user.yaml
 
 # yuhao user_db file
 yuhao.txt
+
+# lua/Litles
+runLog.txt
