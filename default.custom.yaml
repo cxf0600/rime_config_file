@@ -49,8 +49,8 @@ patch:
     - {accept: "[", send: Page_Down, when: composing}
     - {accept: "]", send: Page_Up, when: composing}
     - {accept: Tab, send: Escape, when: composing}
-    - {accept: space, send: space, when: has_menu}
-    - {accept: space, send: Escape, when: composing}
+    # - {accept: space, send: space, when: has_menu}
+    # - {accept: space, send: Escape, when: composing}
 
   #"menu/alternative_select_labels":
   #  - "Ⅰ"
