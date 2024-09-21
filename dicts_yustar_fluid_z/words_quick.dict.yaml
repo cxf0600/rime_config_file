@@ -1,0 +1,77 @@
+# Rime dictionary
+# encoding: utf-8
+# https://github.com/Litles/rime-xingma-sentence
+# 【名称】 三码星陈·简码词
+# 【描述】 包含汉字词符号和字母数字
+---
+name: words_quick
+version: "2.0"
+sort: by_weight
+use_preset_vocabulary: false
+columns:
+  - text
+  - code
+  - weight
+...
+0	zno00	0
+1	zny00	0
+2	zne00	0
+3	zns00	0
+4	zni00	0
+5	znw00	0
+6	znl00	0
+7	znq00	0
+8	znb00	0
+9	znj00	0
+A	zva00	0
+B	zvb00	0
+C	zvc00	0
+D	zvd00	0
+E	zve00	0
+F	zvf00	0
+G	zvg00	0
+H	zvh00	0
+I	zvi00	0
+J	zvj00	0
+K	zvk00	0
+L	zvl00	0
+M	zvm00	0
+N	zvn00	0
+O	zvo00	0
+P	zvp00	0
+Q	zvq00	0
+R	zvr00	0
+S	zvs00	0
+T	zvt00	0
+U	zvu00	0
+V	zvv00	0
+W	zvw00	0
+X	zvx00	0
+Y	zvy00	0
+Z	zvz00	0
+a	zma00	0
+b	zmb00	0
+c	zmc00	0
+d	zmd00	0
+e	zme00	0
+f	zmf00	0
+g	zmg00	0
+h	zmh00	0
+i	zmi00	0
+j	zmj00	0
+k	zmk00	0
+l	zml00	0
+m	zmm00	0
+n	zmn00	0
+o	zmo00	0
+p	zmp00	0
+q	zmq00	0
+r	zmr00	0
+s	zms00	0
+t	zmt00	0
+u	zmu00	0
+v	zmv00	0
+w	zmw00	0
+x	zmx00	0
+y	zmy00	0
+z	zmz00	0

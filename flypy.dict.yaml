@@ -1,0 +1,18 @@
+# Rime dictionary
+# encoding: utf-8
+# https://github.com/Litles/rime-xingma-sentence
+# 主 yaml 文件，可以在这里统一调控各分支 yaml 文件的开启或关闭
+---
+name: flypy
+version: "2024.9.19"
+sort: by_weight
+use_preset_vocabulary: false
+import_tables:
+  # 单字码表
+  - flypy/8105  # 基础字表
+  - flypy/41448  # 扩展字表
+  # 词库码表
+  - flypy/base     # 基础词库
+  - flypy/ext   # 扩展词库
+  - flypy/others   # 一些杂项(容错音和错字)，可以不开
+...

@@ -1,0 +1,15 @@
+# Rime dictionary
+# encoding: utf-8
+# https://github.com/Litles/rime-xingma-sentence
+# 【名称】 三码星陈·用户词
+# 【描述】 用于统一存放用户自定义生成的词
+---
+name: words_user
+version: "2.0"
+sort: by_weight
+use_preset_vocabulary: false
+columns:
+  - text
+  - code
+  - weight
+...

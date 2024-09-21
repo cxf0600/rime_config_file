@@ -1,0 +1,24 @@
+# Rime dictionary
+# encoding: utf-8
+# https://github.com/Litles/rime-xingma-sentence
+# 主 yaml 文件，可以在这里统一调控各分支 yaml 文件的开启或关闭
+---
+name: yustar_fluid
+version: "2.0"
+sort: by_weight
+use_preset_vocabulary: false
+import_tables:
+  # 单字码表
+  - dicts_yustar_fluid/chars  # 基础字表
+  - dicts_yustar_fluid/chars_ext  # 扩展字表
+  - dicts_yustar_fluid/chars_none  # 填充字符表
+  # 词库码表
+  - dicts_yustar_fluid/words     # 基础词库
+  - dicts_yustar_fluid/words_ext   # 扩展词库
+  - dicts_yustar_fluid/words_ext2   # 一些杂项(容错音和错字)，可以不开
+  - dicts_yustar_fluid/words_quick   # 简码词
+  - dicts_yustar_fluid/words_user   # 用户词
+  # z引导的常规编码码表
+  - dicts_yustar_fluid/zwords_idioms   # 成语、名句
+  - dicts_yustar_fluid/zwords_poems   # 古诗词(唐、五代、宋)
+...

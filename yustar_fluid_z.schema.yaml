@@ -1,0 +1,263 @@
+# Rime schema
+# encoding: utf-8
+# https://github.com/Litles/rime-xingma-sentence
+
+schema:
+  schema_id: yustar_fluid_z
+  name: 星陈·三码整句(Z版)
+  version: "2.0"
+  author:
+    - Litles
+  description: |
+    - 形码三码整句解决方案，借鉴参考：gaboolic (裁缝) https://github.com/gaboolic/rime-shuangpin-fuzhuma
+  dependencies: |
+    - yustar_fluid_z - 词库
+
+switches: # 在状态栏上显示的开关
+  - options: [ _keyboard_menu, _keyboard_menu]
+    states: [ "❖", "❖"]
+  - name: ascii_mode
+    states: [ 中, 英 ]
+    reset: 0
+  - name: zh_trad
+    states: [ "⊘", "繁" ]  # 简转繁，即打简出繁 (opencc)
+    reset: 0
+  - name: chaifen  # 单字拆分 (opencc)
+    states: ["⊘", "拆"]
+    reset: 0
+  - name: phraseExt  # used by dyy_phraseExt_Filter
+    states: ["⊘", "💡"]
+    reset: 1
+  - name: phraseComment  # used by dyy_phraseComment_Filter
+    states: ["⊘", "💬"]
+    reset: 0
+  - name: appEmojiFlg  # used by dyy_phraseExt_Filter
+    states: ["⊘", "😃"]
+    reset: 0
+  - name: super_set_chars  # used by Litles_markedWord_filter
+    states: [ "⊘", "超" ]
+    reset: 0
+  - name: charset  # 单字所在字符集 (opencc)
+    states: [ "⊘", "集" ]
+    reset: 0
+  - name: stroke  # 单字的笔顺 (opencc)
+    states: [ "⊘", "笔" ]
+    reset: 0
+  - options: [ _keyboard_default, _keyboard_defaultVJ]
+    states: [ "　　", "　　"]
+  - options: [ _key_Hide, _key_Hide]
+    states: [ ﹀, ﹀]
+
+engine:
+  processors:
+    - ascii_composer
+    - recognizer
+    - key_binder
+    - speller
+    - punctuator
+    - selector
+    - navigator
+    - express_editor
+  segmentors:
+    - ascii_segmentor
+    - matcher
+    - abc_segmentor
+    - punct_segmentor
+    - fallback_segmentor
+  translators:
+    - punct_translator
+    - reverse_lookup_translator@reverse_lookup
+    - reverse_lookup_translator@liangfen_lookup
+    - script_translator
+    - lua_translator@Litles_customPhrase_translator
+  filters:
+    - simplifier
+    - simplifier@zh_trad
+    - simplifier@yustar_char_chaifen
+    - simplifier@char_charset
+    - simplifier@char_stroke
+    - lua_filter@Litles_markedWord_filter
+    - lua_filter@dyy_phraseExt_Filter
+    - lua_filter@dyy_phraseComment_Filter
+    - lua_filter@dyy_laneChangeAndSpace_Filter
+    - uniquifier
+
+speller:
+  alphabet: zyxwvutsrqponmlkjihgfedcba/
+  initials: zyxwvutsrqponmlkjihgfedcba/
+  delimiter: ""
+  algebra:
+    # --- 前两码 ---
+    #- derive/^([a-z])([a-z])000$/$1$2/
+    #- derive/^([a-z])([a-z])[a-z\d]{2}\d$/$1$2/
+    #- derive/^([a-y])([a-z])[a-z\d]{2}\d,[a-z\d,]{5,11}$/$1$2/
+    #- derive/^[a-z\d,]{5,11},([a-y])([a-z])[a-z\d]{2}\d$/$1$2/
+    #- derive/^[a-z\d]{5},([a-y])([a-z])[a-z\d]{2}\d,[a-z\d]{5}$/$1$2/
+
+    # --- 前三码 ---
+    - derive/^([a-z])([a-z])([a-z])[a-z\d]\d$/$1$2$3/  # z
+    - derive/^([a-y])([a-z])([a-z])[a-z\d]\d,[a-z\d,]{5,11}$/$1$2$3/
+    - derive/^[a-z\d,]{5,11},([a-y])([a-z])([a-z])[a-z\d]\d$/$1$2$3/
+    - derive/^[a-z\d]{5},([a-y])([a-z])([a-z])[a-z\d]\d,[a-z\d]{5}$/$1$2$3/
+
+    # --- 全码（补终止符） ---
+    # 1.四码全码（结尾补"/"）
+    - derive|^([a-y])([a-z])([a-z])([a-z])1$|$1$2$3$4/|
+    - derive|^([a-y])([a-z])([a-z])([a-z])1,[a-z\d,]{5,11}$|$1$2$3$4/|
+    - derive|^[a-z\d,]{5,11},([a-y])([a-z])([a-z])([a-z])1$|$1$2$3$4/|
+    - derive|^[a-z\d]{5},([a-y])([a-z])([a-z])([a-z])1,[a-z\d]{5}$|$1$2$3$4/|
+    - derive|^([a-y])([a-z])([a-z])([a-z])[2-9]$|$1$2$3$4//|  # 2选
+    - derive|^([a-y])([a-z])([a-z])([a-z])[3-9]$|$1$2$3$4///|  # 3选
+    - derive|^([a-y])([a-z])([a-z])([a-z])[4-9]$|$1$2$3$4////|  # 4选
+    - derive|^([a-y])([a-z])([a-z])([a-z])[5-9]$|$1$2$3$4/////|  # 5选
+    - derive|^([a-y])([a-z])([a-z])([a-z])[6-9]$|$1$2$3$4//////|  # 6选
+    - derive|^([a-y])([a-z])([a-z])([a-z])[7-9]$|$1$2$3$4///////|  # 7选
+    - derive|^([a-y])([a-z])([a-z])([a-z])[8-9]$|$1$2$3$4////////|  # 8选
+    - derive|^([a-y])([a-z])([a-z])([a-z])[9-9]$|$1$2$3$4/////////|  # 9选
+    - derive|^([a-y])([a-z])([a-z])([a-z])[2-9],[a-z\d,]{5,11}$|$1$2$3$4//|  # 2选
+    - derive|^([a-y])([a-z])([a-z])([a-z])[3-9],[a-z\d,]{5,11}$|$1$2$3$4///|  # 3选
+    - derive|^([a-y])([a-z])([a-z])([a-z])[4-9],[a-z\d,]{5,11}$|$1$2$3$4////|  # 4选
+    - derive|^([a-y])([a-z])([a-z])([a-z])[5-9],[a-z\d,]{5,11}$|$1$2$3$4/////|  # 5选
+    - derive|^([a-y])([a-z])([a-z])([a-z])[6-9],[a-z\d,]{5,11}$|$1$2$3$4//////|  # 6选
+    - derive|^([a-y])([a-z])([a-z])([a-z])[7-9],[a-z\d,]{5,11}$|$1$2$3$4///////|  # 7选
+    - derive|^([a-y])([a-z])([a-z])([a-z])[8-9],[a-z\d,]{5,11}$|$1$2$3$4////////|  # 8选
+    - derive|^([a-y])([a-z])([a-z])([a-z])[9-9],[a-z\d,]{5,11}$|$1$2$3$4/////////|  # 9选
+    - derive|^[a-z\d,]{5,11},([a-y])([a-z])([a-z])([a-z])[2-9]$|$1$2$3$4//|  # 2选
+    - derive|^[a-z\d,]{5,11},([a-y])([a-z])([a-z])([a-z])[3-9]$|$1$2$3$4///|  # 3选
+    - derive|^[a-z\d,]{5,11},([a-y])([a-z])([a-z])([a-z])[4-9]$|$1$2$3$4////|  # 4选
+    - derive|^[a-z\d,]{5,11},([a-y])([a-z])([a-z])([a-z])[5-9]$|$1$2$3$4/////|  # 5选
+    - derive|^[a-z\d,]{5,11},([a-y])([a-z])([a-z])([a-z])[6-9]$|$1$2$3$4//////|  # 6选
+    - derive|^[a-z\d,]{5,11},([a-y])([a-z])([a-z])([a-z])[7-9]$|$1$2$3$4///////|  # 7选
+    - derive|^[a-z\d,]{5,11},([a-y])([a-z])([a-z])([a-z])[8-9]$|$1$2$3$4////////|  # 8选
+    - derive|^[a-z\d,]{5,11},([a-y])([a-z])([a-z])([a-z])[9-9]$|$1$2$3$4/////////|  # 9选
+    - derive|^[a-z\d]{5},([a-y])([a-z])([a-z])([a-z])[2-9],[a-z\d]{5}$|$1$2$3$4//|  # 2选
+    - derive|^[a-z\d]{5},([a-y])([a-z])([a-z])([a-z])[3-9],[a-z\d]{5}$|$1$2$3$4///|  # 3选
+    - derive|^[a-z\d]{5},([a-y])([a-z])([a-z])([a-z])[4-9],[a-z\d]{5}$|$1$2$3$4////|  # 4选
+    - derive|^[a-z\d]{5},([a-y])([a-z])([a-z])([a-z])[5-9],[a-z\d]{5}$|$1$2$3$4/////|  # 5选
+    - derive|^[a-z\d]{5},([a-y])([a-z])([a-z])([a-z])[6-9],[a-z\d]{5}$|$1$2$3$4//////|  # 6选
+    - derive|^[a-z\d]{5},([a-y])([a-z])([a-z])([a-z])[7-9],[a-z\d]{5}$|$1$2$3$4///////|  # 7选
+    - derive|^[a-z\d]{5},([a-y])([a-z])([a-z])([a-z])[8-9],[a-z\d]{5}$|$1$2$3$4////////|  # 8选
+    - derive|^[a-z\d]{5},([a-y])([a-z])([a-z])([a-z])[9-9],[a-z\d]{5}$|$1$2$3$4/////////|  # 9选
+
+    # 2.三码全码（结尾补"/"）
+    - derive|^([a-y])([a-z])([a-z])10$|$1$2$3/|
+    - derive|^([a-y])([a-z])([a-z])10,[a-z\d,]{5,11}$|$1$2$3/|
+    - derive|^[a-z\d,]{5,11},([a-y])([a-z])([a-z])10$|$1$2$3/|
+    - derive|^[a-z\d]{5},([a-y])([a-z])([a-z])10,[a-z\d]{5}$|$1$2$3/|
+    - derive|^([a-y])([a-z])([a-z])[2-9]0$|$1$2$3//|  # 2选
+    - derive|^([a-y])([a-z])([a-z])[3-9]0$|$1$2$3///|  # 3选
+    - derive|^([a-y])([a-z])([a-z])[4-9]0$|$1$2$3////|  # 4选
+    - derive|^([a-y])([a-z])([a-z])[5-9]0$|$1$2$3/////|  # 5选
+    - derive|^([a-y])([a-z])([a-z])[6-9]0$|$1$2$3//////|  # 6选
+    - derive|^([a-y])([a-z])([a-z])[7-9]0$|$1$2$3///////|  # 7选
+    - derive|^([a-y])([a-z])([a-z])[8-9]0$|$1$2$3////////|  # 8选
+    - derive|^([a-y])([a-z])([a-z])[9-9]0$|$1$2$3/////////|  # 9选
+    - derive|^([a-y])([a-z])([a-z])[2-9]0,[a-z\d,]{5,11}$|$1$2$3//|  # 2选
+    - derive|^([a-y])([a-z])([a-z])[3-9]0,[a-z\d,]{5,11}$|$1$2$3///|  # 3选
+    - derive|^([a-y])([a-z])([a-z])[4-9]0,[a-z\d,]{5,11}$|$1$2$3////|  # 4选
+    - derive|^([a-y])([a-z])([a-z])[5-9]0,[a-z\d,]{5,11}$|$1$2$3/////|  # 5选
+    - derive|^([a-y])([a-z])([a-z])[6-9]0,[a-z\d,]{5,11}$|$1$2$3//////|  # 6选
+    - derive|^([a-y])([a-z])([a-z])[7-9]0,[a-z\d,]{5,11}$|$1$2$3///////|  # 7选
+    - derive|^([a-y])([a-z])([a-z])[8-9]0,[a-z\d,]{5,11}$|$1$2$3////////|  # 8选
+    - derive|^([a-y])([a-z])([a-z])[9-9]0,[a-z\d,]{5,11}$|$1$2$3/////////|  # 9选
+    - derive|^[a-z\d,]{5,11},([a-y])([a-z])([a-z])[2-9]0$|$1$2$3//|  # 2选
+    - derive|^[a-z\d,]{5,11},([a-y])([a-z])([a-z])[3-9]0$|$1$2$3///|  # 3选
+    - derive|^[a-z\d,]{5,11},([a-y])([a-z])([a-z])[4-9]0$|$1$2$3////|  # 4选
+    - derive|^[a-z\d,]{5,11},([a-y])([a-z])([a-z])[5-9]0$|$1$2$3/////|  # 5选
+    - derive|^[a-z\d,]{5,11},([a-y])([a-z])([a-z])[6-9]0$|$1$2$3//////|  # 6选
+    - derive|^[a-z\d,]{5,11},([a-y])([a-z])([a-z])[7-9]0$|$1$2$3///////|  # 7选
+    - derive|^[a-z\d,]{5,11},([a-y])([a-z])([a-z])[8-9]0$|$1$2$3////////|  # 8选
+    - derive|^[a-z\d,]{5,11},([a-y])([a-z])([a-z])[9-9]0$|$1$2$3/////////|  # 9选
+    - derive|^[a-z\d]{5},([a-y])([a-z])([a-z])[2-9]0,[a-z\d]{5}$|$1$2$3//|  # 2选
+    - derive|^[a-z\d]{5},([a-y])([a-z])([a-z])[3-9]0,[a-z\d]{5}$|$1$2$3///|  # 3选
+    - derive|^[a-z\d]{5},([a-y])([a-z])([a-z])[4-9]0,[a-z\d]{5}$|$1$2$3////|  # 4选
+    - derive|^[a-z\d]{5},([a-y])([a-z])([a-z])[5-9]0,[a-z\d]{5}$|$1$2$3/////|  # 5选
+    - derive|^[a-z\d]{5},([a-y])([a-z])([a-z])[6-9]0,[a-z\d]{5}$|$1$2$3//////|  # 6选
+    - derive|^[a-z\d]{5},([a-y])([a-z])([a-z])[7-9]0,[a-z\d]{5}$|$1$2$3///////|  # 7选
+    - derive|^[a-z\d]{5},([a-y])([a-z])([a-z])[8-9]0,[a-z\d]{5}$|$1$2$3////////|  # 8选
+    - derive|^[a-z\d]{5},([a-y])([a-z])([a-z])[9-9]0,[a-z\d]{5}$|$1$2$3/////////|  # 9选
+
+    # --- 词组 ---
+    # 四码词组（z键引导: zxxxx）
+    - derive|^(z)([a-y])([a-z])([a-z])([a-z])$|$1$2$3$4$5|
+    # 四码词组（首字母大写引导: Axxx）
+    #- derive|^([A-Y])([a-z])([a-z])([a-z])$|$1$2$3$4|
+
+translator:
+  dictionary:  yustar_fluid_z
+  initial_quality: 1
+  enable_completion: false # 编码提示开关
+  spelling_hints: 0
+  enable_user_dict: false
+  enable_sentence: false
+
+zh_trad:
+  tags: [abc, reverse_lookup]
+  option_name: zh_trad
+  opencc_config: s2tw.json
+  tips: all
+  comment_format:
+    - xform/^/〔/
+    - xform/$/〕/
+
+reverse_lookup:
+  dictionary: flypy
+  prefix: "`"
+  tips: 〔双拼〕
+  comment_format:
+    - xform/^/〔/
+    - xform/$/〕/
+    - xform/ /, /
+
+liangfen_lookup:
+  dictionary: liangfen
+  tag: liangfen_lookup
+  prefix: "~"
+  tips: 〔两分〕
+  comment_format:
+    - xform/^/〔/
+    - xform/$/〕/
+    - xform/ /, /
+
+yustar_char_chaifen:
+  opencc_config: yustar_char_chaifen.json
+  option_name: chaifen
+  show_in_comment: true
+  tags: [abc, reverse_lookup]
+  tips: char
+
+char_charset:
+  opencc_config: char_charset.json
+  option_name: charset
+  show_in_comment: true
+  tags: [abc, reverse_lookup]
+  tips: char
+
+char_stroke:
+  opencc_config: char_stroke.json
+  option_name: stroke
+  show_in_comment: true
+  tags: [abc, reverse_lookup]
+  tips: char
+
+punctuator:
+  import_preset: default
+
+key_binder:
+  import_preset: default
+  bindings:
+    - { when: composing, accept: Tab, send: "Shift+BackSpace" } # 逐字删除
+    # 翻页相关
+    - { when: paging, accept: bracketleft, send: bracketleft }
+    - { when: has_menu, accept: bracketright, send: bracketright }
+    - { when: paging, accept: comma, send: comma }
+    - { when: has_menu, accept: period, send: period }
+
+menu:
+  page_size: 6 #候选项数
+
+recognizer:
+  import_preset: default
+  patterns: # 若只需要在开头生效则加 ^ 前缀
+    reverse_lookup: "`[a-z]*'?$"
+    liangfen_lookup: "~([a-z]+'?)*$"

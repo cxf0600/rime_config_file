@@ -1,0 +1,106 @@
+﻿# Rime schema
+# vim: set sw=2 sts=2 et:
+# encoding: utf-8
+
+schema:
+  schema_id: liangfen
+  name: 字海两分
+  version: "5.0"
+  author: |
+    - 作者：TianHeng <2417647441@qq.com>
+    - 修改：Litles <1664667011@qq.com>
+  description: |
+    Use《http://yedict.com/》
+    http://yedict.com/
+    Dict is from http://yedict.com/
+  dependencies: |
+    - char_charset.json - 字符集
+    - char_stroke.json - 笔顺
+
+switches: # 在状态栏上显示的开关
+  - options: [ _keyboard_menu, _keyboard_menu]
+    states: [ "❖", "❖"]
+  - name: ascii_mode
+    states: [ 中, 英 ]
+    reset: 0
+  - name: charset  # 单字所在字符集 (opencc)
+    states: [ "⊘", "集" ]
+    reset: 0
+  - name: stroke  # 单字的笔顺 (opencc)
+    states: [ "⊘", "笔" ]
+    reset: 0
+
+engine:
+  processors:
+    - ascii_composer
+    - recognizer
+    - key_binder
+    - speller
+    - punctuator
+    - selector
+    - navigator
+    - express_editor
+  segmentors:
+    - ascii_segmentor
+    - matcher
+    - abc_segmentor
+    - punct_segmentor
+    - fallback_segmentor
+  translators:
+    - punct_translator
+    - r10n_translator
+    - reverse_lookup_translator
+  filters:
+    - simplifier
+    - simplifier@char_charset
+    - simplifier@char_stroke
+    - uniquifier
+
+speller:
+  alphabet: zyxwvutsrqponmlkjihgfedcba
+  delimiter: " '"
+  algebra:
+    - abbrev/^([a-z]).+$/$1/
+
+translator:
+  dictionary: liangfen
+  prism: liangfen
+  spelling_hints: 4
+  enable_user_dict: false
+  enable_sentence: false
+  preedit_format:
+    - "xlit|v|ü|"
+    - xform/iü/iv/
+  comment_format:
+    - "xlit|v|ü|"
+    - xform/iü/iv/
+
+char_charset:
+  opencc_config: char_charset.json
+  option_name: charset
+  show_in_comment: true
+  tags: [abc, reverse_lookup]
+  tips: char
+
+char_stroke:
+  opencc_config: char_stroke.json
+  option_name: stroke
+  show_in_comment: true
+  tags: [abc, reverse_lookup]
+  tips: char
+
+punctuator:
+  import_preset: default
+
+menu:
+  page_size: 6
+
+key_binder:
+  import_preset: default
+  bindings:
+    - {accept: Return, send: Escape, when: composing}
+
+recognizer:
+  import_preset: default
+  patterns:
+    reverse_lookup: "`[a-z]*$"

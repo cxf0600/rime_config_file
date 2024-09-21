@@ -1,7 +1,7 @@
 # encoding: utf-8
 #
 # 宇浩·繁简通
-# 版本: 20240619
+# 版本: 20240917
 
 # 朱宇浩 开发
 # Rime方案 forFudan <https://zhuyuhao.com/yuhao>
@@ -11,7 +11,7 @@
 
 ---
 name: "yuhao.symbols"
-version: "20240619"
+version: "20240917"
 sort: original
 columns:
   - text
@@ -342,6 +342,10 @@ $	kkmy
 ʩ	kkfn
 ʮ	kkh
 ʯ	kkh
+ˇ	kkss
+ˊ	kkps
+ˊ	kkyp
+ˋ	kkqs
 Α	kkal
 Β	kkbe
 Γ	kkga
@@ -1352,6 +1356,10 @@ $	kkmy
 ǚ	pyu
 ǜ	pyu
 ɑ	pya
+ˇ	pyss
+ˊ	pyps
+ˊ	pyyp
+ˋ	pyqs
 ẑ	pyzh
 ——	bdpz
 ……	bdsl

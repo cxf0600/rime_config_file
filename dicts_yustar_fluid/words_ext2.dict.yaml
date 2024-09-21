@@ -1,0 +1,473 @@
+# Rime dictionary
+# encoding: utf-8
+# https://github.com/Litles/rime-xingma-sentence
+# 【名称】 三码星陈·词库
+# 【描述】 生成自白霜(frost)词库 others.dict.yaml
+---
+name: words_ext2
+version: "2.0"
+sort: by_weight
+use_preset_vocabulary: false
+columns:
+  - text
+  - code
+  - weight
+...
+空落落	ipg10,ipg20,ipg00 sntl1,snt00 sntl1,snt00	16
+空落落的	ipg10,ipg20,ipg00 sntl1,snt00 sntl1,snt00 d0000,dwkd1,dwkd3	87
+阿房宫	yjl00,yjlv1 htf00,htf20,htf10 ill00,illv2,illv1	180
+阿房宫赋	yjl00,yjlv1 htf00,htf20,htf10 ill00,illv2,illv1 cfkp1,cfk00	44
+伯伯	edb10,edb00 edb10,edb00	464
+远上寒山石径斜	flo00,floc1 jv100 iski1 us100 vs100 cbpg1 rfa00,rfag1	38
+坐骑	rrh00,rrht1 boj00,bojl1	965
+铁骑	ogof1,ogo00 boj00,bojl1	291
+一骑绝尘	fi100 boj00,bojl1 kxob1,kxo00 iht30,iht10	684
+一骑当千	fi100 boj00,bojl1 ibj10,i0000 mq100	53
+一骑红尘妃子笑	fi100 boj00,bojl1 kpg10 iht30,iht10 coj00,coj10 kz100 gmy00,gmy10	37
+走单骑	hz100 qjgi1,qjg00 boj00,bojl1	2
+千里走单骑	mq100 vl100 hz100 qjgi1,qjg00 boj00,bojl1	100
+仆街	eub10 chhi1	37
+扑街	fub10,fub00 chhi1	1257
+扑街仔	fub10,fub00 chhi1 ekz00,ekz10	20
+仆街仔	eub10 chhi1 ekz00,ekz10	2
+街溜子	chhi1 nkv00,nkvt1 kz100	70
+郭明錤	akyf1,aky00 jwy20,jwy10,jwy00 tuq00,tuq10	38
+李昌镐	akz10,akz00,akz20 jjr10 oag10	242
+曹世镐	cjr00,cjr10 si100 oag10	2
+张镐哲	bnc00,bnc10 oag10 fdlv1,fdl00	2
+姜成镐	qcn00,qcn10,qcn20 kyi10,kyi00 oag10	5
+姜镐童	qcn00,qcn10,qcn20 oag10 kvl10,kvl00	2
+张镐濂	bnc00,bnc10 oag10 nmqk1,nmq00	7
+李敏镐	akz10,akz00,akz20 get00,getu1 oag10	28
+李陈镐	akz10,akz00,akz20 yxiv1,yxi00 oag10	3
+赵亮镐	hsi10 aej10 oag10	5
+郑俊镐	qoy00,qoyf1 enk00,enkt1 oag10	3
+馄饨	xjnn1,xjnn3 xxwk1	726
+主角	kjw10,kjw00 xsy00,xsy10	24120
+角色	xsy00,xsy10 xob00,xob20,xob10	20042
+比萨	nnb10,nnb00 syk00,sykg1	167
+比萨饼	nnb10,nnb00 syk00,sykg1 xqso1,xqs00	23
+吃比萨	lgyi1,lgy00 nnb10,nnb00 syk00,sykg1	5
+说服	dqlw2,dqlw1,dql00 wab00,wabo1	5563
+道行	qqoc1,qqo00 cic00,cic10	269
+模样	asj00,asjo1 aqy10,aqy00	5186
+有模有样	ewy10,ewy20,e0000 asj00,asjo1 ewy10,ewy20,e0000 aqy10,aqy00	279
+一模一样	fi100 asj00,asjo1 fi100 aqy10,aqy00	5083
+装模作样	qha00,qhag1 asj00,asjo1 egub1,egu00 aqy10,aqy00	485
+人模狗样	re100 asj00,asjo1 hwl00,hwlv1 aqy10,aqy00	146
+模板	asj00,asjo1 adbo1,adb00	14654
+阿弥陀佛	yjl00,yjlv1 bxiv1,bxi00 yinb1,yin00 ebk00,ebka1	371
+南无阿弥陀佛	gcqy1,gcq00 ffo20,ffo00,ffo10 yjl00,yjlv1 bxiv1,bxi00 yinb1,yin00 ebk00,ebka1	42
+给予	krh00,krh10 kv100	11360
+槟榔	aidk1,aid00 akby1,akb00	533
+张柏芝	bnc00,bnc10 adb10 soz10,soz00	749
+藤蔓	swqn1,swq00 sjub1,sju00	320
+弄堂	jso00,jso10 iht20,iht00,iht10	126
+心宽体胖	ri100 isc00,iscj1 eaf00,eafi1 wqak1,wqa00	39
+埋怨	hvl00,hvl10,hvl20 xar00,xari1	1141
+虚与委蛇	uue00,uue10 hfi10,hfi00 mcn00,mcn10 qinb1,qin00	93
+木讷	am100 dcre2,dcr00,dcre1	428
+独乐乐	hqc00,hqc10 kiv20,kiv00,kiv10 kiv20,kiv00,kiv10	13
+众乐乐	rrr00,rrre1 kiv20,kiv00,kiv10 kiv20,kiv00,kiv10	20
+荨麻	sbkc1 ma100	71
+荨麻疹	sbkc1 ma100 mrc00,mrcp1	198
+模具	asj00,asjo1 jka20,jka10,jka00	1937
+草薙	sjz00,sjz10 sje00,sjeh1	88
+草薙京	sjz00,sjz10 sje00,sjeh1 aiv00,aiv10	144
+草薙剑	sjz00,sjz10 sje00,sjeh1 rfnm1,rfn00	17
+贾平凹	pcb00,pcb20,pcb10 nqk00,nqk10 cfi10,cfi00	247
+雪佛兰	cbj20,cbj10,cbj00 ebk00,ebka1 qir00,qir10	366
+强劲	blq00,blqc1 bps00,bpsl1	1498
+胴体	wcf00,wcfl1,wcfl2 eaf00,eafi1	80
+力能扛鼎	sl100 n0000,nwnn1 fpg10,fpg00 jddp1,jdd00	26
+鸭绿江	vmn10,vmn00 kbns1,kbn00,kbns2 npg10,npg00	152
+大腹便便	od100 wgjt1,wgj00 efj00,efjs1 efj00,efjs1	147
+卡脖子	jub00,jub10 wgxk1,wgx00 kz100	308
+吱声	lgbo1,lgb00 hbs00,hbs10	147
+掺和	fnoc1,fno00 m0000,mlv10,mlv50	438
+称职	mxi00,mxiv1 llka1,llk00,llka2	90
+螺蛳粉	qvos1,qvo00 qqfu1,qqf00 qkmd1,qkm00,qkmd3	551
+调换	dwhl1,dwh00,dwhl2 fxco2,fxc00,fxco1	618
+太行山	okd00,okd10 cic00,cic10 us100	388
+歇斯底里	jwrx1 udj00,udj10 mkxk2,mkxk1,mkx00 vl100	878
+暖和	junb1,junb2,jun00 m0000,mlv10,mlv50	732
+模棱两可	asj00,asjo1 ahk00,ahkt1 fcrr1,fcr00 jlv20,jlv10,jlv00	848
+鄱阳湖	gqvy1 yjr00,yjr10 njw00,njwy1	1291
+脖颈	wgxk1,wgx00 bpc00,bpcy1	483
+脖颈儿	wgxk1,wgx00 bpc00,bpcy1 wr100	3
+结扎	khlv2,khlv1,khl00 fei00,fei10	126
+海参崴	ngem1,nge00 noc00,nocp1 ukf00,ukfc1	304
+厚朴	vjk00,vjkz1 aub10	52
+大宛马	od100 ixaj1 bm100	9
+龇牙	prwn1 ha100	60
+龇着牙	prwn1 qjm00,qjm10 ha100	14
+龇牙咧嘴	prwn1 ha100 lfxm1,lfx00 lpn00,lpns1	166
+头皮屑	iod20,iod10,iod00 bp100 biwy1,biw00,biwy3	501
+六安	aka20,aka00,aka10 icn00,icn10	109
+六安县	aka20,aka00,aka10 icn00,icn10 jna20,jna10,jna00	4
+六安市	aka20,aka00,aka10 icn00,icn10 auj00,auj10	23
+六合区	aka20,aka00,aka10 rh100 hsi00,hsi20,hsi10	3
+安徽六安	icn00,icn10 cfo00,cfos1 aka20,aka00,aka10 icn00,icn10	15
+安徽六安市	icn00,icn10 cfo00,cfos1 aka20,aka00,aka10 icn00,icn10 auj00,auj10	3
+安徽省六安市	icn00,icn10 cfo00,cfos1 igj00,igjm1 aka20,aka00,aka10 icn00,icn10 auj00,auj10	8
+南京六合	gcqy1,gcq00 aiv00,aiv10 aka20,aka00,aka10 rh100	5
+南京六合区	gcqy1,gcq00 aiv00,aiv10 aka20,aka00,aka10 rh100 hsi00,hsi20,hsi10	3
+南京市六合区	gcqy1,gcq00 aiv00,aiv10 auj00,auj10 aka20,aka00,aka10 rh100 hsi00,hsi20,hsi10	3
+偌大	ese00,esel1 od100	642
+饮鸩止渴	xxq10 xwmn1,xwm00 pi100 njwe1	336
+饮鸩解渴	xxq10 xwmn1,xwm00 xsm00,xsmp1 njwe1	2
+曾经	qjj00,qjjr1,qjjr2 kbpg1,kbp00	39650
+曾今	qjj00,qjjr1,qjjr2 rkyi1	105
+按捺	fic00,ficn1 foj00,fojs1	75
+按耐	fic00,ficn1 skc00,skc10	8
+按捺不住	fic00,ficn1 foj00,fojs1 vu100,v0000 ekj00,ekjw1,ekjw2	296
+按耐不住	fic00,ficn1 skc00,skc10 vu100,v0000 ekj00,ekjw1,ekjw2	2
+别价	lsmd1,lsm00 erka1,erk00	3
+别介	lsmd1,lsm00 rka10,rka00	31
+甭价	vsy20,vsy10,vsy00 erka1,erk00	2
+甭介	vsy20,vsy10,vsy00 rka10,rka00	2
+血脉贲张	gum10,gum00 wkn00,wkns1 gscb1 bnc00,bnc10	49
+血脉偾张	gum10,gum00 wkn00,wkns1 egsc1 bnc00,bnc10	36
+血脉喷张	gum10,gum00 wkn00,wkns1 lgs00,lgsc1 bnc00,bnc10	2
+契诃夫	dmo00,dmod1 djlv1,djl00,djlv2 of100	437
+契科夫	dmo00,dmod1 migi1 of100	2
+凑合	iof00,iofo1 rh100	1613
+凑活	iof00,iofo1 nls10,nls00	245
+巨惠	hbo10,hbo00 dri10,dri00,dri20	2
+钜惠	ohbo1,ohb00,ohbo2 dri10,dri00,dri20	2
+摩羯座	mfs10,mfs00 qjwe2,qjwe1 mrrh1,mrrh2,mrr00	101
+魔蝎座	mdg00,mdg10,mdg30 qjwe1 mrrh1,mrrh2,mrr00	2
+两个火	fcrr1,fcr00 rus10,rus00,rus20 ih100	2
+两个土	fcrr1,fcr00 rus10,rus00,rus20 ht100	2
+两个一	fcrr1,fcr00 rus10,rus00,rus20 fi100	2
+两个二	fcrr1,fcr00 rus10,rus00,rus20 ir100	2
+两个山	fcrr1,fcr00 rus10,rus00,rus20 us100	2
+两个口	fcrr1,fcr00 rus10,rus00,rus20 lv100	2
+两个田	fcrr1,fcr00 rus10,rus00,rus20 vt100	2
+两个九	fcrr1,fcr00 rus10,rus00,rus20 rj100	2
+两个人	fcrr1,fcr00 rus10,rus00,rus20 re100	17527
+两个飞	fcrr1,fcr00 rus10,rus00,rus20 yir10,yir00	2
+两个戈	fcrr1,fcr00 rus10,rus00,rus20 kg100	2
+两个厶	fcrr1,fcr00 rus10,rus00,rus20 na200,na100	2
+两个又	fcrr1,fcr00 rus10,rus00,rus20 bo100	2
+两个香	fcrr1,fcr00 rus10,rus00,rus20 mjr00,mjr10	2
+两个面	fcrr1,fcr00 rus10,rus00,rus20 sm100	2
+两个兀	fcrr1,fcr00 rus10,rus00,rus20 lw100	2
+两个女	fcrr1,fcr00 rus10,rus00,rus20 cn100	2
+两个𡥦	fcrr1,fcr00 rus10,rus00,rus20 kkkz1	2
+两个臣	fcrr1,fcr00 rus10,rus00,rus20 hc100	2
+两个巾	fcrr1,fcr00 rus10,rus00,rus20 uj100	2
+两个左	fcrr1,fcr00 rus10,rus00,rus20 epg20,epg00,epg10	2
+两个母	fcrr1,fcr00 rus10,rus00,rus20 em100	2
+两个来	fcrr1,fcr00 rus10,rus00,rus20 fqm00,fqm10	2
+两个凡	fcrr1,fcr00 rus10,rus00,rus20 ekd00,ekd20,ekd10	2
+两个夕	fcrr1,fcr00 rus10,rus00,rus20 xx100	2
+两个彐	fcrr1,fcr00 rus10,rus00,rus20 bj100	2
+两个𢎘	fcrr1,fcr00 rus10,rus00,rus20 yei10	2
+两个魚	fcrr1,fcr00 rus10,rus00,rus20 vv100,vv200	2
+两个明	fcrr1,fcr00 rus10,rus00,rus20 jwy20,jwy10,jwy00	2
+两个朿	fcrr1,fcr00 rus10,rus00,rus20 ack00,ack10	2
+两个乂	fcrr1,fcr00 rus10,rus00,rus20 si200,si100	2
+两个曰	fcrr1,fcr00 rus10,rus00,rus20 jy100	2
+两个尸	fcrr1,fcr00 rus10,rus00,rus20 bs100	2
+两个户	fcrr1,fcr00 rus10,rus00,rus20 hh100	2
+两个大	fcrr1,fcr00 rus10,rus00,rus20 od100	545
+两个八	fcrr1,fcr00 rus10,rus00,rus20 ka100	12
+两个而	fcrr1,fcr00 rus10,rus00,rus20 sr100,s0000	2
+两个羊	fcrr1,fcr00 rus10,rus00,rus20 qy100	2
+两个吉	fcrr1,fcr00 rus10,rus00,rus20 hlv10	2
+两个马	fcrr1,fcr00 rus10,rus00,rus20 bm100	2
+两个卅	fcrr1,fcr00 rus10,rus00,rus20 ss100	2
+两个巛	fcrr1,fcr00 rus10,rus00,rus20 lc100,lc300	2
+两个止	fcrr1,fcr00 rus10,rus00,rus20 pi100	2
+两个比	fcrr1,fcr00 rus10,rus00,rus20 nnb10,nnb00	2
+两个言	fcrr1,fcr00 rus10,rus00,rus20 by100	2
+两个申	fcrr1,fcr00 rus10,rus00,rus20 ds100	2
+两个牛	fcrr1,fcr00 rus10,rus00,rus20 pn100	2
+两个余	fcrr1,fcr00 rus10,rus00,rus20 rfam1	2
+两个束	fcrr1,fcr00 rus10,rus00,rus20 alv20,alv00,alv10	2
+两个罒	fcrr1,fcr00 rus10,rus00,rus20 uw100	2
+两个㐅	fcrr1,fcr00 rus10,rus00,rus20 si100,si300	2
+两个金	fcrr1,fcr00 rus10,rus00,rus20 tj100	2
+两个木	fcrr1,fcr00 rus10,rus00,rus20 am100	2
+两个水	fcrr1,fcr00 rus10,rus00,rus20 ns100	2
+两个風	fcrr1,fcr00 rus10,rus00,rus20 ef100	2
+两个石	fcrr1,fcr00 rus10,rus00,rus20 vs100	2
+两个日	fcrr1,fcr00 rus10,rus00,rus20 jr100	2
+两个月	fcrr1,fcr00 rus10,rus00,rus20 wy100	6726
+两个目	fcrr1,fcr00 rus10,rus00,rus20 jm100	2
+两个白	fcrr1,fcr00 rus10,rus00,rus20 db100	2
+两个百	fcrr1,fcr00 rus10,rus00,rus20 vjr10,vjr20,vjr00	2
+两个耳	fcrr1,fcr00 rus10,rus00,rus20 le100	2
+两个屮	fcrr1,fcr00 rus10,rus00,rus20 wc100	2
+两个廿	fcrr1,fcr00 rus10,rus00,rus20 sfi10,sfi20,sfi00	2
+两个卄	fcrr1,fcr00 rus10,rus00,rus20 so400,so100	2
+两个虫	fcrr1,fcr00 rus10,rus00,rus20 qc100	2
+两个虎	fcrr1,fcr00 rus10,rus00,rus20 uh100	2
+两个龍	fcrr1,fcr00 rus10,rus00,rus20 kwub1	2
+两个馬	fcrr1,fcr00 rus10,rus00,rus20 wm100	2
+两个犬	fcrr1,fcr00 rus10,rus00,rus20 hq100	2
+两个入	fcrr1,fcr00 rus10,rus00,rus20 kr100	2
+两个习	fcrr1,fcr00 rus10,rus00,rus20 vx100	2
+两个卪	fcrr1,fcr00 rus10,rus00,rus20 akd10	2
+两个㔾	fcrr1,fcr00 rus10,rus00,rus20 aj100,aj200	2
+两个几	fcrr1,fcr00 rus10,rus00,rus20 ej100	2
+两个乙	fcrr1,fcr00 rus10,rus00,rus20 yi100	2
+两个夫	fcrr1,fcr00 rus10,rus00,rus20 of100	2
+两个禾	fcrr1,fcr00 rus10,rus00,rus20 mh100	2
+两个干	fcrr1,fcr00 rus10,rus00,rus20 ng100	2
+两个井	fcrr1,fcr00 rus10,rus00,rus20 ika10,ika00	2
+两个斤	fcrr1,fcr00 rus10,rus00,rus20 dj100	2
+两个片	fcrr1,fcr00 rus10,rus00,rus20 dp100	2
+两个牙	fcrr1,fcr00 rus10,rus00,rus20 ha100	2
+两个炎	fcrr1,fcr00 rus10,rus00,rus20 iih20,iih00,iih10	2
+两个弓	fcrr1,fcr00 rus10,rus00,rus20 bg100	2
+两个永	fcrr1,fcr00 rus10,rus00,rus20 kns10,kns00,kns20	2
+两个亦	fcrr1,fcr00 rus10,rus00,rus20 ti100	2
+两个手	fcrr1,fcr00 rus10,rus00,rus20 fs100	2
+两个毛	fcrr1,fcr00 rus10,rus00,rus20 mm100	2
+两个王	fcrr1,fcr00 rus10,rus00,rus20 jw100	2
+两个男	fcrr1,fcr00 rus10,rus00,rus20 vsl00,vsl20,vsl10	2
+两个支	fcrr1,fcr00 rus10,rus00,rus20 gbo20,gbo00,gbo10	2
+两个隻	fcrr1,fcr00 rus10,rus00,rus20 ebo10,ebo40	2
+两个古	fcrr1,fcr00 rus10,rus00,rus20 jg100	2
+两个舌	fcrr1,fcr00 rus10,rus00,rus20 ls100	2
+两个启	fcrr1,fcr00 rus10,rus00,rus20 hlv30,hlv10	2
+两个來	fcrr1,fcr00 rus10,rus00,rus20 al100	2
+两个桼	fcrr1,fcr00 rus10,rus00,rus20 arns1	2
+两个旡	fcrr1,fcr00 rus10,rus00,rus20 hwr10,hwr40	2
+两个歹	fcrr1,fcr00 rus10,rus00,rus20 fxx10	2
+两个匕	fcrr1,fcr00 rus10,rus00,rus20 nb100	2
+两个幺	fcrr1,fcr00 rus10,rus00,rus20 na100	2
+两个玄	fcrr1,fcr00 rus10,rus00,rus20 ana00,ana10	2
+两个心	fcrr1,fcr00 rus10,rus00,rus20 ri100	2
+两个力	fcrr1,fcr00 rus10,rus00,rus20 sl100	2
+两个欠	fcrr1,fcr00 rus10,rus00,rus20 xq100	2
+两个子	fcrr1,fcr00 rus10,rus00,rus20 kz100	2
+两个予	fcrr1,fcr00 rus10,rus00,rus20 kv100	2
+两个享	fcrr1,fcr00 rus10,rus00,rus20 akz10	2
+两个立	fcrr1,fcr00 rus10,rus00,rus20 kl100	2
+两个音	fcrr1,fcr00 rus10,rus00,rus20 kjr10,kjr00	2
+两个竟	fcrr1,fcr00 rus10,rus00,rus20 kjwr1	2
+两个竞	fcrr1,fcr00 rus10,rus00,rus20 klwr1,klw00,klwr2	2
+两个兄	fcrr1,fcr00 rus10,rus00,rus20 lwr00,lwr10	2
+两个見	fcrr1,fcr00 rus10,rus00,rus20 jj100	2
+两个貝	fcrr1,fcr00 rus10,rus00,rus20 jb100	2
+两个辛	fcrr1,fcr00 rus10,rus00,rus20 kx100	2
+两个瓜	fcrr1,fcr00 rus10,rus00,rus20 ug100	2
+两个呆	fcrr1,fcr00 rus10,rus00,rus20 lam00,lam10	2
+两个果	fcrr1,fcr00 rus10,rus00,rus20 jam20,jam10,jam00	2
+两个鸟	fcrr1,fcr00 rus10,rus00,rus20 mn100	2
+两个巢	fcrr1,fcr00 rus10,rus00,rus20 ljam2,lja00,ljam1	2
+两个禺	fcrr1,fcr00 rus10,rus00,rus20 vv100	2
+两个巿	fcrr1,fcr00 rus10,rus00,rus20 fuj20,fuj10	2
+两个句	fcrr1,fcr00 rus10,rus00,rus20 wlv10	2
+两个奇	fcrr1,fcr00 rus10,rus00,rus20 ojl00,ojlv1,ojlv2	2
+两个真	fcrr1,fcr00 rus10,rus00,rus20 gjka1,gjk00	2
+两个尹	fcrr1,fcr00 rus10,rus00,rus20 bgp00,bgp10	2
+两个昔	fcrr1,fcr00 rus10,rus00,rus20 sjr10,sjr00	2
+两个易	fcrr1,fcr00 rus10,rus00,rus20 jwcp1,jwc00	2
+两个先	fcrr1,fcr00 rus10,rus00,rus20 pwr00,pwr10	2
+两个老	fcrr1,fcr00 rus10,rus00,rus20 hnb10,hnb00	2
+两个示	fcrr1,fcr00 rus10,rus00,rus20 js100	2
+两个至	fcrr1,fcr00 rus10,rus00,rus20 dz100	2
+两个生	fcrr1,fcr00 rus10,rus00,rus20 ps100	2
+两个車	fcrr1,fcr00 rus10,rus00,rus20 dc100	2
+两个足	fcrr1,fcr00 rus10,rus00,rus20 pz100	2
+两个區	fcrr1,fcr00 rus10,rus00,rus20 hlll1	2
+两个隹	fcrr1,fcr00 rus10,rus00,rus20 eh100	2
+两个牟	fcrr1,fcr00 rus10,rus00,rus20 npn00,npn10,npn20	2
+两个豕	fcrr1,fcr00 rus10,rus00,rus20 ts100	2
+两个𠂢	fcrr1,fcr00 rus10,rus00,rus20 dgy10	2
+两个畐	fcrr1,fcr00 rus10,rus00,rus20 flvt1	2
+两个㣇	fcrr1,fcr00 rus10,rus00,rus20 ecuj1,ecu00	2
+两个邑	fcrr1,fcr00 rus10,rus00,rus20 lob10	2
+两个堯	fcrr1,fcr00 rus10,rus00,rus20 hhhl1	2
+两个秉	fcrr1,fcr00 rus10,rus00,rus20 mbj20,mbj10,mbj00	2
+两个倉	fcrr1,fcr00 rus10,rus00,rus20 rkbl1	2
+两个東	fcrr1,fcr00 rus10,rus00,rus20 ajr30,ajr10	2
+两个善	fcrr1,fcr00 rus10,rus00,rus20 qqlv1,qql00	2
+两个僉	fcrr1,fcr00 rus10,rus00,rus20 rq100	2
+两个齒	fcrr1,fcr00 rus10,rus00,rus20 pc100	2
+两个喜	fcrr1,fcr00 rus10,rus00,rus20 hlv10,hlv20,hlv00	2
+两个走	fcrr1,fcr00 rus10,rus00,rus20 hz100	2
+两个昌	fcrr1,fcr00 rus10,rus00,rus20 jjr10	2
+两个串	fcrr1,fcr00 rus10,rus00,rus20 llus1	2
+两个米	fcrr1,fcr00 rus10,rus00,rus20 qm100	2
+两个隶	fcrr1,fcr00 rus10,rus00,rus20 bd100	2
+两个不	fcrr1,fcr00 rus10,rus00,rus20 vu100,v0000	2
+两个龙	fcrr1,fcr00 rus10,rus00,rus20 fgp00,fgp10	2
+两个乞	fcrr1,fcr00 rus10,rus00,rus20 gyi10	2
+两个夋	fcrr1,fcr00 rus10,rus00,rus20 nkt00,nktu1	2
+两个天	fcrr1,fcr00 rus10,rus00,rus20 fod10,fod00	2
+三个生	la100 rus10,rus00,rus20 ps100	2
+三个秦	la100 rus10,rus00,rus20 omh00,omh10	2
+三个若	la100 rus10,rus00,rus20 sel00,selv1	2
+三个雲	la100 rus10,rus00,rus20 cina1	2
+三个人	la100 rus10,rus00,rus20 re100	4278
+三个刀	la100 rus10,rus00,rus20 md100	2
+三个十	la100 rus10,rus00,rus20 gi100	3
+三个力	la100 rus10,rus00,rus20 sl100	2
+三个原	la100 rus10,rus00,rus20 vdi00,vdiv1	2
+三个厶	la100 rus10,rus00,rus20 na200,na100	2
+三个又	la100 rus10,rus00,rus20 bo100	2
+三个口	la100 rus10,rus00,rus20 lv100	2
+三个七	la100 rus10,rus00,rus20 xi100	2
+三个吉	la100 rus10,rus00,rus20 hlv10	2
+三个土	la100 rus10,rus00,rus20 ht100	2
+三个士	la100 rus10,rus00,rus20 hs100	2
+三个女	la100 rus10,rus00,rus20 cn100	2
+三个子	la100 rus10,rus00,rus20 kz100	2
+三个小	la100 rus10,rus00,rus20 iv100	2
+三个心	la100 rus10,rus00,rus20 ri100	2
+三个手	la100 rus10,rus00,rus20 fs100	2
+三个日	la100 rus10,rus00,rus20 jr100	2
+三个木	la100 rus10,rus00,rus20 am100	2
+三个止	la100 rus10,rus00,rus20 pi100	2
+三个毛	la100 rus10,rus00,rus20 mm100	2
+三个水	la100 rus10,rus00,rus20 ns100	2
+三个泉	la100 rus10,rus00,rus20 dns00,dns10	2
+三个火	la100 rus10,rus00,rus20 ih100	2
+三个牛	la100 rus10,rus00,rus20 pn100	2
+三个犬	la100 rus10,rus00,rus20 hq100	2
+三个田	la100 rus10,rus00,rus20 vt100	2
+三个白	la100 rus10,rus00,rus20 db100	2
+三个目	la100 rus10,rus00,rus20 jm100	2
+三个直	la100 rus10,rus00,rus20 gjq20,gjq10,gjq00	2
+三个石	la100 rus10,rus00,rus20 vs100	2
+三个羊	la100 rus10,rus00,rus20 qy100	2
+三个耳	la100 rus10,rus00,rus20 le100	2
+三个舌	la100 rus10,rus00,rus20 ls100	2
+三个屮	la100 rus10,rus00,rus20 wc100	2
+三个虫	la100 rus10,rus00,rus20 qc100	2
+三个言	la100 rus10,rus00,rus20 by100	2
+三个贝	la100 rus10,rus00,rus20 cb100	2
+三个車	la100 rus10,rus00,rus20 dc100	2
+三个金	la100 rus10,rus00,rus20 tj100	2
+三个隹	la100 rus10,rus00,rus20 eh100	2
+三个雷	la100 rus10,rus00,rus20 cvt00,cvt10	2
+三个風	la100 rus10,rus00,rus20 ef100	2
+三个飛	la100 rus10,rus00,rus20 yf200,yf100	2
+三个香	la100 rus10,rus00,rus20 mjr00,mjr10	2
+三个马	la100 rus10,rus00,rus20 bm100	2
+三个魚	la100 rus10,rus00,rus20 vv100,vv200	2
+三个鹿	la100 rus10,rus00,rus20 ml100	2
+三个龍	la100 rus10,rus00,rus20 kwub1	2
+三个个	la100 rus10,rus00,rus20 rus10,rus00,rus20	2
+三个丶	la100 rus10,rus00,rus20 kd100	2
+三个了	la100 rus10,rus00,rus20 ke100,k0000	2
+三个介	la100 rus10,rus00,rus20 rka10,rka00	2
+三个企	la100 rus10,rus00,rus20 rpi00,rpi10	2
+三个舍	la100 rus10,rus00,rus20 rls10,rls20,rls00	2
+三个圥	la100 rus10,rus00,rus20 hwr10	2
+三个光	la100 rus10,rus00,rus20 ilw10,ilw00	2
+三个兔	la100 rus10,rus00,rus20 xlwk1	2
+三个全	la100 rus10,rus00,rus20 rjw00,rjw10	2
+三个𠙽	la100 rus10,rus00,rus20 hwk10	2
+三个𠧪	la100 rus10,rus00,rus20 uwrr1	2
+三个㔾	la100 rus10,rus00,rus20 aj100,aj200	2
+三个厡	la100 rus10,rus00,rus20 vdns2,vdns1	2
+三个可	la100 rus10,rus00,rus20 jlv20,jlv10,jlv00	2
+三个因	la100 rus10,rus00,rus20 wod00,wod20,wod10	2
+三个夏	la100 rus10,rus00,rus20 vjtu1,vjt00	2
+三个大	la100 rus10,rus00,rus20 od100	2
+三个天	la100 rus10,rus00,rus20 fod10,fod00	2
+三个太	la100 rus10,rus00,rus20 okd00,okd10	2
+三个𦉼	la100 rus10,rus00,rus20 uod10	2
+三个宝	la100 rus10,rus00,rus20 ijk00,ijkd1	2
+三个宜	la100 rus10,rus00,rus20 ijq10,ijq00	2
+三个客	la100 rus10,rus00,rus20 itlv1	2
+三个寒	la100 rus10,rus00,rus20 iski1	2
+三个少	la100 rus10,rus00,rus20 igp10,igp00	2
+三个山	la100 rus10,rus00,rus20 us100	2
+三个市	la100 rus10,rus00,rus20 auj00,auj10	3
+三个文	la100 rus10,rus00,rus20 te100	2
+三个斗	la100 rus10,rus00,rus20 igi10,igi00	2
+三个朿	la100 rus10,rus00,rus20 ack00,ack10	2
+三个束	la100 rus10,rus00,rus20 alv20,alv00,alv10	2
+三个林	la100 rus10,rus00,rus20 aam10,aam00,aam20	2
+三个果	la100 rus10,rus00,rus20 jam20,jam10,jam00	2
+三个欠	la100 rus10,rus00,rus20 xq100	2
+三个𣥚	la100 rus10,rus00,rus20 mpi10	2
+三个爪	la100 rus10,rus00,rus20 uz100	2
+三个妥	la100 rus10,rus00,rus20 ucn10,ucn00,ucn20	2
+三个用	la100 rus10,rus00,rus20 sy100	2
+三个甲	la100 rus10,rus00,rus20 vj100	2
+三个百	la100 rus10,rus00,rus20 vjr10,vjr20,vjr00	2
+三个盖	la100 rus10,rus00,rus20 qum00,qum10,qum20	2
+三个県	la100 rus10,rus00,rus20 jeiv1	2
+三个空	la100 rus10,rus00,rus20 ipg10,ipg20,ipg00	2
+三个亇	la100 rus10,rus00,rus20 xyi10,xyi00	2
+三个竹	la100 rus10,rus00,rus20 gz100	2
+三个罒	la100 rus10,rus00,rus20 uw100	2
+三个羗	la100 rus10,rus00,rus20 qena1,qen00	2
+三个老	la100 rus10,rus00,rus20 hnb10,hnb00	2
+三个月	la100 rus10,rus00,rus20 wy100	8472
+三个至	la100 rus10,rus00,rus20 dz100	2
+三个興	la100 rus10,rus00,rus20 dcfk1	2
+三个足	la100 rus10,rus00,rus20 pz100	2
+三个㖖	la100 rus10,rus00,rus20 klv10,klv50	2
+三个門	la100 rus10,rus00,rus20 dm100	2
+三个面	la100 rus10,rus00,rus20 sm100	2
+三个頁	la100 rus10,rus00,rus20 je100	2
+三个鳥	la100 rus10,rus00,rus20 dn100	2
+三个男	la100 rus10,rus00,rus20 vsl00,vsl20,vsl10	2
+三个立	la100 rus10,rus00,rus20 kl100	2
+三个九	la100 rus10,rus00,rus20 rj100	3
+三个也	la100 rus10,rus00,rus20 oe100,o0000	2
+三个加	la100 rus10,rus00,rus20 slv00,slv10	2
+三个動	la100 rus10,rus00,rus20 mvsl1	2
+三个千	la100 rus10,rus00,rus20 mq100	2
+三个方	la100 rus10,rus00,rus20 tf100	2
+三个朔	la100 rus10,rus00,rus20 qww00,qwwy1	2
+三个玉	la100 rus10,rus00,rus20 jkd00,jkd20,jkd10	2
+三个申	la100 rus10,rus00,rus20 ds100	2
+三个𡿨	la100 rus10,rus00,rus20 ei100	2
+三个去	la100 rus10,rus00,rus20 hna00,hna10	2
+三个弓	la100 rus10,rus00,rus20 bg100	2
+三个䖝	la100 rus10,rus00,rus20 gqc10	2
+三个丿	la100 rus10,rus00,rus20 gp100	2
+三个户	la100 rus10,rus00,rus20 hh100	2
+三个瓜	la100 rus10,rus00,rus20 ug100	2
+三个鸟	la100 rus10,rus00,rus20 mn100	2
+三个米	la100 rus10,rus00,rus20 qm100	2
+四个乂	wwr10,wwr00 rus10,rus00,rus20 si200,si100	2
+四个人	wwr10,wwr00 rus10,rus00,rus20 re100	2274
+四个厶	wwr10,wwr00 rus10,rus00,rus20 na200,na100	2
+四个又	wwr10,wwr00 rus10,rus00,rus20 bo100	2
+四个匕	wwr10,wwr00 rus10,rus00,rus20 nb100	2
+四个工	wwr10,wwr00 rus10,rus00,rus20 pg100	2
+四个口	wwr10,wwr00 rus10,rus00,rus20 lv100	3
+四个天	wwr10,wwr00 rus10,rus00,rus20 fod10,fod00	2
+四个小	wwr10,wwr00 rus10,rus00,rus20 iv100	2
+四个屮	wwr10,wwr00 rus10,rus00,rus20 wc100	2
+四个火	wwr10,wwr00 rus10,rus00,rus20 ih100	2
+四个牛	wwr10,wwr00 rus10,rus00,rus20 pn100	2
+四个魚	wwr10,wwr00 rus10,rus00,rus20 vv100,vv200	2
+四个月	wwr10,wwr00 rus10,rus00,rus20 wy100	1618
+四个日	wwr10,wwr00 rus10,rus00,rus20 jr100	2
+四个林	wwr10,wwr00 rus10,rus00,rus20 aam10,aam00,aam20	2
+四个水	wwr10,wwr00 rus10,rus00,rus20 ns100	2
+四个石	wwr10,wwr00 rus10,rus00,rus20 vs100	2
+四个田	wwr10,wwr00 rus10,rus00,rus20 vt100	2
+四个甲	wwr10,wwr00 rus10,rus00,rus20 vj100	2
+四个且	wwr10,wwr00 rus10,rus00,rus20 jq100	2
+四个囚	wwr10,wwr00 rus10,rus00,rus20 wre10,wre00	2
+四个困	wwr10,wwr00 rus10,rus00,rus20 wam00,wam10	2
+四个竹	wwr10,wwr00 rus10,rus00,rus20 gz100	2
+四个老	wwr10,wwr00 rus10,rus00,rus20 hnb10,hnb00	2
+四个朿	wwr10,wwr00 rus10,rus00,rus20 ack00,ack10	2
+四个先	wwr10,wwr00 rus10,rus00,rus20 pwr00,pwr10	2
+四个金	wwr10,wwr00 rus10,rus00,rus20 tj100	2
+四个泉	wwr10,wwr00 rus10,rus00,rus20 dns00,dns10	2
+四个言	wwr10,wwr00 rus10,rus00,rus20 by100	2
+四个門	wwr10,wwr00 rus10,rus00,rus20 dm100	2
+四个果	wwr10,wwr00 rus10,rus00,rus20 jam20,jam10,jam00	2
+四个春	wwr10,wwr00 rus10,rus00,rus20 ojr10,ojr00	2
+四个車	wwr10,wwr00 rus10,rus00,rus20 dc100	2
+四个風	wwr10,wwr00 rus10,rus00,rus20 ef100	2
+四个雷	wwr10,wwr00 rus10,rus00,rus20 cvt00,cvt10	2
+四个雲	wwr10,wwr00 rus10,rus00,rus20 cina1	2
+四个興	wwr10,wwr00 rus10,rus00,rus20 dcfk1	2
+四个龍	wwr10,wwr00 rus10,rus00,rus20 kwub1	2
+四个土	wwr10,wwr00 rus10,rus00,rus20 ht100	2
