@@ -63,6 +63,8 @@ patch:
 
   key_binder/import_preset: default
   key_binder/bindings/+:   #本行请勿做任何更改。
+    - {accept: space, send: space, when: has_menu}
+    - {accept: space, send: Escape, when: composing}
 
   punctuator/half_shape/+:       #本行请勿做任何更改。
     '*' : ['*','＊','·','・','×','※','❂','⁂','☮','☯','☣']
